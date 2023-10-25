@@ -13,7 +13,7 @@
             <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item">
-                        <a class="nav-link mx-2 active" aria-current="page" href="iniciarSesion">Iniciar Sesion</a>
+                        <a class="nav-link mx-2 active" aria-current="page" href="login">Iniciar Sesion</a>
                     </li>
                     <li class="nav-item-dos">
                         <a class="nav-link mx-2 active" aria-current="page" href="registro">Registrarse</a>
@@ -22,7 +22,7 @@
                         <a class="nav-link mx-2" href="inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2 text-danger" href="#">Cerrar Sesion</a>
+                        <a class="nav-link mx-2 text-danger" href="cerrarSesion">Cerrar Sesion</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
