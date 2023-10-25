@@ -4,7 +4,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-light" id="neubar">
         <div class="container">
-            <img src="view\images\logoo.png" width="80">
+            <img src="vista\imagenes\logoo.png" width="80">
             <FONT SIZE="6" FACE="Cooper Black" COLOR="black" >LIFE SHEET</FONT>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
         <hr class="my-4" />
 
         <div class="justify-content-center">
-            <img src="view\images\hoja.png" width="150">
+            <img src="vista\imagenes\hoja.png" width="150">
 
             <button type="button" class="btn" style="background-color: #f5d7b2;">
                 Learn more
