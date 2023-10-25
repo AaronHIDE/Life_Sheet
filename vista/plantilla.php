@@ -3,10 +3,9 @@
 session_start();
 
 include_once "vista/modulos/cabecera.php";
+include_once "vista/modulos/inicio.php";
 
 if (isset($_SESSION["ruta"])) {
-
-    include_once "vista/modulos/inicio.php";
 
     if($_GET["ruta"] == "registro" ||
        $_GET["ruta"] == "login" ||
