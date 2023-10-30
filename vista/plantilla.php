@@ -13,20 +13,20 @@ if (isset($_SESSION["ruta"])) {
 
     if($_GET["ruta"] == "registro"
     || $_GET["ruta"] == "login"
-    || $_GET["ruta"] == "registro"
     || $_GET["ruta"] == "contacto"
     || $_GET["ruta"] == "cerrarSesion"){
 
     include_once "vista/modulos/".$_GET["ruta"].".php";
     }
 } else {
-    if($_GET["ruta"] == "login" || $_GET["ruta"] == "registro" ){
+    if($_GET["ruta"] == "login" || $_GET["ruta"] == "registro" || $_GET["ruta"] == "contacto" || $_GET["ruta"] == "admin"){
+
         include_once "vista/modulos/".$_GET["ruta"].".php";
     }else{
         include_once "vista/modulos/login.php";
     }
 
-    
+     
 }
 
 include_once "vista/modulos/pie.php";
