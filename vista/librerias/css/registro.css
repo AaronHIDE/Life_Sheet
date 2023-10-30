@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-.contenedor{
-    background-color: hsla(251, 14%, 29%, 0.39);
-    border-style: dashed;
-    width: 400px;
-    height: 450px;
-
-}
-
 section{
     margin: 0;
     padding: 0;
@@ -16,15 +7,19 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 180vh;
     width: 100%;
     
-    background-color:rgb(151, 84, 84);
+    background-color: beige;
     background-position: center;
     background-size: cover;
 }
 
+.contenedor{
+    background-color: hsla(252, 9%, 34%, 0.39);
+    border-style: dashed;
 
+}
 
 .form-box{
     position: relative;
