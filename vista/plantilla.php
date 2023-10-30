@@ -3,13 +3,17 @@
 session_start();
 
 include_once "vista/modulos/cabecera.php";
-include_once "vista/modulos/inicio.php";
+include_once "vista/modulos/nav.php";
+include_once "vista/modulos/jumbutron.php";
+
 
 if (isset($_SESSION["ruta"])) {
 
+    include_once "vista/modulos/menu.php";
+
     if($_GET["ruta"] == "registro" ||
        $_GET["ruta"] == "login" ||
-       $_GET["ruta"] == "cerrarSesion"){
+       $_GET["ruta"] == "cerrarSesion" ){
 
     include_once "vista/modulos/".$_GET["ruta"].".php";
     }
@@ -18,4 +22,3 @@ if (isset($_SESSION["ruta"])) {
 }
 
 include_once "vista/modulos/pie.php";
-
