@@ -16,20 +16,14 @@
                     <li class="nav-item-dos">
                         <a class="nav-link mx-2 active" aria-current="page" href="registro">Registrarse</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2" href="inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-2 text-danger" href="cerrarSesion">Cerrar Sesion</a>
-                    </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Company
+                            Opciones
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                            <li><a class="dropdown-item" href="#">About Us</a></li>
-                            <li><a class="dropdown-item" href="#">Contact us</a></li>
+                            <li><a class="dropdown-item" href="contacto">Contacto</a></li>
+                            <li><a class="dropdown-item" href="admin">ADMINISTRAR</a></li>
                         </ul>
                     </li>
                 </ul>
