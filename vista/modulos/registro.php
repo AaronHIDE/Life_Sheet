@@ -1,6 +1,6 @@
 <body>
-    <section>
-        <div class="form-box">
+    <section class="container col-md-3">
+        <div class="form-box2">
             <div class="form-value">
                 <form action="/action_page.php">
                     <FONT SIZE="6" FACE="Cooper Black" COLOR="black" class="h2">REGISTRARSE</FONT>
