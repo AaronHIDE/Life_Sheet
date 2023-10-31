@@ -1,9 +1,10 @@
-<body>
+<body style="background-image: url(vista/imagenes/fondo2.jpg);">
+
     <section class="container col-md-3">
         <div class="form-box2">
             <div class="form-value">
-                <form action="/action_page.php">
-                    <FONT SIZE="6" FACE="Cooper Black" COLOR="black" class="h2">REGISTRARSE</FONT>
+                <form action="">
+                    <h2>REGISTRARSE</h2>
                     <div class="inputbox">
                         <ion-icon name="pencil-outline"></ion-icon>
                         <input type="text" class="form-control" id="nombres" name="nombres" required>
