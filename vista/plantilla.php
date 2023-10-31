@@ -22,7 +22,12 @@ if (isset($_SESSION["ruta"])) {
     }
 
 } else {
-    if($_GET["ruta"] == "login" || $_GET["ruta"] == "registro" || $_GET["ruta"] == "contacto" || $_GET["ruta"] == "admin"){
+    if($_GET["ruta"] == "login" 
+    || $_GET["ruta"] == "registro" 
+    || $_GET["ruta"] == "contacto" 
+    || $_GET["ruta"] == "admin"
+    || $_GET["ruta"] == "formatoSena"
+    || $_GET["ruta"] == "formato"){
         include_once "vista/modulos/".$_GET["ruta"].".php";
 
     }else{
