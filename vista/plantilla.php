@@ -21,6 +21,7 @@ if (isset($_SESSION["ruta"])) {
     include_once "vista/modulos/".$_GET["ruta"].".php";
     }
 
+
 } else {
     if($_GET["ruta"] == "login" 
     || $_GET["ruta"] == "registro" 
@@ -30,6 +31,7 @@ if (isset($_SESSION["ruta"])) {
     || $_GET["ruta"] == "formato"){
         include_once "vista/modulos/".$_GET["ruta"].".php";
 
+        
     }else{
         include_once "vista/modulos/nav.php";
         include_once "vista/modulos/jumbutron.php";
