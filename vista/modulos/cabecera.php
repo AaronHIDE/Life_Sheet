@@ -19,6 +19,7 @@
 
   <!-- Local CDN's -->
 
+  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/formato.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/login.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/registro.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/navbar.css'>
