@@ -23,7 +23,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="contacto">Contacto</a></li>
-                            <li><a class="dropdown-item" href="admin">ADMINISTRAR</a></li>
+                            <li><a class="dropdown-item" href="login">ADMINISTRAR</a></li>
                         </ul>
                     </li>
                 </ul>

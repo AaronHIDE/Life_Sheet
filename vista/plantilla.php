@@ -21,6 +21,7 @@ if (isset($_SESSION["ruta"])) {
     }
 
 } else {
+    
     if($_GET["ruta"] == "login" 
     || $_GET["ruta"] == "registro" 
     || $_GET["ruta"] == "contacto" 
