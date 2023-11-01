@@ -1,4 +1,4 @@
-<body style="background-image: url(vista/imagenes/fondo2.jpg);">
+<body style="background-image: url(vista/imagenes/fondo2.jpg);" class="fondo">
 
     <section class="container col-md-3">
         <div class="form-box2">
