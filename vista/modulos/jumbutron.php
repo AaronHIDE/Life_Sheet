@@ -7,14 +7,17 @@
             En este sitio puedes generar tus hojas de vida de una forma práctica y sencilla, además de poder compartirlas y descargarlas.
         </p>
 
-        <hr class="my-4"/>
+        <hr class="my-4" />
 
         <div class="justify-content-center">
             <img src="vista\imagenes\hoja.png" width="150">
+            <br><br>
+            <a href="login">
+                <button type="button" class="btn" style="background-color: #f5d7b2;">
+                    Learn more
+                </button>
+            </a>
 
-            <button type="button" class="btn" style="background-color: #f5d7b2;">
-                Learn more
-            </button>
         </div>
     </div>
 
