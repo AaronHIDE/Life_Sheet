@@ -4,6 +4,7 @@
             <div class="h1-container">
                 <FONT SIZE="6" FACE="Montserrat" COLOR="black" class="h1">Formato Hoja de vida SENA</FONT>
             </div>
+            <br><br>
             <div class="table-responsive">
                 <table class="table table-bordered" id="inventario">
                     <tbody>
@@ -428,8 +429,14 @@
 </div>
 
 
-<div class="col-md-2 offset-md-11">
+<br><br><br>
+
+
+<div class="col-md-2 offset-md-9">
     <button type="button" class="btn btn-outline-info" style="width: 100px; height: 100px;">
         <img src="vista/imagenes/chat.png" style="width: 110px; height: 80px;">
     </button>
 </div>
+
+
+<br><br><br><br>

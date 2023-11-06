@@ -28,7 +28,7 @@ if (isset($_SESSION["ruta"])) {
     || $_GET["ruta"] == "admin"
     || $_GET["ruta"] == "formatoSena"
     || $_GET["ruta"] == "formato"
-    || $_GET["ruta"] == "inicio"){
+    || $_GET["ruta"] == "mail"){
         include_once "vista/modulos/".$_GET["ruta"].".php";
 
     }else{
