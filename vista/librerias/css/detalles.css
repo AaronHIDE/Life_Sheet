@@ -6,3 +6,16 @@
 }
 
 
+.foto {
+    border-radius: 50px;
+    border-color: black;
+    border-style: groove;
+}
+ 
+.perfil1 {
+    background-color: black;
+}
+
+.perfil2 {
+    background-color:blanchedalmond;
+}

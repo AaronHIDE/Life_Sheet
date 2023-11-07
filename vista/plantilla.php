@@ -8,13 +8,17 @@ include_once "vista/modulos/nav.php";
 
 if (isset($_SESSION["ruta"])) {
 
-    include_once "vista/modulos/nav.php";
+    include_once "vista/modulos/principal.php";
 
     if($_GET["ruta"] == "registro"
     || $_GET["ruta"] == "login"
     || $_GET["ruta"] == "contacto"
     || $_GET["ruta"] == "formato"
     || $_GET["ruta"] == "formatoSena"
+    || $_GET["ruta"] == "configuracion"
+    || $_GET["ruta"] == "formatoSena"
+    || $_GET["ruta"] == "inicio"
+    
     || $_GET["ruta"] == "cerrarSesion"){
 
     include_once "vista/modulos/".$_GET["ruta"].".php";

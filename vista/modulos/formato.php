@@ -3,7 +3,7 @@
         <FONT SIZE="6" FACE="Montserrat" COLOR="black" class="h1">Hoja de Vida</FONT>
     </div>
     <div class="table-responsive">
-        <table class="table table-bordered" id="inventario">
+        <table class="table table-bordered" id="formato1">
             <tbody>
                 <tr>
                     <td>

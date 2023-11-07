@@ -5,8 +5,9 @@
                 <FONT SIZE="6" FACE="Montserrat" COLOR="black" class="h1">Formato Hoja de vida SENA</FONT>
             </div>
             <br><br>
+            
             <div class="table-responsive">
-                <table class="table table-bordered" id="inventario">
+                <table class="table table-bordered" id="formato2">
                     <tbody>
                         <tr>
                             <!-- Datos personales SENA-->
@@ -24,16 +25,16 @@
                                                 Nombre Completo:</FONT>
                                         </label>
                                     </div>
-                            </td>
-                            <td>
-                                <div class="inputboxf">
-                                    <ion-icon name="document-text"></ion-icon>
-                                    <input type="text" class="form-control" id="documento" name="documento" required>
-                                    <label for="documento" class="form-label">
-                                        <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h5">
-                                            Documento:</FONT>
-                                    </label>
-                                </div>
+
+                                    <div class="inputboxf">
+                                        <ion-icon name="document-text"></ion-icon>
+                                        <input type="text" class="form-control" id="documento" name="documento"
+                                            required>
+                                        <label for="documento" class="form-label">
+                                            <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h5">
+                                                Documento:</FONT>
+                                        </label>
+                                    </div>
                             </td>
                             <td>
                                 <div class="inputboxf">
@@ -45,8 +46,6 @@
                                             Fecha de Nacimiento:</FONT>
                                     </label>
                                 </div>
-                            </td>
-                            <td>
                                 <div class="inputboxf">
                                     <ion-icon name="document-text"></ion-icon>
                                     <input type="number" class="form-control" id="edad" name="edad" required>
@@ -65,8 +64,6 @@
                                             Teléfono:</FONT>
                                     </label>
                                 </div>
-                            </td>
-                            <td>
                                 <div class="inputboxf">
                                     <ion-icon name="document-text"></ion-icon>
                                     <input type="email" class="form-control" id="email_misena" name="email_misena"
@@ -97,8 +94,6 @@
                                             Dirección:</FONT>
                                     </label>
                                 </div>
-                            </td>
-                            <td>
                                 <div class="inputboxf">
                                     <ion-icon name="document-text"></ion-icon>
                                     <input type="point" class="form-control" id="ciudad" name="ciudad" required>
@@ -108,8 +103,9 @@
                                     </label>
                                 </div>
                             </td>
-
+                            <br><br>
                         </tr>
+
 
                         <tr>
                             <td><img src="vista/imagenes/logoo.png" style="height: 350px; width:350px;">
