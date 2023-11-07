@@ -24,7 +24,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/registro.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/navbar.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/pie.css'>
-
+  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/mail.css'>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -13,6 +13,7 @@ if (isset($_SESSION["ruta"])) {
     if($_GET["ruta"] == "registro"
     || $_GET["ruta"] == "login"
     || $_GET["ruta"] == "contacto"
+    || $_GET["ruta"] == "mail"
     || $_GET["ruta"] == "formato"
     || $_GET["ruta"] == "formatoSena"
     || $_GET["ruta"] == "cerrarSesion"){
@@ -25,6 +26,7 @@ if (isset($_SESSION["ruta"])) {
     if($_GET["ruta"] == "login" 
     || $_GET["ruta"] == "registro" 
     || $_GET["ruta"] == "contacto" 
+    || $_GET["ruta"] == "mail" 
     || $_GET["ruta"] == "admin"
     || $_GET["ruta"] == "formatoSena"
     || $_GET["ruta"] == "formato"){
