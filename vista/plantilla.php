@@ -13,6 +13,7 @@ if (isset($_SESSION["ruta"])) {
     if($_GET["ruta"] == "registro"
     || $_GET["ruta"] == "login"
     || $_GET["ruta"] == "contacto"
+    || $_GET["ruta"] == "mail"
     || $_GET["ruta"] == "formato"
     || $_GET["ruta"] == "formatoSena"
     || $_GET["ruta"] == "configuracion"
@@ -30,6 +31,7 @@ if (isset($_SESSION["ruta"])) {
     if($_GET["ruta"] == "login" 
     || $_GET["ruta"] == "registro" 
     || $_GET["ruta"] == "contacto" 
+    || $_GET["ruta"] == "mail" 
     || $_GET["ruta"] == "admin"
 
     //borrarlos despues del login
