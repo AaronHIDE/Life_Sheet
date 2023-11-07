@@ -3,6 +3,23 @@
     color: black;
   }
 
+  #inventario {
+    width: 60%; /* Reduzca el ancho de la tabla al 60% del contenedor */
+    margin: 1 auto; /* Centra la tabla en la página */
+    border: 2px solid black; /* Establece el grosor y color de los bordes */
+    font-size: 13px; /* Reduzca el tamaño de la fuente */
+    border-collapse: collapse; /* Fusiona los bordes de las celdas */
+}
+
+#inventario td {
+    padding: 3px; /* Reduzca el espacio entre celdas */
+    border: 2px solid black; /* Establece el grosor y color de los bordes de las celdas */
+}
+
+#inventario .h5 {
+    font-size: 14px; /* Reduzca el tamaño de la fuente para el texto */
+}
+
   .table-bordered {
     border: 2px solid black; /* Cambia el grosor y el color del borde según tus preferencias */
 }
@@ -14,9 +31,7 @@
 
   
 .h1-container {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    
     height: 100px; /* Ajusta la altura según tus preferencias */
 }
 

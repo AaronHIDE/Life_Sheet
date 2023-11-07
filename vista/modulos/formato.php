@@ -1,6 +1,9 @@
 <div class="container mt-3">
     <div class="h1-container">
-        <FONT SIZE="6" FACE="Montserrat" COLOR="black" class="h1">Hoja de Vida</FONT>
+        <FONT FACE="Montserrat" COLOR="black" class="h1">Hoja de Vida</FONT>
+        <div class="col-md-2 offset-md-4">
+        <button type="submit" class="btn btn-danger">Descargar en PDF</button>
+        </div>  
     </div>
     <div class="table-responsive">
         <table class="table table-bordered" id="formato1">
@@ -33,7 +36,7 @@
                 </tr>
 
                 <tr>
-                    <td><img src="vista/imagenes/logoo.png" style="height: 350px; width:350px;"></td>
+                    <td><img src="vista/imagenes/logoo.png" style="height: 320px; width:320px;"></td>
                     <td>
                         <!-- Datos Personales -->
                         <div class="inputboxf">
@@ -178,5 +181,11 @@
                 </tr>
             </tbody>
         </table>
+        <div class="col-md-2 offset-md-11">
+                <button type="button" class="btn btn-outline-info" style="width: 100px; height: 100px;">
+                    <img src="vista/imagenes/chat.png" style="width: 110px; height: 80px;">
+                </button>
+            </div>
+
     </div>
 </div>
