@@ -6,7 +6,7 @@
         <br><br>
 
         <div class="table-responsive">
-            <table class="table table-bordered" id="formato2">
+            <table class="table table-bordered" id="formatoSena">
                 <tbody>
                     <tr>
                         <!-- Datos personales SENA-->
@@ -98,7 +98,7 @@
                             <!-- Nivel Academico  -->
                             <div class="inputboxf">
                                 <ion-icon name="id-card"></ion-icon>
-                                <input type="text" class="form-control" id="titulo_obenido" name="titulo_obtenido" required>
+                                <input type="text" class="form-control" id="titulo_obtenido" name="titulo_obtenido" required>
                                 <label for="titulo_obtenido" class="form-label">
                                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h5">
                                         Título Obtenido:</FONT>
@@ -235,34 +235,7 @@
 
                     <tr>
                         <td>
-                            <!-- Datos de Coordnadores -->
-                            <div class="inputboxf">
-                                <ion-icon name="library"></ion-icon>
-                                <input type="text" class="form-control" id="coordinador_academico" name="coordinador_academico" required>
-                                <label for="coordinador_academico" class="form-label">
-                                    <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h5">
-                                        Coordinador Acádemico:</FONT>
-                                </label>
-                            </div>
-                            <div class="inputboxf">
-                                <ion-icon name="ribbon"></ion-icon>
-                                <input type="number" class="form-control" id="telefono1" name="telefono1" required>
-                                <label for="telefono1" class="form-label">
-                                    <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h5">
-                                        Teléfono:</FONT>
-                                </label>
-                            </div>
-                            <div class="inputboxf">
-                                <ion-icon name="ribbon"></ion-icon>
-                                <input type="email" class="form-control" id="email_personal" name="email_personal" required>
-                                <label for="email_personal" class="form-label">
-                                    <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h5">
-                                        Email:</FONT>
-                                </label>
-                            </div>
-                        </td>
 
-                        <td>
                             <!-- Datos Funcionario -->
                             <div class="inputboxf">
                                 <ion-icon name="barbell"></ion-icon>

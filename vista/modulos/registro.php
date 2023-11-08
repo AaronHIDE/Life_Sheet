@@ -3,7 +3,7 @@
     <section class="container col-md-3">
         <div class="form-box2">
             <div class="form-value">
-                <form action="">
+                <form action="" id ="registro">
                     <h2>REGISTRARSE</h2>
                     <div class="inputbox">
                         <ion-icon name="pencil-outline"></ion-icon>
@@ -38,8 +38,8 @@
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" class="form-control" id="pwd" name="pswd" required>
-                        <label for="pwd" class="form-label">
+                        <input type="password" class="form-control" id="password" name="password" required>
+                        <label for="password" class="form-label">
                             <FONT SIZE="6" FACE="Times new roman" COLOR="black" class="h5">Contraseña:</FONT>
 
                         </label>

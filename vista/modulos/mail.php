@@ -1,3 +1,7 @@
+<body style="background-image: url(vista/imagenes/fondo4.jpg);" class="fondo">
+
+
+
 <div class="container">
 
 
