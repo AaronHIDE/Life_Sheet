@@ -1,6 +1,5 @@
 <?php
 
-
 session_start();
 
 include_once "vista/modulos/cabecera.php";

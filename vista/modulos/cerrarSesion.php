@@ -1,1 +1,4 @@
-<h1>cerrar sesion</h1>
+
+session_destroy();
+
+echo '<script>window.location = "login";</script>';
