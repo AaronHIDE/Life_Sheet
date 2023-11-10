@@ -247,8 +247,8 @@
                             </div>
                             <div class="inputboxf">
                                 <ion-icon name="barbell"></ion-icon>
-                                <input type="number" class="form-control" id="telefono" name="telefono" required>
-                                <label for="telefono" class="form-label">
+                                <input type="number" class="form-control" id="telefono1" name="telefono1" required>
+                                <label for="telefono1" class="form-label">
                                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h5">
                                         Teléfono:</FONT>
                                 </label>
@@ -318,8 +318,8 @@
                             </div>
                             <div class="inputboxf">
                                 <ion-icon name="ribbon"></ion-icon>
-                                <input type="number" class="form-control" id="telefono2" name="telefono2" required>
-                                <label for="telefono2" class="form-label">
+                                <input type="number" class="form-control" id="telefono3" name="telefono3" required>
+                                <label for="telefono3" class="form-label">
                                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h5">
                                         Teléfono:</FONT>
                                 </label>
