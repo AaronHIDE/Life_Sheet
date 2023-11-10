@@ -2,7 +2,12 @@
     <div class="h1-container">
         <FONT FACE="Montserrat" COLOR="black" class="h1">Hoja de Vida</FONT>
         <div class="col-md-2 offset-md-4">
-        <button type="submit" class="btn btn-danger">Descargar en PDF</button>
+        <button type="button" class="btn btn-danger" onclick="imprimir()"> Descargar en PDF</button>
+        <script>
+            function imprimir(){
+                window.print();
+            }
+        </script>
         </div>  
     </div>
     <div class="table-responsive">
@@ -181,11 +186,10 @@
                 </tr>
             </tbody>
         </table>
-        <div class="col-md-2 offset-md-11">
+    </div>
+    <div class="col-md-2 offset-md-11">
                 <button type="button" class="btn btn-outline-info" style="width: 100px; height: 100px;">
                     <img src="vista/imagenes/chat.png" style="width: 110px; height: 80px;">
                 </button>
             </div>
-
-    </div>
 </div>

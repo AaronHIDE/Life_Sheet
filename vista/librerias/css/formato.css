@@ -99,3 +99,17 @@ input:valid ~ label {
     font-size: 1.2em;
     top: 20px;
 }
+
+@media print {
+    /* Estilos que se aplicarán cuando la página se imprime o se genera un PDF */
+    body {
+      font-size: 12pt; /* Tamaño de fuente para la impresión */
+    }
+
+    .navbar{
+
+      display: none;
+    }
+  }
+  
+  
