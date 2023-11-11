@@ -36,12 +36,12 @@
                         </div>
                     </td>
                     <td>
-                    <img src="vista/imagenes/life_sheet_logo0.png" style="height: 100px; width:310px;">
+                    <img src="vista/imagenes/life_sheet_logo0.png" style="height: 100px; width:200px;">
                     </td>
                 </tr>
 
                 <tr>
-                    <td><img src="vista/imagenes/logoo.png" style="height: 320px; width:320px;"></td>
+                    <td><img src="vista/imagenes/logoo.png" style="height: 200x; width:200px;"></td>
                     <td>
                         <!-- Datos Personales -->
                         <div class="inputboxf">
@@ -187,7 +187,7 @@
             </tbody>
         </table>
     </div>
-    <div class="col-md-2 offset-md-11">
+    <div class="col-md-2 offset-md-9">
                 <button type="button" class="btn btn-outline-info" style="width: 100px; height: 100px;">
                     <img src="vista/imagenes/chat.png" style="width: 110px; height: 80px;">
                 </button>

@@ -27,6 +27,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/navbar.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/detalles.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/mail.css'>
+  <link rel='stylesheet' type='text/css' media='print' href='vista/librerias/css/print.css'>
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

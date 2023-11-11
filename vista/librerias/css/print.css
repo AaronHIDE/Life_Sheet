@@ -1,0 +1,11 @@
+.navbar{
+    display: none;
+}
+
+.btn{
+    display: none;
+}
+
+.table {
+    page-break-inside: avoid;
+  }

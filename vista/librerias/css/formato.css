@@ -3,22 +3,9 @@
     color: black;
   }
 
-  #inventario {
-    width: 60%; /* Reduzca el ancho de la tabla al 60% del contenedor */
-    margin: 1 auto; /* Centra la tabla en la página */
-    border: 2px solid black; /* Establece el grosor y color de los bordes */
-    font-size: 13px; /* Reduzca el tamaño de la fuente */
-    border-collapse: collapse; /* Fusiona los bordes de las celdas */
-}
-
-#inventario td {
-    padding: 3px; /* Reduzca el espacio entre celdas */
-    border: 2px solid black; /* Establece el grosor y color de los bordes de las celdas */
-}
-
-#inventario .h5 {
-    font-size: 14px; /* Reduzca el tamaño de la fuente para el texto */
-}
+  .table{
+    width: 50%; /* Ajustar según sea necesario */
+  }
 
   .table-bordered {
     border: 2px solid black; /* Cambia el grosor y el color del borde según tus preferencias */
@@ -35,35 +22,10 @@
     height: 100px; /* Ajusta la altura según tus preferencias */
 }
 
-.titulo{
-    text-align: center;
-}
-.nombre-container {
-    text-align: left; /* Alinea el contenido a la izquierda */
-}
-
-.form-box3{
-    position: relative;
-    width: 1100px;
-    height: 2000px;
-    background: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .inputboxf{
     position: relative;
     margin: 30px 0;
-    width: 310px;
-    border-bottom: 2px solid #000000;
-}
-.inputboxf {
-    position: relative;
-    margin: 30px 0;
-    width: 310px;
+    width: 250px;
     border-bottom: 2px solid #000000;
 }
 
@@ -99,17 +61,3 @@ input:valid ~ label {
     font-size: 1.2em;
     top: 20px;
 }
-
-@media print {
-    /* Estilos que se aplicarán cuando la página se imprime o se genera un PDF */
-    body {
-      font-size: 12pt; /* Tamaño de fuente para la impresión */
-    }
-
-    .navbar{
-
-      display: none;
-    }
-  }
-  
-  
