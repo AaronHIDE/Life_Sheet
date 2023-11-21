@@ -42,7 +42,7 @@
             <br><br><br>
             <button type="button" class="btn btn-outline-success" onClick="location.href='https://wa.me/+573124836422'">
                 <img src="vista/imagenes/WhatsApp.jpg" style="width: 30px; height: 30px;">
-                <FONT SIZE="6" FACE="Garamond" COLOR="black" class="h5">
+                <FONT SIZE="6" FACE="Garamond" COLOR="black" class="h6">
                     Ir a WhatsApp
                 </FONT>
             </button>
@@ -51,7 +51,7 @@
 
             <button type="button" class="btn btn-outline-info" onClick="location.href='https://www.facebook.com/Xenas.Off?mibextid=ZbWKwL'" style="width: 250px; height: 40px;">
                 <img src="vista/imagenes/facebook.jpg" style="width: 25px; height: 25px;">
-                <FONT SIZE="6" FACE="Garamond" COLOR="black" class="h5">
+                <FONT SIZE="6" FACE="Garamond" COLOR="black" class="h6">
                     Página de Facebook
                 </FONT>
             </button>
