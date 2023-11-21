@@ -38,7 +38,7 @@
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" class="form-control" id="password" name="password" required>
+                        <input type="passwordR" class="form-control" id="passwordR" name="passwordR" required>
                         <label for="password" class="form-label">
                             <FONT SIZE="6" FACE="Times new roman" COLOR="black" class="h5">Contraseña:</FONT>
 
