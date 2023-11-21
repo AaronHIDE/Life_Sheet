@@ -10,11 +10,11 @@ if (isset($_GET["ruta"])) {
 
     // include_once "vista/modulos/principal.php";
 
+
         if ($_GET["ruta"] == "registro"
             || $_GET["ruta"] == "login"
             || $_GET["ruta"] == "contacto"
             || $_GET["ruta"] == "mail"
-            || $_GET["ruta"] == "admin"
             || $_GET["ruta"] == "formato"
             || $_GET["ruta"] == "formatoSena"
             || $_GET["ruta"] == "configuracion"
@@ -41,13 +41,14 @@ if (isset($_GET["ruta"])) {
 
             include_once "vista/modulos/".$_GET["ruta"].".php";
         } else {
-            include_once "vista/modulos/inicio.php";
+            include_once "vista/modulos/nav.php";
+            include_once "vista/modulos/jumbutron.php";
         }
     }
 } else {
     // Si $_GET["ruta"] no está definido, se puede manejar de manera predeterminada aquí
     // Por ejemplo, puedes incluir la página principal o una página de inicio aquí.
-    include_once "vista/modulos/error.php";
+    include_once "vista/modulos/inicio.php";
 }
 
 include_once "vista/modulos/pie.php";
