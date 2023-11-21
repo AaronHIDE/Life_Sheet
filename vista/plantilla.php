@@ -5,6 +5,7 @@ session_start();
 include_once "vista/modulos/cabecera.php";
 include_once "vista/modulos/nav.php";
 
+
 if (isset($_SESSION["ruta"])) {
 
     // include_once "vista/modulos/principal.php";

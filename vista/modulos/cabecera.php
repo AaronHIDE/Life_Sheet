@@ -19,15 +19,18 @@
   <!-- Bootstrap 5 Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
   <!-- Local CDN's -->
 
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/formato.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/login.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/registro.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/navbar.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/detalles.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/mail.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/formato.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/login.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/registro.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/navbar.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/detalles.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/mail.css'>
   <link rel='stylesheet' type='text/css' media='print' href='vista/librerias/css/print.css'>
+  <link rel="stylesheet" type='text/css' href="vista/librerias/css/style.css">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
