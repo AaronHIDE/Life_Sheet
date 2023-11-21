@@ -371,10 +371,15 @@
 </div>
 
 
-<br><br><br>
+<br><br><br><br>
 
 <div class="col-md-2 offset-md-4">
-    <button type="submit" class="btn btn-danger">Descargar en PDF</button>
+    <button type="button" class="btn btn-danger" onclick="imprimir()">Descargar en PDF</button>
+    <script>
+        function imprimir() {
+            window.print();
+        }
+    </script>
 </div>
 <div class="col-md-2 offset-md-9">
     <button type="button" class="btn btn-outline-info" style="width: 100px; height: 100px;">

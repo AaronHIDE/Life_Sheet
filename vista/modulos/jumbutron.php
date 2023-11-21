@@ -1,5 +1,9 @@
 <!-- JUMBOTRON -->
 
+<?php 
+include_once "vista/modulos/nav.php";
+?>
+
 <div class="p-4 mt-5 shadow-4 rounded-3 w-50 mx-auto" style="background-color: #FFFFFF;">
     <FONT SIZE="6" FACE="Times New Roman" COLOR="black" class="text-center">¡Bienvenido a Life Sheet!</FONT>
     <br>

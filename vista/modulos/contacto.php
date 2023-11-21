@@ -1,3 +1,8 @@
+<?php 
+include_once "vista/modulos/nav.php";
+?>
+
+
 <div class="container">
     <FONT SIZE="6" FACE="Cooper Black" COLOR="black" class="h1">CONTACTENOS</FONT>
     <br><br><br>

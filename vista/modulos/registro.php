@@ -1,3 +1,8 @@
+<?php 
+include_once "vista/modulos/nav.php";
+?>
+
+
 <body style="background-image: url(vista/imagenes/fondo2.jpg);" class="fondo">
 
     <section class="container col-md-3">
