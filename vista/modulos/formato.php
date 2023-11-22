@@ -18,6 +18,7 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="contacto">Contacto</a></li>
                         <li><a class="dropdown-item" href="mail">Enviar Email</a></li>
+                        <li><a class="dropdown-item" href="principal">Página Principal</a></li>
                     </ul>
                 </li>
             </ul>
@@ -204,16 +205,16 @@
     </div>
 
     <div class="col-md-4 offset-md-4">
-    <button type="button" class="btn btn-danger" onclick="imprimir()">Descargar en PDF</button>
-    <script>
-        function imprimir() {
-            window.print();
-        }
-    </script>
-</div>
+        <button type="button" class="btn btn-danger" onclick="imprimir()">Descargar en PDF</button>
+        <script>
+            function imprimir() {
+                window.print();
+            }
+        </script>
+    </div>
 
 
-<br><br><br><br>
+    <br><br><br><br>
 
     <!-- <div class="container mt-3">
     <div class="h1-container">
