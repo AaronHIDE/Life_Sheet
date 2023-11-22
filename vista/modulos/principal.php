@@ -19,16 +19,47 @@
         </div>
     </nav>
 
+    <br><br><br>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 perfil2">
-                <h1>plantillas</h1>
+    <div class="row">
+
+        <div class="col-md-3 offset-md-1 c1 contenedor borde">
+            <center>
+                <FONT SIZE="6" FACE="Cooper Black" COLOR="black">PLANTILLAS</FONT>
+            </center>
+            <br><br>
+            <div class="card">
+                <div class="card-border-top">
+                </div>
+                <div class="img">
+                </div>
+                <span>FORMATO NORMAL</span>
+                <p class="job"> Job Title</p>
+                <a href="formato"><button> Click </button></a>
             </div>
-            <div class="col-md-3 perfil1">
-                <h1>perfil</h1>
+
+            <div class="card">
+                <div class="card-border-top">
+                </div>
+                <div class="img">
+                </div>
+                <span>FORMATO SENA</span>
+                <p class="job">Formato dirigido a aquellos aprendices que van a practicas</p>
+                <a href="formatoSena"><button> Click </button></a>
             </div>
         </div>
+
+
+        <div class="col-md-3 c2 contenedor2 borde">
+            <center>
+                <FONT SIZE="6" FACE="Cooper Black" COLOR="black">PERFIL</FONT>
+            </center>
+            <br>
+            <div class="img-area">
+                <img src="vista/imagenes/logoo.png">
+            </div>
+        </div>
+    </div>
     </div>
 
     <br><br><br><br>
