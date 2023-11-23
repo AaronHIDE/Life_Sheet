@@ -1,7 +1,3 @@
-<?php
-include 'control/mailControl.php';
-?>
-
 <div class="container">
 
 
@@ -26,21 +22,21 @@ include 'control/mailControl.php';
                     <div class="container bg-white rounded">
                         
                     <!-- Formulario  -->
-                    <form class="contact" action="" method="post" enctype="multipart/form-data">
+                    <form id="emailForm" class="contact" action="" method="post" enctype="multipart/form-data">
 
                         <!-- Input Email Address -->
                         <div class="mb-3">
-                            <input type="email" name="destinatario" class="form-control" placeholder="Escribe el correo del destinatario:" required>
+                            <input type="email" id="destinatario" name="destinatario" class="form-control" placeholder="Escribe el correo del destinatario:" required>
                         </div>
 
                         <!-- Input Asunto Correo -->
                         <div class="mb-3">
-                            <input type="text" name="asunto" class="form-control" placeholder="Escribe el asunto del correo:" required>
+                            <input type="text" id="asunto" name="asunto" class="form-control" placeholder="Escribe el asunto del correo:" required>
                         </div>
 
                         <!-- Textarea Contenido Correo Electronico -->
                         <div class="mb-3">
-                            <textarea name="contenido" rows="5" class="form-control" placeholder="Escribe el contenido del correo:" required></textarea>
+                            <textarea name="contenido" id="contenido" rows="5" class="form-control" placeholder="Escribe el contenido del correo:" required></textarea>
                         </div>
 
                         <!-- Files Input -->
@@ -51,7 +47,7 @@ include 'control/mailControl.php';
 
                         <!-- Boton Enviar -->
                         <div class="mb-3">
-                            <button type="submit" name="submit" class="btn btn-danger text-dark">
+                            <button type="button" id="submitButton" name="submit" class="btn btn-danger text-dark">
                                 Enviar <i class="bi bi-send"></i>
                             </button>
                         </div>
