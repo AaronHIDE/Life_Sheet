@@ -1,3 +1,7 @@
+<?php 
+include_once "vista/modulos/nav.php";
+?>
+
 <div class="container">
 
 

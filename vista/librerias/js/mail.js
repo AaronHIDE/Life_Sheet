@@ -19,16 +19,29 @@ $(document).ready(function () {
             body: formData})
             .then(response => response.text())
             .then(data => {
-                console.log(data)
-
                 // Manejar la respuesta del servidor (data)
-                console.log("Correo enviado exitosamente"); // Puedes realizar acciones según la respuesta del servidor
-            })
-            .catch(error => {
+                console.log(data);
+
+                // Agregar SweetAlert después de que el correo se envíe correctamente
+                if (data === 'Message has been sent') {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Correo enviado',
+                        text: 'El correo se ha enviado correctamente.',
+                    });
+                }
+                })
+                .catch(error => {
                 // Manejar errores
                 console.error('Error en la solicitud fetch:', error);
-            });
 
+                // Agregar SweetAlert para errores
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error al enviar el correo',
+                    text: 'Hubo un problema al enviar el correo. Por favor, inténtalo de nuevo.',
+                });
+                });
 
         
     });
