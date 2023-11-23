@@ -1,3 +1,8 @@
+<?php 
+include_once "vista/modulos/nav.php";
+?>
+
+
 <body style="background-image: url(vista/imagenes/fondo2.jpg);" class="fondo">
 
     <section class="container col-md-3">
@@ -38,7 +43,7 @@
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" class="form-control" id="password" name="password" required>
+                        <input type="passwordR" class="form-control" id="passwordR" name="passwordR" required>
                         <label for="password" class="form-label">
                             <FONT SIZE="6" FACE="Times new roman" COLOR="black" class="h5">Contraseña:</FONT>
 

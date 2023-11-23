@@ -19,14 +19,20 @@
   <!-- Bootstrap 5 Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
   <!-- Local CDN's -->
 
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/formato.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/login.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/registro.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/navbar.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/detalles.css'>
-  <link rel='stylesheet' type='text/css' media='screen' href='vista/librerias/css/mail.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/formato.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/login.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/registro.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/navbar.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/detalles.css'>
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/mail.css'>
+  <link rel='stylesheet' type='text/css' media='print' href='vista/librerias/css/print.css'>
+  <link rel="stylesheet" type='text/css' href="vista/librerias/css/style.css">
+  <link rel="stylesheet" type='text/css' href="vista/librerias/css/principal.css">
+  <link rel="stylesheet" type='text/css' href="vista/librerias/css/cards.css">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,10 +41,13 @@
 
 
   <script src='vista/librerias/js/login.js'></script>
+  <script src='vista/librerias/js/formato.js'></script>
+  <script src='vista/librerias/js/formatoSena.js'></script>
+  <script src='vista/librerias/js/registro.js'></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
 
   <!-- Jquery and Sweetalert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
