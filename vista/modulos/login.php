@@ -11,7 +11,7 @@ include_once "vista/modulos/nav.php";
         <div class="form-value">
 
           <form action="">
-            <h2>INICIAR SESION</h2>
+          <center><FONT SIZE="6" FACE="Cooper Black" COLOR="white">INICIAR SESION</FONT></center>
 
             <div class="inputbox">
               <ion-icon name="mail-outline"></ion-icon>
