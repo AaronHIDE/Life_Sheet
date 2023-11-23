@@ -56,7 +56,7 @@ include_once "vista/modulos/nav.php";
 
                                 <!-- Boton Enviar -->
                                 <div class="mb-3">
-                                    <button type= "submit" id="submitButton" name="submit" class="btn btn-danger text-dark">
+                                    <button type= "submit" name="submit" class="btn btn-danger text-dark">
                                         Enviar <i class="bi bi-send"></i>
                                     </button>
                                 </div>
