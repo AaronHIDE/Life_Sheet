@@ -6,15 +6,15 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require 'PHPMailer\vendor\autoload.php';
+require '..\PHPMailer\vendor\autoload.php';
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
-
-if(isset($_POST['submit'])){
-    $asunto = ($_POST["asunto"]);
-    $contenido = ($_POST["contenido"]);
-    $para = ($_POST["destinatario"]);
+$mensaje="";    
+$destinatario = $_POST["destinatario"];
+$asunto = $_POST["asunto"];
+$contenido = $_POST["contenido"];
+$file = $_FILES["file"];
 
 try {
     //Server settings
@@ -29,7 +29,7 @@ try {
 
     //Recipients
     $mail->setFrom('life.sheet.3@gmail.com' , 'Life Sheet');
-    $mail->addAddress($para);     //Add a recipient
+    $mail->addAddress($destinatario);     //Add a recipient
 
 
     //Attachments
@@ -42,10 +42,14 @@ try {
     $mail->Body    = $contenido;
     
 
-    $mail->send();
-    echo 'Message has been sent';
+    if($mail->send()){
+        $mensaje='Message has been sent';
+    }else{
+        $mensaje="error";
+    }
+    
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    $mensaje= "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
-}
-// Hola xd
+
+echo $mensaje;

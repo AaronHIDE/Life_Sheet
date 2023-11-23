@@ -1,8 +1,6 @@
-<?php
-include 'control/mailControl.php';
+<?php 
 include_once "vista/modulos/nav.php";
 ?>
-
 
 <div class="container">
 
@@ -21,34 +19,31 @@ include_once "vista/modulos/nav.php";
 
 
 
-        <!-- Segundo container -->
-        <div class="col-md-5 mb-5 bg-gray rounded">
-            <div class="row">
-                <div class="contact-section">
-                    <div class="contact-form mx-auto">
-                        <br><br>
-                        <FONT SIZE="6" FACE="Cooper Black" COLOR="black" class="h2">¡Adjunta tu hoja de vida!</FONT>
-                        <br><br>
+<!-- Segundo container -->
+      <div class="col-md-5 mb-5 bg-gray rounded">
+        <div class="row">
+            <div class="contact-section">
+                <div class="contact-form mx-auto">
+                    <h2 style="color:black;">¡Adjunta tu hoja de vida!</h2><hr>
+                    <div class="container bg-white rounded">
+                        
+                    <!-- Formulario  -->
+                    <form id="emailForm" class="contact" action="" method="post" enctype="multipart/form-data">
 
-                        <div class="container bg-white rounded">
+                        <!-- Input Email Address -->
+                        <div class="mb-3">
+                            <input type="email" id="destinatario" name="destinatario" class="form-control" placeholder="Escribe el correo del destinatario:" required>
+                        </div>
 
-                            <!-- Formulario  -->
-                            <form class="contact" action="" method="post" enctype="multipart/form-data">
-                                <br>
-                                <!-- Input Email Address -->
-                                <div class="mb-3">
-                                    <input type="email" name="destinatario" class="form-control" placeholder="Escribe el correo del destinatario:" required>
-                                </div>
+                        <!-- Input Asunto Correo -->
+                        <div class="mb-3">
+                            <input type="text" id="asunto" name="asunto" class="form-control" placeholder="Escribe el asunto del correo:" required>
+                        </div>
 
-                                <!-- Input Asunto Correo -->
-                                <div class="mb-3">
-                                    <input type="text" name="asunto" class="form-control" placeholder="Escribe el asunto del correo:" required>
-                                </div>
-
-                                <!-- Textarea Contenido Correo Electronico -->
-                                <div class="mb-3">
-                                    <textarea name="contenido" rows="5" class="form-control" placeholder="Escribe el contenido del correo:" required></textarea>
-                                </div>
+                        <!-- Textarea Contenido Correo Electronico -->
+                        <div class="mb-3">
+                            <textarea name="contenido" id="contenido" rows="5" class="form-control" placeholder="Escribe el contenido del correo:" required></textarea>
+                        </div>
 
                                 <!-- Files Input -->
                                 <div class="mb-3">
@@ -56,16 +51,14 @@ include_once "vista/modulos/nav.php";
                                     <input class="form-control" type="file" id="formFile" name="file">
                                 </div>
 
-                                <!-- Boton Enviar -->
-                                <div class="mb-3">
-                                    <button type="submit" name="submit" class="btn btn-danger text-dark">
-                                        Enviar <i class="bi bi-send"></i>
-                                    </button>
-                                </div>
-                                <br>
-                            </form>
-
+                        <!-- Boton Enviar -->
+                        <div class="mb-3">
+                            <button type="button" id="submitButton" name="submit" class="btn btn-danger text-dark">
+                                Enviar <i class="bi bi-send"></i>
+                            </button>
                         </div>
+
+                    </form>
                     </div>
                 </div>
             </div>
