@@ -25,14 +25,26 @@
     </div>
 </nav>
 
-<br><br><br>
-
 
 <div class="container1">
-    <div class="header">
-        <div class="img-area">
-            <img src="vista/imagenes/logoo.png">
+
+<div class="header">
+        
+        <div class="input-group mb-3">
+            <input id="txt-file" type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Subir</label>
         </div>
+
+        <div class="col-md-4 offset-md-4">
+            <button id="btn-subir" type="button" class="btn btn-dark" onclick="">Agregar Foto</button>
+        </div>
+
+        <div class="container">
+            <div id="contenedorFoto" class="row">
+            </div>
+        </div>
+        
+        
         <div class="container nombre-container">
             <div class="inputboxf">
                 <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Nombre Completo</FONT>
@@ -197,6 +209,37 @@
                     <ion-icon name="library"></ion-icon>
                     <input type="text" class="form-control" id="estudios4" name="estudios4" required>
                     <label for="estudios4" class="form-label"></label>
+                </div>
+
+            
+            <h2>Contacto Referencia</h2>
+
+                <div class="inputboxi">
+                    <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Telefono</FONT>
+                    <ion-icon name="call"></ion-icon>
+                    <input type="text" class="form-control" id="telefonoReferencia1" name="telefonoReferencia1" required>
+                    <label for="telefonoReferencia1" class="form-label"></label>
+                </div>
+
+                <div class="inputboxi">
+                    <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Telefono</FONT>
+                    <ion-icon name="call"></ion-icon>
+                    <input type="text" class="form-control" id="telefonoReferencia2" name="telefonoReferencia2" required>
+                    <label for="telefonoReferencia2" class="form-label"></label>
+                </div>
+
+                <div class="inputboxi">
+                    <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Telefono</FONT>
+                    <ion-icon name="call"></ion-icon>
+                    <input type="text" class="form-control" id="telefonoReferencia3" name="telefonoReferencia3" required>
+                    <label for="telefonoReferencia3" class="form-label"></label>
+                </div>
+
+                <div class="inputboxi">
+                    <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Telefono</FONT>
+                    <ion-icon name="call"></ion-icon>
+                    <input type="text" class="form-control" id="telefonoReferencia4" name="telefonoReferencia4" required>
+                    <label for="telefonoReferencia4" class="form-label"></label>
                 </div>
 
             </div>

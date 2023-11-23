@@ -40,6 +40,7 @@
 
   <script src='vista/librerias/js/login.js'></script>
   <script src='vista/librerias/js/formato.js'></script>
+  <script src='vista/librerias/js/foto.js'></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
