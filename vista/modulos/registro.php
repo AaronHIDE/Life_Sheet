@@ -1,15 +1,15 @@
-<?php 
+<?php
 include_once "vista/modulos/nav.php";
 ?>
-
 
 <body style="background-image: url(vista/imagenes/fondo2.jpg);" class="fondo">
 
     <section class="container col-md-3">
         <div class="form-box2">
             <div class="form-value">
-                <form action="" id ="registro">
-                    <h2>REGISTRARSE</h2>
+                <form action="" id="registro">
+                    <center><FONT SIZE="6" FACE="Cooper Black" COLOR="white">REGISTRARSE</FONT></center>
+
                     <div class="inputbox">
                         <ion-icon name="pencil-outline"></ion-icon>
                         <input type="text" class="form-control" id="nombres" name="nombres" required>

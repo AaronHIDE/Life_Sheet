@@ -25,7 +25,7 @@
 
         <div class="col-md-3 offset-md-1 c1 contenedor borde">
             <center>
-                <FONT SIZE="6" FACE="Cooper Black" COLOR="black">PLANTILLAS</FONT>
+                <FONT SIZE="6" FACE="Cooper Black" COLOR="white">PLANTILLAS</FONT>
             </center>
             <br><br>
             <div class="card">

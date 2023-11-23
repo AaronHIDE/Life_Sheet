@@ -19,14 +19,14 @@ if (isset($_GET["ruta"])) {
             include_once "vista/modulos/".$_GET["ruta"].".php";
         } else {
             include_once "vista/modulos/jumbutron.php";
-            // Otros archivos que desees incluir en lugar del nav.php
+            // Otros archivos que se desee incluir en lugar del nav.php
         }
     } else {
         if ($_GET["ruta"] == "cerrarSesion") {
             include_once "vista/modulos/".$_GET["ruta"].".php";
         } else {
             include_once "vista/modulos/".$_GET["ruta"].".php";
-            include_once "vista/modulos/jumbutron.php";
+            //include_once "vista/modulos/jumbutron.php";
             // Otros archivos que desees incluir después del inicio de sesión
         }
     }
