@@ -1,6 +1,5 @@
 <nav class="navbar navbar-expand-sm navbar-light" id="neubar">
     <div class="container">
-        <a href="principal"><img src="vista\imagenes\logoo.png" width="80"></a>
         <FONT SIZE="6" FACE="Cooper Black" COLOR="black">LIFE SHEET</FONT>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,6 +23,27 @@
         </div>
     </div>
 </nav>
+
+<br><br>
+
+<div class="row col-md-3 offset-md-2">
+    <a href="principal">
+        <button class="button">
+            <div class="button-box">
+                <span class="button-elem">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 40">
+                        <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
+                    </svg>
+                </span>
+                <span class="button-elem">
+                    <svg viewBox="0 0 46 40">
+                        <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
+                    </svg>
+                </span>
+            </div>
+        </button>
+    </a>
+</div>
 
 
 <div class="container1">
@@ -247,16 +267,16 @@
     </div>
 
     <div class="col-md-4 offset-md-4">
-    <button type="button" class="btn btn-danger" onclick="imprimir()">Descargar en PDF</button>
-    <script>
-        function imprimir() {
-            window.print();
-        }
-    </script>
-</div>
+        <button type="button" class="btn btn-danger" onclick="imprimir()">Descargar en PDF</button>
+        <script>
+            function imprimir() {
+                window.print();
+            }
+        </script>
+    </div>
 
 
-<br><br><br><br>
+    <br><br><br><br>
 
     <!-- <div class="container mt-3">
     <div class="h1-container">

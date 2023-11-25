@@ -6,12 +6,12 @@ include_once "vista/modulos/nav.php";
 
 <br><br><br><br><br><br><br><br>
   
-    <section class="container col-md-3">
-      <div class="form-box">
+    <section class="container col-md-3 ">
+      <div class="form-box fuente">
         <div class="form-value">
 
           <form action="">
-            <h2>INICIAR SESION</h2>
+          <center><FONT COLOR="white">INICIAR SESION</FONT></center>
 
             <div class="inputbox">
               <ion-icon name="mail-outline"></ion-icon>

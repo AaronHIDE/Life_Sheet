@@ -106,7 +106,7 @@ body {
 	background: #f5f5f5;
 	max-width: 800px;
 	margin: 60px auto;
-	height: 1700px;
+	height: auto;
 	padding: 20px;
 	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
