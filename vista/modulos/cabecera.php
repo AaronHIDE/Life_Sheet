@@ -40,6 +40,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
+  <script src='vista/librerias/js/foto.js'></script>
   <script src='vista/librerias/js/login.js'></script>
   <script src='vista/librerias/js/formato.js'></script>
   <script src='vista/librerias/js/formatoSena.js'></script>
