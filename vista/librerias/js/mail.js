@@ -14,11 +14,26 @@ $(document).ready(function () {
         formData.append('contenido', contenido)
         formData.append('file', file)
 
+        // Mostrar SweetAlert de carga
+        Swal.fire({
+            title: 'Enviando correo',
+            html: 'Por favor, espera...',
+            allowOutsideClick: false,
+            onBeforeOpen: () => {
+                Swal.showLoading();
+            }
+        });
+
+
         fetch('control/mailControl.php',{
             method: 'POST',
             body: formData})
             .then(response => response.text())
             .then(data => {
+
+                // Cerrar SweetAlert de carga
+                Swal.close();
+
                 // Manejar la respuesta del servidor (data)
                 console.log(data);
 
@@ -32,6 +47,10 @@ $(document).ready(function () {
                 }
                 })
                 .catch(error => {
+
+                    // Cerrar SweetAlert de carga en caso de error
+                    Swal.close();
+
                 // Manejar errores
                 console.error('Error en la solicitud fetch:', error);
 
