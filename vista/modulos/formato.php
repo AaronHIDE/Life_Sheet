@@ -1,5 +1,6 @@
-<nav class="navbar navbar-expand-sm navbar-light" id="neubar">
+<nav class="navbar navbar-expand-sm navbar-light" id="neubar" style="background-color: #0fc7c7;">
     <div class="container">
+    <a href="inicio"><img src="vista\imagenes\logoo.png" width="80"></a>
         <FONT SIZE="6" FACE="Cooper Black" COLOR="black">LIFE SHEET</FONT>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,12 +51,9 @@
 
 <div class="header">
         
-        <div class="input-group mb-3">
+        <div class="col-md-4 offset-md-4">
             <input id="txt-file" type="file" class="form-control" id="inputGroupFile02">
             <label class="input-group-text" for="inputGroupFile02">Subir</label>
-        </div>
-
-        <div class="col-md-4 offset-md-4">
             <button id="btn-subir" type="button" class="btn btn-dark" onclick="">Agregar Foto</button>
         </div>
 
@@ -82,7 +80,7 @@
 
         <div class="main">
             <div class="left">
-                <h2>Información Personal</h2>
+                <h2 class="marcoh2">Información Personal</h2>
                 <div class="inputboxi">
                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Documento</FONT>
                     <ion-icon name="id-card"></ion-icon>
@@ -108,7 +106,7 @@
                     <label for="direccion" class="form-label"></label>
                 </div>
 
-                <h2>Habilidades</h2>
+                <h2 class="marcoh2">Habilidades</h2>
 
                 <div class="inputboxi">
                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Habilidad 1</FONT>
@@ -138,7 +136,7 @@
                     <label for="habilidades4" class="form-label"></label>
                 </div>
 
-                <h2>Referencias</h2>
+                <h2 class="marcoh2">Referencias</h2>
 
                 <div class="inputboxi">
                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Referencia 1</FONT>
@@ -171,7 +169,8 @@
             </div>
 
             <div class="right">
-                <h2>Experiencia</h2>
+                
+                <h2 class="marcoh2">Experiencia</h2>
 
                 <div class="inputboxi">
                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Experiencia 1</FONT>
@@ -201,7 +200,7 @@
                     <label for="experiencia4" class="form-label"></label>
                 </div>
 
-                <h2>Educación</h2>
+                <h2 class="marcoh2">Educación</h2>
 
                 <div class="inputboxi">
                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Estudio 1</FONT>
@@ -232,7 +231,7 @@
                 </div>
 
             
-            <h2>Contacto Referencia</h2>
+            <h2 class="marcoh2">Contacto Referencia</h2>
 
                 <div class="inputboxi">
                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Telefono</FONT>

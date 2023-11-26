@@ -1,6 +1,6 @@
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-sm navbar-light" id="neubar" style="background-color: #f5d7b2;">
+<nav class="navbar navbar-expand-sm navbar-light" id="neubar" style="background-color: #0fc7c7;">
     <div class="container">
         <a href="inicio"><img src="vista\imagenes\logoo.png" width="80"></a>
         <FONT SIZE="6" FACE="Cooper Black" COLOR="black">LIFE SHEET</FONT>
