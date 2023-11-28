@@ -33,6 +33,7 @@
   <link rel="stylesheet" type='text/css' href="vista/librerias/css/style.css">
   <link rel="stylesheet" type='text/css' href="vista/librerias/css/principal.css">
   <link rel="stylesheet" type='text/css' href="vista/librerias/css/cards.css">
+  <link rel='stylesheet' type='text/css' href='vista/librerias/css/nav.css'>
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -13,42 +13,37 @@
     background-position: center;
     background-size: cover;
 }
-.form-boxr{
+.form-boxr {
+    background-color: #ffffff; /* Cambiado a negro */
     position: relative;
     width: 400px;
     height: 600px;
-    background: transparent;
-    border: 2px solid rgba(35, 194, 56, 0.5);
-    border-radius: 20px;
+    /* border: 2px solid rgba(0, 0, 0, 0.5); */
+    border-radius: 10px;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.h2registrar{
+
+.h2registrar {
     font-size: 2em;
-    color: #1b6124;
+    color: #000000; /* Cambiado a negro */
     text-align: center;
 }
-.inputboxr{
+
+.inputboxr {
     position: relative;
     margin: 30px 0;
     width: 310px;
-    border-bottom: 2px solid #1b6124;
-}
-.inputboxr{
-    position: relative;
-    margin: 30px 0;
-    width: 310px;
-    border-bottom: 2px solid #1b6124;
+    border-bottom: 2px solid #000000; /* Cambiado a negro */
 }
 
 .inputboxr label {
     position: absolute;
-    top: 0; /* Cambia esta posición según tus preferencias */
+    top: 0;
     left: 5px;
-    color: #06270a;
+    color: #000000; /* Cambiado a negro */
     font-size: 1em;
     pointer-events: none;
     transition: .5s;
@@ -56,7 +51,7 @@
 
 input:focus ~ label,
 input:valid ~ label {
-    top: -15px; /* Puedes ajustar la posición según tus preferencias */
+    top: -15px;
 }
 
 .inputboxr input {
@@ -67,56 +62,63 @@ input:valid ~ label {
     outline: none;
     font-size: 1em;
     padding: 0 5px;
-    color: #000000;
+    color: #000000; /* Cambiado a negro */
 }
-.inputboxr ion-icon{
+
+.inputboxr ion-icon {
     position: absolute;
     right: 8px;
-    color: #54d165;
+    color: #000000; /* Cambiado a negro */
     font-size: 1.2em;
     top: 20px;
 }
-.forgetr{
-    margin: -15px 0 15px ;
+
+.forgetr {
+    margin: -15px 0 15px;
     font-size: .9em;
-    color: #1b6124;
+    color: #000000; /* Cambiado a negro */
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
 }
 
-.forgetr label input{
+.forgetr label input {
     margin-right: 3px;
-    
 }
-.forgetr label a{
-    color: #1b6124;
+
+.forgetr label a {
+    color: #000000; /* Cambiado a negro */
     text-decoration: none;
 }
-.forgetr label a:hover{
+
+.forgetr label a:hover {
     text-decoration: underline;
 }
-.buttonregistrar{
+
+.buttonregistrar {
     width: 100%;
     height: 40px;
     border-radius: 40px;
-    background: #54d165;
+    background: #000000; /* Cambiado a negro */
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 1em;
     font-weight: 600;
 }
-.registerr{
+
+.registerr {
     font-size: .9em;
-    color: #1b6124;
+    color: #000000; /* Cambiado a negro */
     text-align: center;
     margin: 25px 0 10px;
 }
-.registerr p a{
+
+.registerr p a {
     text-decoration: none;
-    color: #1b6124;
+    color: #000000; /* Cambiado a negro */
     font-weight: 600;
 }
-.registerr p a:hover{
+
+.registerr p a:hover {
     text-decoration: underline;
 }

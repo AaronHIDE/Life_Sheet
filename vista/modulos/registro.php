@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-light" id="neubar" style="background-color: #0fc7c7;">
+<nav class="navbar navbar-expand-sm navbar-light" id="neubar">
     <div class="container">
         <a href="inicio"><img src="vista\imagenes\logoo.png" width="80"></a>
         <FONT SIZE="6" FACE="Cooper Black" COLOR="black">LIFE SHEET</FONT>
@@ -57,7 +57,7 @@
                         <input type="password" class="form-control" id="pwd" name="pswd" required>
                         <label for="pwd" class="form-label">Contraseña:</label>
                     </div>
-                    <button class="buttonregistrar">Crear Cuenta</button>
+                    <button class="btn btn-success">Crear Cuenta <i class="bi bi-plus-circle"></i></button>
                     <div class="registerr">
                         <p>Ya tengo una Cuenta <a href="#">Iniciar Sesion</a></p>
                     </div>

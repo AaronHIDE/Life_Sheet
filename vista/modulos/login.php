@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-light" id="neubar" style="background-color: #0fc7c7;">
+<nav class="navbar navbar-expand-sm navbar-light" id="neubar">
     <div class="container">
         <a href="inicio"><img src="vista\imagenes\logoo.png" width="80"></a>
         <FONT SIZE="6" FACE="Cooper Black" COLOR="black">LIFE SHEET</FONT>
@@ -46,7 +46,7 @@
           <div class="forgetl">
             <label for=""><input type="checkbox" name="remember">Recordar Datos <a href="#">Olvide mi constraseña</a></label>
           </div>
-          <button class="buttonlogin">Ingresar</button>
+          <button class="btn btn-success">Ingresar <i class="bi bi-door-closed"></i></button>
           <div class="registerl">
             <p>No tengo una cuenta <a href="#">Registrarse</a></p>
           </div>
