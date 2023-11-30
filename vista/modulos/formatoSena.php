@@ -592,14 +592,9 @@
 
                                     <br>
 
-                                    <h6>Solicitamos a la empresa imprimir y suministrar copia de este documento una
-                                        vez
-                                        realizada la
-                                        evaluación
-                                        del aprendiz que será remitida a la oficina de Relacionamiento Corporativo
-                                        del
-                                        Centro de
-                                        Formación.
+                                    <h6>Solicitamos a la empresa imprimir y suministrar copia de este documento una vez
+                                        realizada la evaluación del aprendiz que será remitida a la oficina de Relacionamiento
+                                        Corporativo del Centro de Formación.
                                     </h6>
 
 
