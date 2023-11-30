@@ -42,7 +42,7 @@
                         </th>
                         <td>
                             <center>
-                                <img src="sena.png" alt="Logo SENA" style="width: 150px; height: 150px;">
+                                <img src="vista/imagenes/sena.png" alt="Logo SENA" style="width: 150px; height: 150px;">
                             </center>
                         </td>
                     </tr>
