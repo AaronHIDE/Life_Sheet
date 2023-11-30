@@ -1,3 +1,5 @@
+<script src="vista/librerias/js/registro.js"></script>
+
 <nav class="navbar navbar-expand-sm navbar-light" id="neubar">
     <div class="container">
         <a href="inicio"><img src="vista\imagenes\logoo.png" width="80"></a>
@@ -30,7 +32,7 @@
 <section class="section-registrar">
         <div class="form-boxr">
             <div class="form-value">
-                <form action="/action_page.php">
+                <form action="" class="" method="POST" id="registro">
                     <h2 class="h2registrar">Registrarse</h2>
                     <div class="inputboxr">
                         <ion-icon name="pencil-outline"></ion-icon>
@@ -54,12 +56,12 @@
                     </div>
                     <div class="inputboxr">
                         <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" class="form-control" id="pwd" name="pswd" required>
+                        <input type="password" class="form-control" id="passwordR" name="pswd" required>
                         <label for="pwd" class="form-label">Contraseña:</label>
                     </div>
                     <button class="btn btn-success">Crear Cuenta <i class="bi bi-plus-circle"></i></button>
                     <div class="registerr">
-                        <p>Ya tengo una Cuenta <a href="#">Iniciar Sesion</a></p>
+                        <p>Ya tengo una Cuenta <a href="login">Iniciar Sesion</a></p>
                     </div>
                 </form>
             </div>

@@ -48,7 +48,7 @@
           </div>
           <button class="btn btn-success">Ingresar <i class="bi bi-door-closed"></i></button>
           <div class="registerl">
-            <p>No tengo una cuenta <a href="#">Registrarse</a></p>
+            <p>No tengo una cuenta <a href="registro">Registrarse</a></p>
           </div>
         </form>
       </div>
