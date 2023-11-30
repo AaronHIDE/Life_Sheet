@@ -13,22 +13,24 @@ $(function () {
             form.classList.add('was-validated')
 
         } else {
-
             let nombres_apellidos = $("#nombres_apellidos").val();
             let documento = $("#documento").val();
             let fecha_nacimiento = $("#fecha_nacimiento").val();
             let edad = $("#edad").val();
-            let telefono = $("#telefono").val();
+            let telefono_aprendiz = $("#telefono_aprendiz").val();
+            let libreta_militar = $("#libreta_militar").val();
             let email_misena = $("#email_misena").val();
             let direccion = $("#direccion").val();
             let ciudad = $("#ciudad").val();
+
             let titulo_obtenido = $("#titulo_obtenido").val();
             let institucion_educativa = $("#institucion_educativa").val();
             let fecha_grado = $("#fecha_grado").val();
+            let nivel = $("#nivel").val();
             let nombre_estudios = $("#nombre_estudios").val();
             let institucion_educativa2 = $("#institucion_educativa2").val();
             let semestres_aprobados = $("#semestres_aprobados").val();
-            let libreta_militar = $("#libreta_militar").val();
+
             let nombre_programa = $("#nombre_programa").val();
             let ficha = $("#ficha").val();
             let perfil = $("#perfil").val();
@@ -37,20 +39,32 @@ $(function () {
             let ciudad_formacion = $("#ciudad_formacion").val();
             let fecha_inicio = $("#fecha_inicio").val();
             let fecha_final = $("fecha_final").val();
-            let nombre_funcionario = $("#nombre_funcionario").val();
-            let telefono1 = $("#telefono1").val();
+            let etapa = $("etapa").val();
+            let coordinador_academico = $("#coordinador_academico").val();
+            let telefono_coordinador = $("#telefono_coordinador").val();
+            let email_coordinador = $("#email_coordinador").val();
+            
+            let fecha_diligenciamiento = $("#fecha_diligenciamiento").val();
+            let firma_aprendiz = $("#firma_aprendiz").val();
+            
+            let funcionario = $("#funcionario").val();
+            let telefono_funcionario = $("#telefono_funcionario").val();
             let email_funcionario = $("#email_funcionario").val();
+
             let nit = $("#nit").val();
             let centro_formacion1 = $("#centro_formacion1").val();
             let representante_legal = $("#representante_legal").val();
-            let email_personal1 = $("#email_personal1").val();
-            let telefono2 = $("#telefono2").val();
-            let coordinador_academico = $("#coordinador_academico").val();
-            let telefono3 = $("#telefono3").val();
-            let email_personal = $("#email_personal").val();
+            let email_representante = $("#email_representante").val();
+            let telefono_representante = $("#telefono_representante").val();
+
             let empresa = $("#empresa").val();
             let telefono_empresa = $("#telefono_empresa").val();
-            let funcionario = $("#funcionario").val();
+            let funcionario_empresa = $("#funcionario_empresa").val();
+
+            let fecha_diligenciamiento1 = $("#fecha_diligenciamiento1").val();
+            let firma = $("#firma").val();
+
+
 
 
             let objData = new FormData();

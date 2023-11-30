@@ -118,7 +118,7 @@
                             <th>TELEFONO</th>
                             <td class="input-cell" colspan="10">
                                 <div class="inputboxf">
-                                    <input type="number" class="form-control" id="telefono" name="telefono" required>
+                                    <input type="number" class="form-control" id="telefono_aprendiz" name="telefono_aprendiz" required>
                                 </div>
                             </td>
                         </tr>
@@ -412,7 +412,7 @@
                                     <th>Ciudad y Fecha de Diligenciamiento:</th>
                                     <td class="input-cell">
                                         <div class="inputboxf">
-                                            <input type="text" class="form-control" id="diligenciamiento" name="diligenciamiento" required>
+                                            <input type="text" class="form-control" id="fecha_diligenciamiento" name="diligenciamiento" required>
                                         </div>
                                     </td>
 
@@ -593,14 +593,14 @@
                                                 <th>Ciudad y Fecha de Diligenciamiento:</th>
                                                 <td class="input-cell">
                                                     <div class="inputboxf">
-                                                        <input type="text" class="form-control" id="diligenciamiento" name="diligenciamiento" required>
+                                                        <input type="text" class="form-control" id="fecha_diligenciamiento1" name="diligenciamiento" required>
                                                     </div>
                                                 </td>
 
                                                 <th>FIRMA:</th>
                                                 <td class="input-cell">
                                                     <div class="inputboxf">
-                                                        <input type="text" class="form-control" id="firma_aprendiz" name="firma_aprendiz" required>
+                                                        <input type="text" class="form-control" id="firma" name="firma" required>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -627,28 +627,22 @@
 
                         <br><br>
 
-                        <div class="col-md-2 offset-md-4">
-                            <style>
-                                /* Estilos para ocultar el navbar y el botón al imprimir */
-                                @media print {
-
-                                    .navbar,
-                                    .btn {
-                                        display: none !important;
-                                    }
-                                }
-                            </style>
-
-                            <div class=" col-md-2 offset-md-4">
-                                <button type="button" class="btn btn-danger" onclick="imprimir()">Descargar en PDF</button>
+                        <div class="row">
+                            <div class="col-md-2 offset-md-8">
+                                <button type="button" class="btn btn-danger" onclick="imprimir()">Descargar
+                                <i class="bi bi-filetype-pdf"></i></button>
                                 <script>
                                     function imprimir() {
-                                        window.print();
-                                    }
+                                    window.print();
+                                }
                                 </script>
                             </div>
-
-
+                            
+                            <div class="col-md-2" id="transferir">
+                                <button type="button" class="btn btn-info"">Enviar
+                                <i class="bi bi-send-plus"></i></button>
+                            </div>
+                        </div>
 
                         </div>
 
