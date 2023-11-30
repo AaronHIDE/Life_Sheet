@@ -1,6 +1,6 @@
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-sm navbar-light" id="neubar" style="background-color: #f5d7b2;">
+<nav class="navbar navbar-expand-sm navbar-light mb-3" id="neubar">
     <div class="container">
         <a href="inicio"><img src="vista\imagenes\logoo.png" width="80"></a>
         <FONT SIZE="6" FACE="Cooper Black" COLOR="black">LIFE SHEET</FONT>
@@ -22,9 +22,9 @@
                         Opciones
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="contacto">Contacto</a></li>
-                        <li><a class="dropdown-item" href="login">Admin</a></li>
-                        <li><a class="dropdown-item" href="mail">Enviar Email</a></li>
+                        <li><a class="dropdown-item" href="contacto">Contacto  <i class="bi bi-info-circle"></i></a></li>
+                        <!-- <li><a class="dropdown-item" href="login">Admin</a></li> -->
+                        <li><a class="dropdown-item" href="mail">Enviar Email  <i class="bi bi-envelope"></i></a></li>
                     </ul>
                 </li>
             </ul>

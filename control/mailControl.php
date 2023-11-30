@@ -6,15 +6,15 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require 'PHPMailer\vendor\autoload.php';
+require '..\PHPMailer\vendor\autoload.php';
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
-
-if(isset($_POST['submit'])){
-    $asunto = ($_POST["asunto"]);
-    $contenido = ($_POST["contenido"]);
-    $para = ($_POST["destinatario"]);
+$mensaje="";    
+$destinatario = $_POST["destinatario"];
+$asunto = $_POST["asunto"];
+$contenido = $_POST["contenido"];
+$file = $_FILES["file"];
 
 try {
     //Server settings
@@ -29,7 +29,7 @@ try {
 
     //Recipients
     $mail->setFrom('life.sheet.3@gmail.com' , 'Life Sheet');
-    $mail->addAddress($para);     //Add a recipient
+    $mail->addAddress($destinatario);     //Add a recipient
 
 
     //Attachments
@@ -39,13 +39,64 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = $asunto;
-    $mail->Body    = $contenido;
+    $mail->Body    = '
+    <!DOCTYPE html>
+    <html>
+    <head>    
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0; /* Fondo gris claro */
+            }
+    
+            #contenedor {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+                padding: 20px;
+                width: 300px; /* Ancho del contenedor */
+                text-align: center;
+            }
+    
+            #titulo {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+        </style>
+        <title>Life Sheet</title>
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="titulo">Life Sheet</div>
+            <!-- Aquí puedes agregar más contenido si es necesario -->
+            <hr>
+            <h3>Hoja de Vida</h3>
+            <h4>Asunto:</h4>
+            <!-- Aqui va el CONTENIDO del correo -->
+            <p>' . $contenido . '</p>
+            <hr>
+            <p>PDF &#9660;</p>
+            
+            
+    
+        </div>
+    </body>
+    </html>
+    ';
     
 
-    $mail->send();
-    echo 'Message has been sent';
+    if($mail->send()){
+        $mensaje='Message has been sent';
+    }else{
+        $mensaje="error";
+    }
+    
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    $mensaje= "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
-}
-// Hola xd
+
+echo $mensaje;

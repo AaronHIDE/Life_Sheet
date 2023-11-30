@@ -53,10 +53,6 @@
     width: 280px;
 }
 
-.inputboxi {
-    width: 200px;
-}
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -91,7 +87,7 @@ body {
 	border-radius: 50%;
 	overflow: hidden;
 	margin: 25px auto;
-	border: 15px groove #004c52;
+	border: 15px groove #000000;
 }
 .img-area img {
 	width: 100%;
@@ -110,14 +106,14 @@ body {
 .left ul li {
 	line-height: 2;
 }
-h2 {
-	background: #004c52;
+.marcoh2 {
+	background: #000000;
 	padding: 15px;
 	color: #fff;
 	margin: 30px 0;
 	font-size: 20px;
 	border-radius: 0 50px 50px 0;
-}
+} 
 .right {
 	flex: 1;
 	padding: 30px;
