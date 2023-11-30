@@ -9,7 +9,7 @@ class LoginModelo{
         $mensaje= array ();
         try {
             
-            $sql = "SELECT * FROM usuario INNER JOIN tipo_usuario ON usuario.tipo_usuario_idtipo_usuario = tipo_usuario.idtipo_usuario WHERE usuario.email = :email AND usuario.password = :password";
+            $sql = "SELECT * FROM usuario INNER JOIN usuario ON nombres, apellidos,  WHERE usuario.email = :email AND usuario.password = :password";
             $objRespuesta = Conexion::conectar()->prepare($sql);
             $objRespuesta -> bindParam(":email",$email);
             $objRespuesta -> bindParam(":password",$password);
@@ -21,13 +21,13 @@ class LoginModelo{
             if($datosUsuario != null){
                 $_SESSION["ruta"] = "";
                 
-                if ($datosUsuario["idtipo_usuario"] == "1") {
-                    $_SESSION["ruta"] = "inicioAdmin";
-                } else if ($datosUsuario["idtipo_usuario"] == "2"){
-                    $_SESSION["ruta"] = "inicioEmpleado";
-                } else if ($datosUsuario["idtipo_usuario"] == "3"){
-                    $_SESSION["ruta"] = "inicioCliente";
-                }
+                // if ($datosUsuario["idtipo_usuario"] == "1") {
+                //     $_SESSION["ruta"] = "inicioAdmin";
+                // } else if ($datosUsuario["idtipo_usuario"] == "2"){
+                //     $_SESSION["ruta"] = "inicioEmpleado";
+                // } else if ($datosUsuario["idtipo_usuario"] == "3"){
+                //     $_SESSION["ruta"] = "inicioCliente";
+                // }
 
                 $mensaje = array("codigo"=>"200", "mensaje"=>$_SESSION["ruta"]);
                 

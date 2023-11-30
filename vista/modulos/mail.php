@@ -11,7 +11,7 @@ include_once "vista/modulos/nav.php";
     <div class="row">
         <div class="col-md-5 bg-orange mr mb-5 rounded">
             <br><br>
-            <FONT SIZE="6" FACE="Cooper Black" class="h4 text-white">¡Comparte tu hoja de vida con nosotros!</FONT>
+            <FONT SIZE="6" FACE="Cooper Black" class="h3 text-white">¡Comparte tu hoja de vida con nosotros!</FONT>
             <br><br><br><br>
             <p style="font-size:large;">Puedes compartir por correo tu hoja de vida previamente descargada como PDF.</p>
             <div style="display: flex; justify-content: center;">
