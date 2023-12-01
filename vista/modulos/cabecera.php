@@ -34,7 +34,7 @@
   <link rel='stylesheet' type='text/css' href='vista/librerias/css/mail.css'>
   <link rel='stylesheet' type='text/css' media='print' href='vista/librerias/css/print.css'>
   <link rel="stylesheet" type='text/css' href="vista/librerias/css/style.css">
-  <link rel="stylesheet" type='text/css' href="vista/librerias/css/principal.css">
+  <link rel="stylesheet" type='text/css' href="vista/librerias/css/main.css">
   <link rel="stylesheet" type='text/css' href="vista/librerias/css/cards.css">
   <link rel='stylesheet' type='text/css' href='vista/librerias/css/nav.css'>
   <link rel="stylesheet" type='text/css' href="vista/librerias/css/formatoSena.css">
@@ -61,6 +61,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <script src="vista/librerias/js/mail.js"></script>
+  <script src="vista/librerias/js/main.js"></script>
 
 
 </head>
