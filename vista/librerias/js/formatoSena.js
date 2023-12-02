@@ -1,11 +1,11 @@
 $(function () {
 
     var tabla = null;
-    listarUsuario();
+    listarFormatoSena();
 
     'use strict'
-    var forms = document.querySelectorAll('#formatoSena');
-    Array.prototype.slice.call(forms)
+    var tables = document.querySelectorAll('#aggFormatoSena')
+    Array.prototype.slice.call(tables)
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         if (!form.checkValidity()) {
@@ -43,10 +43,10 @@ $(function () {
             let coordinador_academico = $("#coordinador_academico").val();
             let telefono_coordinador = $("#telefono_coordinador").val();
             let email_coordinador = $("#email_coordinador").val();
-            
+
             let fecha_diligenciamiento = $("#fecha_diligenciamiento").val();
             let firma_aprendiz = $("#firma_aprendiz").val();
-            
+
             let funcionario = $("#funcionario").val();
             let telefono_funcionario = $("#telefono_funcionario").val();
             let email_funcionario = $("#email_funcionario").val();
@@ -72,17 +72,21 @@ $(function () {
             objData.append("documento", documento);
             objData.append("fecha_nacimiento", fecha_nacimiento);
             objData.append("edad", edad);
-            objData.append("telefono", telefono);
+            objData.append("telefono_aprendiz", telefono_aprendiz);
             objData.append("email_misena", email_misena);
+            objData.append("libreta_militar", libreta_militar);
             objData.append("direccion", direccion);
+            objData.append("estrato", estrato);
             objData.append("ciudad", ciudad);
+
             objData.append("titulo_obtenido", titulo_obtenido);
             objData.append("institucion_educativa", institucion_educativa);
             objData.append("fecha_grado", fecha_grado);
+            objData.append("nivel", nivel);
             objData.append("nombre_estudios", nombre_estudios);
             objData.append("institucion_educativa2", institucion_educativa2);
             objData.append("semestres_aprobados", semestres_aprobados);
-            objData.append("libreta_militar", libreta_militar);
+
             objData.append("nombre_programa", nombre_programa);
             objData.append("ficha", ficha);
             objData.append("perfil", perfil);
@@ -91,73 +95,70 @@ $(function () {
             objData.append("ciudad_formacion", ciudad_formacion);
             objData.append("fecha_inicio", fecha_inicio);
             objData.append("fecha_final", fecha_final);
-            objData.append("nombre_funcionario", nombre_funcionario);
-            objData.append("telefono1", telefono1);
+            objData.append("etapa", etapa);
+            objData.append("coordinador_academico", coordinador_academico);
+            objData.append("telefono_coordinador", telefono_coordinador);
+            objData.append("email_coordinador", email_coordinador);
+
+            objData.append("fecha_diligenciamiento", fecha_diligenciamiento);
+            objData.append("firma_aprendiz", firma_aprendiz);
+
+            objData.append("funcionario", funcionario);
+            objData.append("telefono_funcionario", telefono_funcionario);
             objData.append("email_funcionario", email_funcionario);
+
             objData.append("nit", nit);
             objData.append("centro_formacion1"), centro_formacion1;
             objData.append("representante_legal", representante_legal);
-            objData.append("email_personal1", email_personal1);
-            objData.append("telefono2", telefono2);
-            objData.append("coordinador_academico", coordinador_academico);
-            objData.append("telefono3", telefono3);
-            objData.append("email_personal", email_personal);
+            objData.append("email_representante", email_representante);
+            objData.append("telefono_representante", telefono_representante);
+
             objData.append("empresa", empresa);
             objData.append("telefono_empresa", telefono_empresa);
-            objData.append("funcionario", funcionario);
+            objData.append("funcionario_empresa", funcionario_empresa);
+            objData.append("fecha_diligenciamiento1", fecha_diligenciamiento1);
+            objData.append("firma", firma);
 
-            fetch('control/formatoSenaControl.php', {
+
+            fetch('control/formatoControl.php', {
                 method: 'POST',
                 body: objData
-            }).then(response => response.json()).catch(error => {
-                console.log(error);
-            }).then(response => {
-                alert(response["mensaje"]);
-                $("#nombres_apellidos").val("");
-                $("#documento").val("");
-                $("#fecha_nacimiento").val("");
-                $("#edad").val("");
-                $("#telefono").val("");
-                $("#email_misena").val("");
-                $("#direccion").val("");
-                $("#ciudad").val("");
-                $("#titulo_obtenido").val("");
-                $("#institucion_educativa").val("");
-                $("#fecha_grado").val("");
-                $("#nombre_estudios").val("");
-                $("#institucion_educativa2").val("");
-                $("#semestres_aprobados").val("");
-                $("#libreta_militar").val("");
-                $("#nombre_programa").val("");
-                $("#ficha").val("");
-                $("#perfil").val("");
-                $("#ocupaciones").val("");
-                $("#centro_formacion").val("");
-                $("#ciudad_formacion").val("");
-                $("#fecha_inicio").val("");
-                $("#fecha_final").val("");
-                $("#nombre_funcionario").val("");
-                $("#telefono1").val("");
-                $("#email_funcionario").val("");
-                $("#nit").val("");
-                $("#centro_formacion1").val("");
-                $("#representante_legal").val("");
-                $("#email_personal1").val("");
-                $("#telefono2").val("");
-                $("#coordinador_academico").val("");
-                $("#telefono3").val("");
-                $("#email_personal").val("");
-                $("#empresa").val("");
-                $("#telefono_empresa").val("");
-                $("#funcionario").val("");
-                listarUsuario();
-            
-            });
+            }).then(response => response.json()).then(response => {
+                if (response["codigo"] == "200") {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "Formato Almacenado Correctamente",
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
+                    window.location = response["location"];
+                } else {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "error",
+                        title: "Ocurrio un error al Almacenar el Formato",
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
+                }
+            })
         }
+
     }, false)
 
+
+    function listarFormatoSena() {
+        var objData = new FormData();
+        objData.append("listarFormatoSena", "ok");
+        fetch('control/formatoSenaControl.php', {
+            method: 'POST',
+            body: objData
+        }).then(response => response.json()).catch(error => {
+            console.log(error);
+        }).then(response => {
+        });
+    }
+
+
 })
-
-
-
-
