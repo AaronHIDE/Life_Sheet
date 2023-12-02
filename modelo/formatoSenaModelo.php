@@ -122,15 +122,30 @@ class formatoSenaModelo
 
 
             if ($objRespuesta->execute()) {
-                $mensaje = array("codigo" => "200", "mensaje" => "FORMATO REGISTRADO CORRECTAMENTE");
+                $mensaje = array("codigo" => "200", "mensaje" => "FORMATO GUARDADO CORRECTAMENTE");
             } else {
-                $mensaje = array("codigo" => "425", "mensaje" => "ERROR AL REGISTRAR EL FORMATO");
+                $mensaje = array("codigo" => "425", "mensaje" => "ERROR AL GUARDAR EL FORMATO");
             }
         } catch (Exception $e) {
             $mensaje = array("codigo" => "425", "mensaje" => $e->getMessage());
         }
 
         return $mensaje;
+    }
+
+    public static function mdlListarFormatoSena()
+    {
+        $listarFormatoSena = null;
+        try {
+            $objRespuesta = Conexion::conectar()->prepare("SELECT * FROM hoja_de_vida_sena");
+            $objRespuesta->execute();
+            $listarFormatoSena = $objRespuesta->fetchAll();
+            $objRespuesta = null;
+        } catch (Exception $e) {
+            $listarFormatoSena = $e->getMessage();
+        }
+
+        return $listarFormatoSena;
     }
 
 

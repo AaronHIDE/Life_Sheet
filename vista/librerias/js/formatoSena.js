@@ -4,8 +4,8 @@ $(function () {
     listarFormatoSena();
 
     'use strict'
-    var forms = document.querySelectorAll('#aggFormatoSena');
-    Array.prototype.slice.call(forms)
+    var tables = document.querySelectorAll('#aggFormatoSena')
+    Array.prototype.slice.call(tables)
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         if (!form.checkValidity()) {
@@ -119,66 +119,85 @@ $(function () {
             objData.append("fecha_diligenciamiento1", fecha_diligenciamiento1);
             objData.append("firma", firma);
 
-            fetch('control/formatoSenaControl.php', {
+
+            fetch('control/formatoControl.php', {
                 method: 'POST',
                 body: objData
-            }).then(response => response.json()).catch(error => {
-                console.log(error);
-            }).then(response => {
-                alert(response["mensaje"]);
-                $("#nombres_apellidos").val("");
-                $("#documento").val("");
-                $("#fecha_nacimiento").val("");
-                $("#edad").val("");
-                $("#telefono_aprendiz").val("");
-                $("#email_misena").val("");
-                $("#direccion").val("");
-                $("#estrato").val("");
-                $("#ciudad").val("");
-
-                $("#titulo_obtenido").val("");
-                $("#institucion_educativa").val("");
-                $("#fecha_grado").val("");
-                $("#nivel").val("");
-                $("#nombre_estudios").val("");
-                $("#institucion_educativa2").val("");
-                $("#semestres_aprobados").val("");
-
-                $("#nombre_programa").val("");
-                $("#ficha").val("");
-                $("#perfil").val("");
-                $("#ocupaciones").val("");
-                $("#centro_formacion").val("");
-                $("#ciudad_formacion").val("");
-                $("#fecha_inicio").val("");
-                $("#fecha_final").val("");
-                $("#etapa").val("");
-                $("#coordinador_academico").val("");
-                $("#telefono_coordinador").val("");
-                $("#email_coordinador").val("");
-
-                $("#fecha_diligenciamiento").val("");
-                $("#firma_aprendiz").val("");
-
-                $("#funcionario").val("");
-                $("#telefono_funcionario").val("");
-                $("#email_funcionario").val("");
-
-                $("#nit").val("");
-                $("#centro_formacion1").val("");
-                $("#representante_legal").val("");
-                $("#email_representante").val("");
-                $("#telefono_representante").val("");
-
-                $("#empresa").val("");
-                $("#telefono_empresa").val("");
-                $("#funcionario_empresa").val("");
-                $("#fecha_diligenciamiento1").val("");
-                $("#firma").val("");
-                listarFormatoSena();
-            });
+            }).then(response => response.json()).then(response => {
+                if (response["codigo"] == "200") {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "Formato Almacenado Correctamente",
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
+                    window.location = response["location"];
+                } else {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "error",
+                        title: "Ocurrio un error al Almacenar el Formato",
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
+                }
+            })
         }
-    }, false)
-    
 
+    }, false)
+
+
+    function listarFormatoSena() {
+        var objData = new FormData();
+        objData.append("listarFormatoSena", "ok");
+        fetch('control/formatoSenaControl.php', {
+            method: 'POST',
+            body: objData
+        }).then(response => response.json()).catch(error => {
+            console.log(error);
+        }).then(response => {
+            cargarTipoServ(response);
+        });
+    }
+
+    function cargarTipoServ(response) {
+        console.log(response);
+        var dataSet = [];
+        var objBotones = "";
+
+        response.forEach(listarFormatoSena);
+
+        function listarFormatoSena(item, index) {
+
+            dataSet.push([item.nombres_apellidos, item.documento, item.fecha_nacimiento, item.edad, item.telefono_aprendiz, 
+                item.email_misena, item.libreta_militar, item.direccion, item.ciudad,
+
+                item.titulo_obtenido, item.institucion_educativa, item.fecha_grado, item.nivel, item.nombre_estudios, 
+                item.institucion_educativa2, item.semestres_aprobados, 
+                
+                item.nombre_programa, item.ficha, item.perfil, item.ocupaciones, item.centro_formacion, item.ciudad_formacion, 
+                item.fecha_inicio, item.fecha_final, item.etapa, item.coordinador_academico, item.telefono_coordinador, 
+                item.email_coordinador,
+
+                item.fecha_diligenciamiento, item.firma_aprendiz,
+
+                item.funcionario, item.telefono_funcionario, item.email_funcionario, 
+                
+                item.nit, item.centro_formacion1, item.representante_legal, item.email_representante, item.telefono_representante,
+
+                item.empresa, item.telefono_empresa, item.funcionario_empresa, item.fecha_diligenciamiento1, item.firma, 
+                
+                objBotones]);
+        }
+
+
+        // if (tabla != null) {
+        //     $("").dataTable().fnDestroy();
+        // }
+
+        // tabla = $("").DataTable({
+        //     data: dataSet
+        // });
+    }
 })

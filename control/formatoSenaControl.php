@@ -82,6 +82,11 @@ class formatoSenaControl
             );
             echo json_encode($objRespuesta);
         }
+
+        public function ctrListarFormatoSena(){
+            $objRespuesta = formatoSenaModelo::mdlListarFormatoSena();
+            echo json_encode($objRespuesta);
+        }
             
 
 }
@@ -161,3 +166,8 @@ if (isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimi
     $objAgregar->ctrAgregarFormatoSena();
 }
 
+
+if (isset($_POST["listarFormatoSena"]) == "ok") {
+    $objFormato = new formatoSenaControl();
+    $objFormato->ctrListarFormatoSena();
+}

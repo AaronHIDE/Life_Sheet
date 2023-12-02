@@ -33,4 +33,30 @@
 }
 
 
+
+/* Estilos para el contenedor principal */
+.inputboxfs {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+/* Estilos para el select */
+.opciones {
+  width: calc(100% - 0px); /* Ajusta el ancho según necesites */
+  padding: 8px;
+  font-size: 16px;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para el select cuando está enfocado */
+#estrato-select:focus {
+  outline: none;
+}
+
+
+
   
