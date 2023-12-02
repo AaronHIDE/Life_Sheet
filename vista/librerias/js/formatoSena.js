@@ -157,47 +157,8 @@ $(function () {
         }).then(response => response.json()).catch(error => {
             console.log(error);
         }).then(response => {
-            cargarTipoServ(response);
         });
     }
 
-    function cargarTipoServ(response) {
-        console.log(response);
-        var dataSet = [];
-        var objBotones = "";
 
-        response.forEach(listarFormatoSena);
-
-        function listarFormatoSena(item, index) {
-
-            dataSet.push([item.nombres_apellidos, item.documento, item.fecha_nacimiento, item.edad, item.telefono_aprendiz, 
-                item.email_misena, item.libreta_militar, item.direccion, item.ciudad,
-
-                item.titulo_obtenido, item.institucion_educativa, item.fecha_grado, item.nivel, item.nombre_estudios, 
-                item.institucion_educativa2, item.semestres_aprobados, 
-                
-                item.nombre_programa, item.ficha, item.perfil, item.ocupaciones, item.centro_formacion, item.ciudad_formacion, 
-                item.fecha_inicio, item.fecha_final, item.etapa, item.coordinador_academico, item.telefono_coordinador, 
-                item.email_coordinador,
-
-                item.fecha_diligenciamiento, item.firma_aprendiz,
-
-                item.funcionario, item.telefono_funcionario, item.email_funcionario, 
-                
-                item.nit, item.centro_formacion1, item.representante_legal, item.email_representante, item.telefono_representante,
-
-                item.empresa, item.telefono_empresa, item.funcionario_empresa, item.fecha_diligenciamiento1, item.firma, 
-                
-                objBotones]);
-        }
-
-
-        // if (tabla != null) {
-        //     $("").dataTable().fnDestroy();
-        // }
-
-        // tabla = $("").DataTable({
-        //     data: dataSet
-        // });
-    }
 })
