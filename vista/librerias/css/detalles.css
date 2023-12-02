@@ -43,7 +43,8 @@
 
 
 .contenedor{
-    background-color: hsla(0, 0%, 10%, 0.663);
+    background-color: #000000;
+    max-width: 450px;
 }
 .contenedor2{
     background-color: hsla(0, 0%, 99%, 0.663);
@@ -53,18 +54,11 @@
 }
 
 
-
-.video{
-    width: 600px;
-    height: 350px;
-    align-items: center;
-}
-
-
 .borde {
-    border: 2px solid black;
+    border: 2px solid rgb(63, 199, 192);
     border-radius: 8px;
     padding: 5px;
+    margin-inline-start: 20%;
 }
 
 #editable{
@@ -148,4 +142,10 @@
     transform: translateX(-56px);
   }
   
-  
+  .centrarPlantilla{
+      text-align: center; 
+      color: #020202;
+      margin: 30px 0;
+      font-size: 43px;
+      border-radius: 0 50px 50px 0;      
+}

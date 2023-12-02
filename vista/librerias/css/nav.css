@@ -1,9 +1,9 @@
 #neubar{
-    background-color:rgb(234, 170, 88) ;
+    background-color:rgb(255, 255, 255) ;
 }
 
     #neubar .dropdown-menu {
-      background : rgb(234, 170, 88);
+      background : rgb(255, 255, 255);
     }
     a.navbar-brand {
       color: rgb(234, 170, 88);
