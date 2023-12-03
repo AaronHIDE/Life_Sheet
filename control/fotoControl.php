@@ -1,6 +1,6 @@
-<?php
+<!-- <?php
 include_once "../modelo/fotoModelo.php";
-
+?>
 class fotoControl{
     public $nombreFoto;
     public $foto;
@@ -29,4 +29,4 @@ if (isset($_FILES["foto"])){
 if (isset($_POST["cargarFoto"]) == "ok"){
     $objFoto = new fotoControl();
     $objFoto->ctrCargarFoto();
-}
+} -->
