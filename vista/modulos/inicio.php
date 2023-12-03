@@ -12,7 +12,7 @@ include_once "vista/modulos/nav.php";
   </span>
 </a>
   
-
+<div id="mis-estilos">
 <!-- Sección 1 -->
 <div id="section1" class="section">
     <!-- Contenedor para la imagen y el título -->
@@ -147,6 +147,9 @@ include_once "vista/modulos/nav.php";
     </div>
   </div>
 </div>
+</div>
+
+
 <div class="text-center">
 <footer>
         <p>&copy; 2023 Life Sheet. Todos los derechos reservados.</p>

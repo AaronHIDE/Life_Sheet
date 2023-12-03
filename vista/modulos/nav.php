@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-sm navbar-light mb-3" id="neubar">
     <div class="container">
-        <a href="inicio"><img src="vista\imagenes\logoo.png" width="80"></a>
+        <a href=""><img src="vista\imagenes\lsLogo.png" width="80"></a>
         <FONT SIZE="6" FACE="Cooper Black" COLOR="black">LIFE SHEET</FONT>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
