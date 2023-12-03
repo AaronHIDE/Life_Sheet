@@ -29,7 +29,6 @@
   <link rel='stylesheet' type='text/css' href='vista/librerias/css/formato.css'>
   <link rel='stylesheet' type='text/css' href='vista/librerias/css/login.css'>
   <link rel='stylesheet' type='text/css' href='vista/librerias/css/registro.css'>
-  <link rel='stylesheet' type='text/css' href='vista/librerias/css/navbar.css'>
   <link rel='stylesheet' type='text/css' href='vista/librerias/css/detalles.css'>
   <link rel='stylesheet' type='text/css' href='vista/librerias/css/mail.css'>
   <link rel='stylesheet' type='text/css' media='print' href='vista/librerias/css/print.css'>

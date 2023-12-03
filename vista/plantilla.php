@@ -8,12 +8,9 @@ if (isset($_GET["ruta"])) {
     if (!isset($_SESSION["ruta"])) {
         if ($_GET["ruta"] == "login" 
             || $_GET["ruta"] == "registro" 
-            || $_GET["ruta"] == "contacto" 
             || $_GET["ruta"] == "mail" 
-            || $_GET["ruta"] == "admin"
             || $_GET["ruta"] == "formatoSena"
             || $_GET["ruta"] == "principal"
-            || $_GET["ruta"] == "configuracion"
             || $_GET["ruta"] == "formato") {
 
             include_once "vista/modulos/".$_GET["ruta"].".php";
