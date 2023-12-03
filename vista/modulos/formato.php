@@ -48,8 +48,8 @@
 <div class="container1">
 
 <div class="header">
-        
-        <div class="container nombre-container">
+    <h1 class="marcoh2">HOJA DE VIDA</h1>
+        <div class="container nombre-container needs-validation">
             <form action="" method="POST" id="formato">
                 <div class="inputboxf">
                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Nombre Completo</FONT>

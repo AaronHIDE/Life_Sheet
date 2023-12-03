@@ -1,58 +1,76 @@
 .card {
-    width: 190px;
-    height: 254px;
-    background: #6C567B;
-    border-radius: 15px;
-    box-shadow: 1px 5px 60px 0px #313034;
-   }
-   
-   .card .card-border-top {
-    width: 60%;
-    height: 3%;
-    background: #F67280;
-    margin: auto;
-    border-radius: 0px 0px 15px 15px;
-   }
-   
-   .card span {
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    display: block;
-    padding-top: 10px;
-    font-size: 16px;
-   }
-   
-   .card .job {
-    font-weight: 400;
-    color: white;
-    display: block;
-    text-align: center;
-    padding-top: 3px;
-    font-size: 12px;
-   }
-   
-   .card .img {
-    width: 70px;
-    height: 80px;
-    background: #ffffff;
-    border-radius: 15px;
-    margin: auto;
-    margin-top: 25px;
-   }
-   
-   .card button {
-    padding: 8px 25px;
-    display: block;
-    margin: auto;
-    border-radius: 8px;
     border: none;
-    margin-top: 30px;
-    background: #000000;
-    color: white;
-    font-weight: 600;
-   }
-   
-   .card button:hover {
-    background: #C06C84;
-   }
+    background-color: black; /* Agrega esta línea para cambiar el color de fondo a negro */
+    color: white; /* Agrega esta línea para cambiar el color del texto a blanco */
+}
+
+.card-img {
+    border-radius: 0;
+}
+
+.vgr-cards {
+
+background-color: black;
+
+    .card {
+        display: flex;
+        flex-flow: wrap;
+        flex: 100%;
+        margin-bottom: 40px;
+
+        &:nth-child(even) .card-img-body {
+            order: 2;
+        }
+
+        &:nth-child(even) .card-body {
+            padding-left: 0;
+            padding-right: 1.25rem;
+        }
+
+        @media (max-width: 576px) {
+            display: block;
+        }
+
+    }
+
+    .card-img-body {
+        
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+
+        @media (max-width: 576px) {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .card-img {
+        
+        width: 100%;
+        height: auto;
+        position: absolute;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        @media (max-width: 1140px) {
+            margin: 0;
+            transform: none;
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+    .card-body {
+        
+        flex: 2;
+        padding: 0 0 0 1.25rem;
+
+        @media (max-width: 576px) {
+            padding: 0;
+        }
+    }
+}

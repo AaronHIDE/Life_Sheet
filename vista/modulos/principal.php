@@ -3,6 +3,7 @@
     <nav class="navbar navbar-expand-sm navbar-light" id="neubar">
         <div class="container">
             <img src="vista\imagenes\logoo.png" width="80">
+            <FONT SIZE="6" FACE="Cooper Black" COLOR="black">LIFE SHEET</FONT>
             <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item dropdown">
@@ -10,7 +11,6 @@
                             Opciones
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="configuracion">Configuraciones</a></li>
                             <li><a class="dropdown-item" href="cerrarSesion">Cerrar Sesión</a></li>
                         </ul>
                     </li>
@@ -19,47 +19,30 @@
         </div>
     </nav>
 
-    <br><br><br>
-
-    <div class="row">
-
-        <div class="col-md-3 offset-md-1 c1 contenedor borde">
-            <center>
-                <FONT SIZE="6" FACE="Cooper Black" COLOR="white">PLANTILLAS</FONT>
-            </center>
-            <br><br>
-            <div class="card">
-                <div class="card-border-top">
-                </div>
-                <div class="img">
-                </div>
-                <span>FORMATO NORMAL</span>
-                <p class="job"> Job Title</p>
-                <a href="formato"><button> Click </button></a>
-            </div>
-
-            <div class="card">
-                <div class="card-border-top">
-                </div>
-                <div class="img">
-                </div>
-                <span>FORMATO SENA</span>
-                <p class="job">Formato dirigido a aquellos aprendices que van a practicas</p>
-                <a href="formatoSena"><button> Click </button></a>
-            </div>
+    <h1 class="centrarPlantilla">PLANTILLAS</h1>
+    <div class="container mt-4 p-4 bg-black rounded">
+        <div class="te">
+                <!-- cards  -->
+    <div class="container">
+      <div class="card-group vgr-cards">
+        <div class="card">
+          <div class="card-img-body">
+          <img class="card-img" src="vista/imagenes/koalacard.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">LIFE SHEET</h4>
+            <p class="card-text">Con esta Plantilla tu podras adjuntar toda la informacion que necesites, de manera completa y organizada; para una Hoja de vida de calidad para cualquier empresa.</p>
+            <a href="formato" class="btn btn-outline-info">Probar <i class="bi bi-arrow-right-circle"></i></a>
+          </div>
         </div>
-
-
-        <div class="col-md-3 c2 contenedor2 borde">
-            <center>
-                <FONT SIZE="6" FACE="Cooper Black" COLOR="black">PERFIL</FONT>
-            </center>
-            <br>
-            <div class="img-area">
-                <img src="vista/imagenes/logoo.png">
-            </div>
+        <div class="card">
+          <div class="card-img-body">
+            <img class="card-img" src="vista/imagenes/senacard.png" alt="Card image cap"></div>
+          <div class="card-body">
+            <h4 class="card-title">FORMATO SENA</h4>
+            <p class="card-text">Si eres aprendiz Sena, esta Plantilla es perfecta para ti, ya que tu podras adjuntar toda la informacion que sea necesaria, en base al formato principal que dispone el SENA para una Hoja de Vida completa y de calidad; con la cual podras presentarte a cualquier empresa en tu etapa Practica.</p>
+            <a href="formatoSena" class="btn btn-outline-info">Probar <i class="bi bi-arrow-right-circle"></i></a>
+          </div>
         </div>
-    </div>
-    </div>
-
-    <br><br><br><br>
+      </div>
+</div>
