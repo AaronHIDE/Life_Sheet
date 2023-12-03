@@ -11,8 +11,7 @@
                             Opciones
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="configuracion">Configuraciones</a></li>
-                            <li><a class="dropdown-item" href="cerrarSesion">Cerrar Sesión</a></li>
+                            <li><a class="dropdown-item" href="cerrarSesion">Cerrar Sesión <i class="bi bi-x-circle"></i></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -33,7 +32,7 @@
           <div class="card-body">
             <h4 class="card-title">LIFE SHEET</h4>
             <p class="card-text">Con esta Plantilla tu podras adjuntar toda la informacion que necesites, de manera completa y organizada; para una Hoja de vida de calidad para cualquier empresa.</p>
-            <a href="formato" class="btn btn-outline-info">Probar <i class="bi bi-arrow-right-circle"></i></a>
+            <a href="formato" class="btn btn-info">Probar <i class="bi bi-arrow-right-circle"></i></a>
           </div>
         </div>
         <div class="card">
@@ -42,7 +41,7 @@
           <div class="card-body">
             <h4 class="card-title">FORMATO SENA</h4>
             <p class="card-text">Si eres aprendiz Sena, esta Plantilla es perfecta para ti, ya que tu podras adjuntar toda la informacion que sea necesaria, en base al formato principal que dispone el SENA para una Hoja de Vida completa y de calidad; con la cual podras presentarte a cualquier empresa en tu etapa Practica.</p>
-            <a href="formatoSena" class="btn btn-outline-info">Probar <i class="bi bi-arrow-right-circle"></i></a>
+            <a href="formatoSena" class="btn btn-info">Probar <i class="bi bi-arrow-right-circle"></i></a>
           </div>
         </div>
       </div>

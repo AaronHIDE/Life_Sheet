@@ -18,10 +18,6 @@ if (isset($_GET["ruta"])) {
 
             include_once "vista/modulos/".$_GET["ruta"].".php";
         } else {
-            include_once "vista/modulos/jumbutron.php";
-            // Otros archivos que se desee incluir en lugar del nav.php
-        }
-    } else {
         if ($_GET["ruta"] == "cerrarSesion") {
             include_once "vista/modulos/".$_GET["ruta"].".php";
         } else {
@@ -30,11 +26,7 @@ if (isset($_GET["ruta"])) {
             // Otros archivos que desees incluir después del inicio de sesión
         }
     }
-} else {
-    // Si $_GET["ruta"] no está definido, se puede manejar de manera predeterminada aquí
-    // Por ejemplo, puedes incluir la página principal o una página de inicio aquí.
-    include_once "vista/modulos/inicio.php";
+} 
 }
-
 include_once "vista/modulos/pie.php";
 ?>

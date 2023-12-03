@@ -16,8 +16,7 @@
                         Opciones
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="contacto">Contacto</a></li>
-                        <li><a class="dropdown-item" href="mail">Enviar Email</a></li>
+                        <li><a class="dropdown-item" href="mail">Enviar Email  <i class="bi bi-envelope"></i></a></li>
                     </ul>
                 </li>
             </ul>
@@ -259,8 +258,8 @@
                     </div>
                 </form><br><br>
                 <div class="col-md-2 offset-md-4" id="transferir">
-                        <button type="button" class="btn btn-info"">Enviar
-                        <i class="bi bi-send-plus"></i></button>
+                        <button type="button" class="btn btn-info"">Guardar
+                        <i class="bi bi-save"></i>
                 </div>
 
             </div>

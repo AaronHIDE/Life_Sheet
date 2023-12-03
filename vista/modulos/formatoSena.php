@@ -17,8 +17,7 @@
                         Opciones
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="contacto">Contacto</a></li>
-                        <li><a class="dropdown-item" href="mail">Enviar Email</a></li>
+                        <li><a class="dropdown-item" href="mail">Enviar Email  <i class="bi bi-envelope"></i></a></li>
                     </ul>
                 </li>
             </ul>
