@@ -1,11 +1,10 @@
 $(function () {
 
-    var tabla = null;
     listarFormatoSena();
 
     'use strict'
-    var tables = document.querySelectorAll('#aggFormatoSena')
-    Array.prototype.slice.call(tables)
+    var formatoSena = document.querySelectorAll('#aggFormatoSena')
+    Array.prototype.slice.call(formatoSena)
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         if (!form.checkValidity()) {
