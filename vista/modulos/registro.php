@@ -11,18 +11,7 @@
         <div class=" collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link mx-2 active" aria-current="page" href="login">Iniciar Sesion</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Opciones
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="contacto">Contacto</a></li>
-                        <li><a class="dropdown-item" href="login">Admin</a></li>
-                        <li><a class="dropdown-item" href="mail">Enviar Email</a></li>
-                    </ul>
+                    <a class="nav-link mx-2 active" aria-current="page" href="login">Iniciar Sesion <i class="bi bi-door-open"></i></a>
                 </li>
             </ul>
         </div>
