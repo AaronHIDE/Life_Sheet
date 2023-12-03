@@ -258,7 +258,7 @@
                     </div>
                 </form><br><br>
                 <div class="col-md-2 offset-md-4" id="transferir">
-                        <button type="button" class="btn btn-info"">Guardar
+                        <button type="submit" class="btn btn-info"">Guardar
                         <i class="bi bi-save"></i>
                 </div>
 
