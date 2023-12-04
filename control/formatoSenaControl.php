@@ -100,7 +100,7 @@ class formatoSenaControl
 if (isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimiento"], $_POST["edad"], $_POST["telefono_aprendiz"] ,$_POST["email_misena"], 
         $_POST["libreta_militar"], $_POST["direccion"], $_POST["estrato"], $_POST["ciudad"], 
  
-        $_POST["titulo_obtenido"], $_POST["ficha"], $_POST["fecha_grado"], $_POST["nivel"], $_POST["nombre_estudios"], $_POST["institucion_educativa2"], 
+        $_POST["titulo_obtenido"], $_POST["institucion_educativa"], $_POST["fecha_grado"], $_POST["nivel"], $_POST["nombre_estudios"], $_POST["institucion_educativa2"], 
         $_POST["semestres_aprobados"], 
         
         $_POST["nombre_programa"], $_POST["ficha"], $_POST["perfil"], $_POST["ocupaciones"], $_POST["centro_formacion"], $_POST["ciudad_formacion"], 

@@ -464,7 +464,7 @@
                                         <td class="input-cell">
                                             <div class="inputboxfs">
                                                 <input type="text" class="form-control" id="fecha_diligenciamiento"
-                                                    name="diligenciamiento">
+                                                    name="fecha_diligenciamiento">
                                             </div>
                                         </td>
 
@@ -658,7 +658,7 @@
                                                     <td class="input-cell">
                                                         <div class="inputboxfs">
                                                             <input type="text" class="form-control"
-                                                                id="fecha_diligenciamiento1" name="diligenciamiento">
+                                                                id="fecha_diligenciamiento1" name="fecha_diligenciamiento1">
                                                         </div>
                                                     </td>
 
