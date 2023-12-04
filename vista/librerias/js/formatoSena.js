@@ -1,6 +1,5 @@
 $(function () {
 
-    var tabla = null;
     listarFormatoSena();
 
     'use strict'
@@ -60,11 +59,10 @@ $(function () {
             let empresa = $("#empresa").val();
             let telefono_empresa = $("#telefono_empresa").val();
             let funcionario_empresa = $("#funcionario_empresa").val();
+            let observaciones = $("#observaciones").val();
 
             let fecha_diligenciamiento1 = $("#fecha_diligenciamiento1").val();
             let firma = $("#firma").val();
-
-
 
 
             let objData = new FormData();
@@ -116,11 +114,12 @@ $(function () {
             objData.append("empresa", empresa);
             objData.append("telefono_empresa", telefono_empresa);
             objData.append("funcionario_empresa", funcionario_empresa);
+            objData.append("observaciones", observaciones);
             objData.append("fecha_diligenciamiento1", fecha_diligenciamiento1);
             objData.append("firma", firma);
+            
 
-
-            fetch('control/formatoControl.php', {
+            fetch('control/formatoSenaControl.php', {
                 method: 'POST',
                 body: objData
             }).then(response => response.json()).then(response => {
@@ -131,8 +130,7 @@ $(function () {
                         title: "Formato Almacenado Correctamente",
                         showConfirmButton: false,
                         timer: 1500
-                      })
-                    window.location = response["location"];
+                      })                
                 } else {
                     Swal.fire({
                         position: "top-end",
@@ -146,19 +144,5 @@ $(function () {
         }
 
     }, false)
-
-
-    function listarFormatoSena() {
-        var objData = new FormData();
-        objData.append("listarFormatoSena", "ok");
-        fetch('control/formatoSenaControl.php', {
-            method: 'POST',
-            body: objData
-        }).then(response => response.json()).catch(error => {
-            console.log(error);
-        }).then(response => {
-        });
-    }
-
 
 })

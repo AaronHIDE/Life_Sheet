@@ -39,7 +39,9 @@ include_once "vista/modulos/nav.php";
         <hr>
         <p class="mb-4">Acá podrás generar tus hojas de vida y descargarlas en PDF.</p>
         </div>
+        <a href="login">
         <button type="button" class="btn btn-success mb-3">Comenzar <i class="bi bi-door-closed"></i></button>
+        </a>
         <br>
         <img src="vista\imagenes\kokoCv.png" width="200">
 
@@ -77,7 +79,9 @@ include_once "vista/modulos/nav.php";
       <p>Te porporcionamos nuestro correo para que puedas compartir tus hojas de vida al destinatario deseado.</p>
       <img src="vista\imagenes\kokoShare.png" width="230">
       <br>
+      <a href="login">
       <button type="button" class="btn btn-success mb-3">Compartir <i class="bi bi-share"></i></button>
+      </a>
     </div>
   </div>
 

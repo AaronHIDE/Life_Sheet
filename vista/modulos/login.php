@@ -1,21 +1,3 @@
-<nav class="navbar navbar-expand-sm navbar-light" id="neubar">
-    <div class="container">
-        <a href="inicio"><img src="vista\imagenes\lsLogo.png" width="80"></a>
-        <FONT SIZE="6" FACE="Cooper Black" COLOR="black">LIFE SHEET</FONT>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item-dos">
-                    <a class="nav-link mx-2 active" aria-current="page" href="registro">Registrarse <i class="bi bi-door-closed"></i></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
   
   <section class="section-login">
     <div class="form-boxl">
@@ -42,7 +24,7 @@
             <div class="invalid-feedback">Por favor, ingresa tu contraseña.</div>
           </div>
 
-          <button type="submit" class="btn btn-success">Ingresar <i class="bi bi-door-closed"></i></button>
+          <button type="submit" class="btn btn-success">Ingresar <i class="bi bi-door-open"></i></button>
           <div class="registerl">
             <p>No tengo una cuenta <a href="registro">Registrarse</a></p>
 

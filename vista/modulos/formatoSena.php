@@ -46,39 +46,50 @@
     </a>
 </div>
 
+
+
 <br><br>
 
-<div class="container" id="aggFormatoSena">
-    <div class="row">
-        <div class="col-md-11">
 
-            <div class="section-content">
-                <table class="data-table">
-                    <tr>
-                        <th colspan="10">
-                            <div class="title h4">HOJA DE VIDA APRENDICES EN PROGRAMAS DE FORMACIÓN TITULADA</div>
-                            <h6>F04-9124-002/ 06-10</h6>
-                            <h6>Ejecución de la Formación Profesional</h6>
-                            <h6>Desarrollo Curricular</h6>
-                        </th>
-                        <td>
-                            <center>
-                                <img src="vista/imagenes/sena.png" alt="Logo SENA" style="width: 150px; height: 150px;">
-                            </center>
-                        </td>
-                    </tr>
 
-                </table>
-            </div>
+<div id=formatoSenaCss>
 
-            <br><br><br>
 
-            <div class="section">
-                <div class="bubble-number h2 text-white">1</div>
-                <div class="section-title h3 bubble text-white">INFORMACION GENERAL DEL APRENDIZ</div>
-                <h6>Informacion personal del aprendiz. Usted como empleador podra solicitar aplicacion de esta.</h6>
+    <div class="container" id="aggFormatoSena" style="background-color: white;">
+        <div class="row">
+            <div class="col-md-11" style="margin:auto">
+                <br><br>
                 <div class="section-content">
-                    <table class="data-table">
+                    <form id="aggFormatoSena">
+                        <table class="data-table">
+                            <tr>
+                                <th colspan="10">
+                                    <div class="title h4">HOJA DE VIDA APRENDICES EN PROGRAMAS DE FORMACIÓN TITULADA
+                                    </div>
+                                    <h6>F04-9124-002/ 06-10</h6>
+                                    <h6>Ejecución de la Formación Profesional</h6>
+                                    <h6>Desarrollo Curricular</h6>
+                                </th>
+                                <td>
+                                    <center>
+                                        <img src="vista/imagenes/sena.png" alt="Logo SENA"
+                                            style="width: 150px; height: 150px;">
+                                    </center>
+                                </td>
+                            </tr>
+
+                        </table>
+                </div>
+
+                <br><br><br>
+
+                <div class="section">
+                    <div class="bubble-number h2 text-white">1</div>
+                    <div class="section-title h4 bubble text-white">INFORMACIÓN GENERAL DEL APRENDÍZ</div>
+                    <h6>Informacion personal del aprendíz. Usted como empleador podra solicitar aplicacion de esta.
+                    </h6>
+                    <div class="section-content">
+                        <table class="data-table">
 
                         <tr>
                             <th>NOMBRES Y APELLIDOS</th>
@@ -90,14 +101,14 @@
                             </td>
                         </tr>
 
-                        <tr>
-                            <th>DOCUMENTO DE IDENTIDAD</th>
-                            <td class="input-cell" colspan="10">
-                                <div class="inputboxfs">
-                                    <input type="text" class="form-control" id="documento" name="documento" required>
-                                </div>
-                            </td>
-                        </tr>
+                            <tr>
+                                <th>DOCUMENTO DE IDENTIDAD</th>
+                                <td class="input-cell" colspan="10">
+                                    <div class="inputboxfs">
+                                        <input type="text" class="form-control" id="documento" name="documento">
+                                    </div>
+                                </td>
+                            </tr>
 
                         <tr>
                             <th>FECHA DE NACIMIENTO</th>
@@ -107,13 +118,13 @@
                                 </div>
                             </td>
 
-                            <th>EDAD</th>
-                            <td class="input-cell" colspan="3">
-                                <div class="inputboxfs">
-                                    <input type="number" class="form-control" id="edad" name="edad" required>
-                                </div>
-                            </td>
-                        </tr>
+                                <th>EDAD</th>
+                                <td class="input-cell" colspan="3">
+                                    <div class="inputboxfs">
+                                        <input type="number" class="form-control" id="edad" name="edad">
+                                    </div>
+                                </td>
+                            </tr>
 
                         <tr>
                             <th>TELEFONO</th>
@@ -142,14 +153,14 @@
                             </td>
                         </tr>
 
-                        <tr>
-                            <th>DIRECCIÓN DOMICILIO</th>
-                            <td class="input-cell" colspan="10">
-                                <div class="inputboxfs">
-                                    <input type="point" class="form-control" id="direccion" name="direccion" required>
-                                </div>
-                            </td>
-                        </tr>
+                            <tr>
+                                <th>DIRECCIÓN DOMICILIO</th>
+                                <td class="input-cell" colspan="10">
+                                    <div class="inputboxfs">
+                                        <input type="point" class="form-control" id="direccion" name="direccion">
+                                    </div>
+                                </td>
+                            </tr>
 
                         <tr>
                             <th>ESTRATO</th>
@@ -164,27 +175,27 @@
                             </td>
                         </tr>
 
-                        <tr>
-                            <th>CIUDAD</th>
-                            <td colspan="10">
-                                <div class="inputboxfs">
-                                    <input type="point" class="form-control" id="ciudad" name="ciudad" required>
-                                </div>
-                            </td>
-                        </tr>
+                            <tr>
+                                <th>CIUDAD</th>
+                                <td colspan="10">
+                                    <div class="inputboxfs">
+                                        <input type="point" class="form-control" id="ciudad" name="ciudad">
+                                    </div>
+                                </td>
+                            </tr>
 
-                    </table>
-                </div>
+                        </table>
+                    </div>
 
-                <br><br><br>
+                    <br><br><br>
 
-                <div class="section">
-                    <div class="bubble-number h2 text-white">2</div>
-                    <div class="section-title h3 bubble text-white">FORMACION ACADEMICA</div>
-                    <h6>Digita la información referente al titulo obtenido en el grado 11
-                        que corresponde a la educación media</h6>
-                    <div class="section-content">
-                        <table class="data-table" style="border-color: black;">
+                    <div class="section">
+                        <div class="bubble-number h2 text-white">2</div>
+                        <div class="section-title h4 bubble text-white">FORMACIÓN ACADÉMICA</div>
+                        <h6>Digita la información referente al titulo obtenido en el grado 11
+                            que corresponde a la educación media</h6>
+                        <div class="section-content">
+                            <table class="data-table" style="border-color: black;">
 
                             <tr>
                                 <th>TÍTULO OBTENIDO</th>
@@ -216,15 +227,15 @@
                     </div>
                 </div>
 
-                <br><br>
+                    <br><br>
 
 
-                <h6>Si usted ha realizado estudios de nivel superior como Técnico TC, Tecnólogo TL,
-                    Especialización Tecnológica TE, Universitaria UN, Especialización ES, Maestría MG,
-                    Doctorado DOC, relaciónelos a continuación.
-                </h6>
-                <div class="section-content">
-                    <table class="data-table" style="border-color: black;">
+                    <h6>Si usted ha realizado estudios de nivel superior como Técnico TC, Tecnólogo TL,
+                        Especialización Tecnológica TE, Universitaria UN, Especialización ES, Maestría MG,
+                        Doctorado DOC, relaciónelos a continuación.
+                    </h6>
+                    <div class="section-content">
+                        <table class="data-table" style="border-color: black;">
 
                         <tr>
                             <th>NIVEL</th>
@@ -272,15 +283,15 @@
                 </div>
 
 
-                <br><br><br>
+                    <br><br><br>
 
-                <div class="section">
-                    <div class="bubble-number h2 text-white">3</div>
-                    <div class="section-title h3 bubble text-white">INFORMACION PROGRAMA DE FORMACIÓN</div>
-                    <h6>Información relevante del programa de formación, para más información podrá contactar
-                        al coordinador ácademico</h6>
-                    <div class="section-content">
-                        <table class="data-table">
+                    <div class="section">
+                        <div class="bubble-number h2 text-white">3</div>
+                        <div class="section-title h4 bubble text-white">INFORMACION PROGRAMA DE FORMACIÓN</div>
+                        <h6>Información relevante del programa de formación, para más información podrá contactar
+                            al coordinador ácademico</h6>
+                        <div class="section-content">
+                            <table class="data-table">
 
                             <tr>
                                 <th>NOMBRE DEL PROGRAMA</th>
@@ -292,23 +303,23 @@
                                 </td>
                             </tr>
 
-                            <tr>
-                                <th>CÓDIGO DE LA FICHA</th>
-                                <td class="input-cell" colspan="10">
-                                    <div class="inputboxfs">
-                                        <input type="text" class="form-control" id="ficha" name="ficha" required>
-                                    </div>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <th>CÓDIGO DE LA FICHA</th>
+                                    <td class="input-cell" colspan="10">
+                                        <div class="inputboxfs">
+                                            <input type="text" class="form-control" id="ficha" name="ficha">
+                                        </div>
+                                    </td>
+                                </tr>
 
-                            <tr>
-                                <th>PERFIL OCUPACIONAL</th>
-                                <td class="input-cell" colspan="7">
-                                    <div class="inputboxfs">
-                                        <input type="text" class="form-control" id="perfil" name="perfil" required>
-                                    </div>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <th>PERFIL OCUPACIONAL</th>
+                                    <td class="input-cell" colspan="7">
+                                        <div class="inputboxfs">
+                                            <input type="text" class="form-control" id="perfil" name="perfil">
+                                        </div>
+                                    </td>
+                                </tr>
 
                             <tr>
                                 <th>OCUPACIONES A DESEMPEÑAR</th>
@@ -393,34 +404,37 @@
                                 </td>
                             </tr>
 
-                        </table>
-                    </div>
+                            </table>
+                        </div>
 
-                    <br><br>
+                        <br><br>
 
-                    <div class="section">
-                        <div class="bubble-number h2 text-white">4</div>
-                        <div class="section-title h3 bubble text-white">FIRMA DEL APRENDIZ</div>
-                        <div class="section-content">
+                        <div class="section">
+                            <div class="bubble-number h2 text-white">4</div>
+                            <div class="section-title h4 bubble text-white">FIRMA DEL APRENDÍZ</div>
+                            <div class="section-content">
 
-                            <table class="data-table">
-                                <tr>
-                                    <td colspan="10">
-                                        <p>
-                                        <h6>Manifiesto bajo la gravedad de juramento que no me encuentro dentro de
-                                            las
-                                            causales de
-                                            inhabilidad e incompatibilidad que contravengan el reglamento
-                                            estudiantil o
-                                            términos legales, para
-                                            desarrollar la etapa práctica desempeñándome en una empresa a través del
-                                            contrato de aprendizaje, para
-                                            todos los efectos legales, certifico que los datos por mí anotados en el
-                                            presente formato de hoja de
-                                            vida, son veraces.</h6>
-                                        </p>
-                                    </td>
-                                </tr>
+                                <table class="data-table">
+                                    <tr>
+                                        <td colspan="10">
+                                            <p>
+                                            <h6>Manifiesto bajo la gravedad de juramento que no me encuentro dentro
+                                                de
+                                                las
+                                                causales de
+                                                inhabilidad e incompatibilidad que contravengan el reglamento
+                                                estudiantil o
+                                                términos legales, para
+                                                desarrollar la etapa práctica desempeñándome en una empresa a través
+                                                del
+                                                contrato de aprendizaje, para
+                                                todos los efectos legales, certifico que los datos por mí anotados
+                                                en el
+                                                presente formato de hoja de
+                                                vida, son veraces.</h6>
+                                            </p>
+                                        </td>
+                                    </tr>
 
                                 <tr colspan="10">
                                     <th>Ciudad y Fecha de Diligenciamiento:</th>
@@ -440,17 +454,17 @@
                             </table>
                         </div>
 
-                        <br><br><br>
+                            <br><br><br>
 
-                        <div class="section">
-                            <div class="bubble-number h2 text-white">5</div>
-                            <div class="section-title h3 bubble text-white">FIRMA FUNCIONARIO PROMOCION Y
-                                RELACIONAMIENTO CORPORATIVO SENA</div>
-                            <h6>Información del funcionario encargado en el Centro de Formación. Contacte para
-                                la legalización del contrato de aprendizaje
-                            </h6>
-                            <div class="section-content">
-                                <table class="data-table">
+                            <div class="section">
+                                <div class="bubble-number h2 text-white">5</div>
+                                <div class="section-title h4 bubble text-white">FIRMA FUNCIONARIO PROMOCIÓN Y
+                                    RELACIONAMIENTO CORPORATIVO SENA</div>
+                                <h6>Información del funcionario encargado en el Centro de Formación. Contacte para
+                                    la legalización del contrato de aprendizaje
+                                </h6>
+                                <div class="section-content">
+                                    <table class="data-table">
 
                                     <tr>
                                         <th>NOMBRE FUNCIONARIO</th>
@@ -482,16 +496,16 @@
                             </div>
 
 
-                            <br><br><br>
+                                <br><br><br>
 
 
-                            <div class="section">
-                                <div class="bubble-number h2 text-white">6</div>
-                                <div class="section-title h3 bubble text-white">INFORMACION SERVICIO NACIONAL DE
-                                    APRENDIZAJE</div>
+                                <div class="section">
+                                    <div class="bubble-number h2 text-white">6</div>
+                                    <div class="section-title h4 bubble text-white">INFORMACIÓN SERVICIO NACIONAL DE
+                                        APRENDIZAJE</div>
 
-                                <div class="section-content">
-                                    <table class="data-table">
+                                    <div class="section-content">
+                                        <table class="data-table">
 
                                         <tr>
                                             <th>NIT</th>
@@ -540,15 +554,15 @@
                                     </table>
                                 </div>
 
-                                <br><br><br>
+                                    <br><br><br>
 
-                                <div class="section">
-                                    <div class="bubble-number h2 text-white">7</div>
-                                    <div class="section-title h3 bubble text-white">OBSERVACIONES DEL JEFE DE
-                                        RECURSOS
-                                        HUMANOS Y/O CONTRATOS</div>
-                                    <div class="section-content">
-                                        <table class="data-table">
+                                    <div class="section">
+                                        <div class="bubble-number h2 text-white">7</div>
+                                        <div class="section-title h4 bubble text-white">OBSERVACIONES DEL JEFE DE
+                                            RECURSOS
+                                            HUMANOS Y/O CONTRATOS</div>
+                                        <div class="section-content">
+                                            <table class="data-table">
 
                                             <tr>
                                                 <th>EMPRESA</th>
@@ -577,9 +591,9 @@
                                                 </td>
                                             </tr>
 
-                                            <tr>
-                                                <th colspan="10">OBSERVACIONES</th>
-                                            </tr>
+                                                <tr>
+                                                    <th colspan="10">OBSERVACIONES</th>
+                                                </tr>
 
                                             <tr>
                                                 <td colspan="10">
@@ -587,21 +601,21 @@
                                                 </td>
                                             </tr>
 
-                                            <tr>
-                                                <th>Marque con una X la desicion de contratar al aprendiz</th>
+                                                <tr>
+                                                    <th>Marque con una X la desicion de contratar al aprendíz</th>
 
-                                                <td>
-                                                    <div>
-                                                        Seleccionado
-                                                    </div>
-                                                </td>
+                                                    <td>
+                                                        <div>
+                                                            Seleccionado
+                                                        </div>
+                                                    </td>
 
-                                                <td colspan="10">
-                                                    <div>
-                                                        No Seleccionado
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                                    <td colspan="10">
+                                                        <div>
+                                                            No Seleccionado
+                                                        </div>
+                                                    </td>
+                                                </tr>
 
                                             <tr colspan="10">
                                                 <th>Ciudad y Fecha de Diligenciamiento:</th>
@@ -619,25 +633,26 @@
                                                 </td>
                                             </tr>
 
+                                            </table>
+                                        </div>
 
-                                        </table>
+
+                                        <br>
+
+                                        <h6>Solicitamos a la empresa imprimir y suministrar copia de este documento
+                                            una vez
+                                            realizada la evaluación del aprendíz que será remitida a la oficina de
+                                            Relacionamiento
+                                            Corporativo del Centro de Formación.
+                                        </h6>
+
                                     </div>
-
-
-                                    <br>
-
-                                    <h6>Solicitamos a la empresa imprimir y suministrar copia de este documento una vez
-                                        realizada la evaluación del aprendiz que será remitida a la oficina de
-                                        Relacionamiento
-                                        Corporativo del Centro de Formación.
-                                    </h6>
-
                                 </div>
                             </div>
-                        </div>
 
 
-                        <br><br>
+
+                            <br><br>
 
                         <div class="row">
                             <div class="col-md-2 offset-md-8">
@@ -650,12 +665,22 @@
                                 </script>
                             </div>
 
-                            <div class="col-md-2" id="transferir">
-                                <button type="button" class="btn btn-info"">Enviar
-                                <i class=" bi bi-send-plus"></i></button>
+                                <div class="col-md-2" id="guardarFS">
+                                    <button type="submit" class="btn btn-info">Guardar
+                                    <i class=" bi bi-save"></i>
+                                </div>
                             </div>
+                            </form>
+
                         </div>
-
                     </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
 
-                    <br><br><br><br><br>
+</div>
+
+
+<br><br><br>
