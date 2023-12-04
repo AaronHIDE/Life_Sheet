@@ -39,8 +39,6 @@ $(function () {
             let telefonoReferencia3 = $("#telefonoReferencia3").val();
             let telefonoReferencia4 = $("#telefonoReferencia4").val();
 
-
-
             let objData = new FormData();
             objData.append("nombre", nombre);
             objData.append("documento", documento);
@@ -70,7 +68,6 @@ $(function () {
             objData.append("telefonoReferencia4",telefonoReferencia4);
 
 
-
             fetch('control/formatoControl.php', {
                 method: 'POST',
                 body: objData
@@ -83,7 +80,6 @@ $(function () {
                         showConfirmButton: false,
                         timer: 1500
                       });
-                    window.location = response["location"];
                 } else {
                     Swal.fire({
                         position: "top-end",

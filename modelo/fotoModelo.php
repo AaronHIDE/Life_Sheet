@@ -1,7 +1,7 @@
-<?php
+<!-- <?php
 
 include_once "conexion.php";
-
+?>
 class fotoModelo{
 
     public static function mdlSubirFoto($nombreFoto,$foto){
@@ -47,4 +47,4 @@ class fotoModelo{
         return $mensaje;
     }
 
-}
+} -->

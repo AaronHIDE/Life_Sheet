@@ -5,12 +5,12 @@
             <div class="button-box">
                 <span class="button-elem">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 40">
-                        <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
+                        <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z" fill ="white"></path>
                     </svg>
                 </span>
                 <span class="button-elem">
                     <svg viewBox="0 0 46 40">
-                        <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
+                        <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z" fill ="white"></path>
                     </svg>
                 </span>
             </div>
@@ -23,7 +23,7 @@
 
 <div class="header">
     <h1 class="marcoh2">HOJA DE VIDA</h1>
-        <div class="container nombre-container needs-validation">
+        <div class="container nombre-container" >
             <form action="" method="POST" id="formato">
                 <div class="inputboxf">
                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Nombre Completo</FONT>
@@ -79,21 +79,21 @@
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Habilidad 2</FONT>
                         <ion-icon name="barbell"></ion-icon>
-                        <input type="text" class="form-control" id="habilidades2" name="habilidades2" required>
+                        <input type="text" class="form-control" id="habilidades2" name="habilidades2">
                         <label for="habilidades2" class="form-label"></label>
                     </div>
 
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Habilidad 3</FONT>
                         <ion-icon name="barbell"></ion-icon>
-                        <input type="text" class="form-control" id="habilidades3" name="habilidades3" required>
+                        <input type="text" class="form-control" id="habilidades3" name="habilidades3">
                         <label for="habilidades3" class="form-label"></label>
                     </div>
 
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Habilidad 4</FONT>
                         <ion-icon name="barbell"></ion-icon>
-                        <input type="text" class="form-control" id="habilidades3" name="habilidades4" required>
+                        <input type="text" class="form-control" id="habilidades4" name="habilidades4">
                         <label for="habilidades4" class="form-label"></label>
                     </div>
 
@@ -109,21 +109,21 @@
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Referencia 2</FONT>
                         <ion-icon name="people"></ion-icon>
-                        <input type="text" class="form-control" id="referencias2" name="referencias2" required>
+                        <input type="text" class="form-control" id="referencias2" name="referencias2">
                         <label for="referencias2" class="form-label"></label>
                     </div>
 
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Referencia 3</FONT>
                         <ion-icon name="people"></ion-icon>
-                        <input type="text" class="form-control" id="referencias3" name="referencias3" required>
+                        <input type="text" class="form-control" id="referencias3" name="referencias3">
                         <label for="referencias3" class="form-label"></label>
                     </div>
 
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Referencia 4</FONT>
                         <ion-icon name="people"></ion-icon>
-                        <input type="text" class="form-control" id="referencias3" name="referencias4" required>
+                        <input type="text" class="form-control" id="referencias4" name="referencias4">
                         <label for="referencias4" class="form-label"></label>
                     </div><br><br>
 
@@ -153,21 +153,21 @@
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Experiencia 2</FONT>
                         <ion-icon name="ribbon"></ion-icon>
-                        <input type="text" class="form-control" id="experiencia2" name="experiencia2" required>
+                        <input type="text" class="form-control" id="experiencia2" name="experiencia2">
                         <label for="experiencia2" class="form-label"></label>
                     </div>
 
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Experiencia 3</FONT>
                         <ion-icon name="ribbon"></ion-icon>
-                        <input type="text" class="form-control" id="experiencia3" name="experiencia3" required>
+                        <input type="text" class="form-control" id="experiencia3" name="experiencia3">
                         <label for="experiencia3" class="form-label"></label>
                     </div>
 
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Experiencia 4</FONT>
                         <ion-icon name="ribbon"></ion-icon>
-                        <input type="text" class="form-control" id="experiencia3" name="experiencia4" required>
+                        <input type="text" class="form-control" id="experiencia4" name="experiencia4">
                         <label for="experiencia4" class="form-label"></label>
                     </div>
 
@@ -183,21 +183,21 @@
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Estudio 2</FONT>
                         <ion-icon name="library"></ion-icon>
-                        <input type="text" class="form-control" id="estudios2" name="estudios2" required>
+                        <input type="text" class="form-control" id="estudios2" name="estudios2">
                         <label for="estudios2" class="form-label"></label>
                     </div>
 
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Estudio 3</FONT>
                         <ion-icon name="library"></ion-icon>
-                        <input type="text" class="form-control" id="estudios3" name="estudios3" required>
+                        <input type="text" class="form-control" id="estudios3" name="estudios3">
                         <label for="estudios3" class="form-label"></label>
                     </div>
 
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Estudio 4</FONT>
                         <ion-icon name="library"></ion-icon>
-                        <input type="text" class="form-control" id="estudios4" name="estudios4" required>
+                        <input type="text" class="form-control" id="estudios4" name="estudios4">
                         <label for="estudios4" class="form-label"></label>
                     </div>
 
@@ -207,36 +207,35 @@
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Telefono</FONT>
                         <ion-icon name="call"></ion-icon>
-                        <input type="text" class="form-control" id="telefonoReferencia1" name="telefonoReferencia1" required>
+                        <input type="number" class="form-control" id="telefonoReferencia1" name="telefonoReferencia1" required>
                         <label for="telefonoReferencia1" class="form-label"></label>
                     </div>
 
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Telefono</FONT>
                         <ion-icon name="call"></ion-icon>
-                        <input type="text" class="form-control" id="telefonoReferencia2" name="telefonoReferencia2" required>
+                        <input type="number" class="form-control" id="telefonoReferencia2" name="telefonoReferencia2">
                         <label for="telefonoReferencia2" class="form-label"></label>
                     </div>
 
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Telefono</FONT>
                         <ion-icon name="call"></ion-icon>
-                        <input type="text" class="form-control" id="telefonoReferencia3" name="telefonoReferencia3" required>
+                        <input type="number" class="form-control" id="telefonoReferencia3" name="telefonoReferencia3">
                         <label for="telefonoReferencia3" class="form-label"></label>
                     </div>
 
                     <div class="inputboxf">
                         <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Telefono</FONT>
                         <ion-icon name="call"></ion-icon>
-                        <input type="text" class="form-control" id="telefonoReferencia4" name="telefonoReferencia4" required>
+                        <input type="number" class="form-control" id="telefonoReferencia4" name="telefonoReferencia4">
                         <label for="telefonoReferencia4" class="form-label"></label>
-                    </div>
-                </form><br><br>
-                <div class="col-md-2 offset-md-4" id="transferir">
-                        <button type="button" class="btn btn-info"">Guardar
+                    </div><br><br>
+                    <div class="col-md-2 offset-md-4" id="transferir">
+                        <button type="submit" class="btn btn-info"">Guardar
                         <i class="bi bi-save"></i>
-                </div>
-
+                    </div>
+                </form>
             </div>
         </div>
     </div>

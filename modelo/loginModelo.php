@@ -23,6 +23,8 @@ class LoginModelo {
 
                 // Puedes personalizar estas rutas según tus necesidades
                 $_SESSION["ruta"] = "principal";
+                $_SESSION["usuario"] = $datosUsuario;
+
 
                 $mensaje = array("codigo" => "200", "mensaje" => $_SESSION["ruta"]);
             } else {
