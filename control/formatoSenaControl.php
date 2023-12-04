@@ -58,10 +58,12 @@ class formatoSenaControl
     public $fecha_diligenciamiento1;
     public $firma;
 
+    public $usuario_idusuario;
+
 
         public function ctrAgregarFormatoSena(){
             $objRespuesta = formatoSenaModelo::mdlAgregarFormatoSena($this->nombres_apellidos, $this->documento, $this->fecha_nacimiento,
-            $this->edad, $this->email_misena, $this->libreta_militar, $this->direccion, $this->estrato, $this->ciudad,
+            $this->edad, $this->telefono_aprendiz, $this->email_misena, $this->libreta_militar, $this->direccion, $this->estrato, $this->ciudad,
 
             $this->titulo_obtenido, $this->institucion_educativa, $this->fecha_grado, $this->nivel, $this->nombre_estudios,
             $this->institucion_educativa2, $this->semestres_aprobados,
@@ -79,6 +81,8 @@ class formatoSenaControl
             
             $this->empresa, $this->telefono_empresa, $this->funcionario_empresa, $this->fecha_diligenciamiento1, 
             $this->firma,
+
+            $this->usuario_idusuario,
             );
             echo json_encode($objRespuesta);
         }
@@ -87,12 +91,14 @@ class formatoSenaControl
             $objRespuesta = formatoSenaModelo::mdlListarFormatoSena();
             echo json_encode($objRespuesta);
         }
-            
+
+
+     
 
 }
 
-if (isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimiento"], $_POST["edad"], $_POST["email_misena"], $_POST["libreta_militar"], 
-        $_POST["direccion"], $_POST["estrato"], $_POST["ciudad"], 
+if (isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimiento"], $_POST["edad"], $_POST["telefono_aprendiz"] ,$_POST["email_misena"], 
+        $_POST["libreta_militar"], $_POST["direccion"], $_POST["estrato"], $_POST["ciudad"], 
  
         $_POST["titulo_obtenido"], $_POST["ficha"], $_POST["fecha_grado"], $_POST["nivel"], $_POST["nombre_estudios"], $_POST["institucion_educativa2"], 
         $_POST["semestres_aprobados"], 
@@ -108,15 +114,16 @@ if (isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimi
         $_POST["nit"], $_POST["centro_formacion1"], $_POST["representante_legal"], $_POST["email_representante"], $_POST["telefono_representante"], 
         
         $_POST["empresa"], $_POST["telefono_empresa"], $_POST["funcionario_empresa"], $_POST["fecha_diligenciamiento1"], $_POST["firma"]
-        
+            
         
         )) {
    
-    $objAgregar = new formatoControl();
+    $objAgregar = new formatoSenaControl();
     $objAgregar->nombres_apellidos = $_POST["nombres_apellidos"];
     $objAgregar->documento = $_POST["documento"];
     $objAgregar->fecha_nacimiento = $_POST["fecha_nacimiento"];
     $objAgregar->edad = $_POST["edad"];
+    $objAgregar->telefono_aprendiz = $_POST["telefono_aprendiz"];
     $objAgregar->email_misena = $_POST["email_misena"];
     $objAgregar->libreta_militar = $_POST["libreta_militar"];
     $objAgregar->direccion = $_POST["direccion"];
@@ -162,6 +169,8 @@ if (isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimi
     $objAgregar->funcionario_empresa = $_POST["funcionario_empresa"];
     $objAgregar->fecha_diligenciamiento1 = $_POST["fecha_diligenciamiento1"];
     $objAgregar->firma = $_POST["firma"];
+
+    $objAgregar->usuario_idusuario = $_SESSION["usuario"][0];
 
     $objAgregar->ctrAgregarFormatoSena();
 }

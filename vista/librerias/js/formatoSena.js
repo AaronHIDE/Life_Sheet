@@ -3,8 +3,8 @@ $(function () {
     listarFormatoSena();
 
     'use strict'
-    var formatoSena = document.querySelectorAll('#aggFormatoSena')
-    Array.prototype.slice.call(formatoSena)
+    var tables = document.querySelectorAll('#aggFormatoSena')
+    Array.prototype.slice.call(tables)
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         if (!form.checkValidity()) {
@@ -62,8 +62,6 @@ $(function () {
 
             let fecha_diligenciamiento1 = $("#fecha_diligenciamiento1").val();
             let firma = $("#firma").val();
-
-
 
 
             let objData = new FormData();
@@ -130,8 +128,7 @@ $(function () {
                         title: "Formato Almacenado Correctamente",
                         showConfirmButton: false,
                         timer: 1500
-                      })
-                    window.location = response["location"];
+                      })                
                 } else {
                     Swal.fire({
                         position: "top-end",
@@ -145,19 +142,5 @@ $(function () {
         }
 
     }, false)
-
-
-    function listarFormatoSena() {
-        var objData = new FormData();
-        objData.append("listarFormatoSena", "ok");
-        fetch('control/formatoSenaControl.php', {
-            method: 'POST',
-            body: objData
-        }).then(response => response.json()).catch(error => {
-            console.log(error);
-        }).then(response => {
-        });
-    }
-
 
 })

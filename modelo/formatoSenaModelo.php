@@ -25,7 +25,7 @@ class formatoSenaModelo
                                                 $empresa, $telefono_empresa, $funcionario_empresa, $fecha_diligenciamiento1, 
                                                 $firma,
 
-
+                                                $usuario_idusuario
                                                 )
     {
         $mensaje = array();
@@ -45,8 +45,9 @@ class formatoSenaModelo
                                                             
                                                             nit, centro_formacion1, representante_legal, email_representante, telefono_representante,
 
-                                                            empresa, telefono_empresa, funcionario_empresa, fecha_diligenciamiento1, firma
-                                                                                                                        
+                                                            empresa, telefono_empresa, funcionario_empresa, fecha_diligenciamiento1, firma,
+
+                                                            usuario_idusuario,                                                            
                                                             ) 
                                                             
                                                             VALUES(:nombres_apellidos, :documento, :fecha_nacimiento, :edad, :telefono_aprendiz, 
@@ -64,8 +65,9 @@ class formatoSenaModelo
                                                             
                                                             :nit, :centro_formacion1, :representante_legal, :email_representante, :telefono_representante,
 
-                                                            :empresa, :telefono_empresa, :funcionario_empresa, :fecha_diligenciamiento1, :firma
+                                                            :empresa, :telefono_empresa, :funcionario_empresa, :fecha_diligenciamiento1, :firma,
 
+                                                            :usuario_idusuario
                                                             )");
 
             
@@ -119,6 +121,8 @@ class formatoSenaModelo
             $objRespuesta->bindParam(":funcionario_empresa", $funcionario_empresa);
             $objRespuesta->bindParam(":fecha_diligenciamiento1", $fecha_diligenciamiento1);
             $objRespuesta->bindParam(":firma", $firma);
+
+            $objRespuesta->bindParam(":usuario_idusuario", $usuario_idusuario);
 
 
             if ($objRespuesta->execute()) {

@@ -68,24 +68,24 @@
                 <br><br>
                 <div class="section-content">
                     <form id="aggFormatoSena">
-                    <table class="data-table">
-                        <tr>
-                            <th colspan="10">
-                                <div class="title h4">HOJA DE VIDA APRENDICES EN PROGRAMAS DE FORMACIÓN TITULADA
-                                </div>
-                                <h6>F04-9124-002/ 06-10</h6>
-                                <h6>Ejecución de la Formación Profesional</h6>
-                                <h6>Desarrollo Curricular</h6>
-                            </th>
-                            <td>
-                                <center>
-                                    <img src="vista/imagenes/sena.png" alt="Logo SENA"
-                                        style="width: 150px; height: 150px;">
-                                </center>
-                            </td>
-                        </tr>
+                        <table class="data-table">
+                            <tr>
+                                <th colspan="10">
+                                    <div class="title h4">HOJA DE VIDA APRENDICES EN PROGRAMAS DE FORMACIÓN TITULADA
+                                    </div>
+                                    <h6>F04-9124-002/ 06-10</h6>
+                                    <h6>Ejecución de la Formación Profesional</h6>
+                                    <h6>Desarrollo Curricular</h6>
+                                </th>
+                                <td>
+                                    <center>
+                                        <img src="vista/imagenes/sena.png" alt="Logo SENA"
+                                            style="width: 150px; height: 150px;">
+                                    </center>
+                                </td>
+                            </tr>
 
-                    </table>
+                        </table>
                 </div>
 
                 <br><br><br>
@@ -103,7 +103,7 @@
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
                                         <input type="text" class="form-control" id="nombres_apellidos"
-                                            name="nombres_apellidos" required>
+                                            name="nombres_apellidos">
                                         </imput>
                                     </div>
                                 </td>
@@ -113,8 +113,7 @@
                                 <th>DOCUMENTO DE IDENTIDAD</th>
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
-                                        <input type="text" class="form-control" id="documento" name="documento"
-                                            required>
+                                        <input type="text" class="form-control" id="documento" name="documento">
                                     </div>
                                 </td>
                             </tr>
@@ -124,14 +123,14 @@
                                 <td class="input-cell" colspan="7">
                                     <div class="inputboxfs">
                                         <input type="date" class="form-control" id="fecha_nacimiento"
-                                            name="fecha_nacimiento" required>
+                                            name="fecha_nacimiento">
                                     </div>
                                 </td>
 
                                 <th>EDAD</th>
                                 <td class="input-cell" colspan="3">
                                     <div class="inputboxfs">
-                                        <input type="number" class="form-control" id="edad" name="edad" required>
+                                        <input type="number" class="form-control" id="edad" name="edad">
                                     </div>
                                 </td>
                             </tr>
@@ -141,7 +140,7 @@
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
                                         <input type="number" class="form-control" id="telefono_aprendiz"
-                                            name="telefono_aprendiz" required>
+                                            name="telefono_aprendiz">
                                     </div>
                                 </td>
                             </tr>
@@ -150,8 +149,7 @@
                                 <th>CORREO ELECTRÓNICO MISENA</th>
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
-                                        <input type="email" class="form-control" id="email_misena" name="email_misena"
-                                            required>
+                                        <input type="email" class="form-control" id="email_misena" name="email_misena">
                                     </div>
                                 </td>
                             </tr>
@@ -161,7 +159,7 @@
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
                                         <input type="text" class="form-control" id="libreta_militar"
-                                            name="libreta_militar" required>
+                                            name="libreta_militar">
                                     </div>
                                 </td>
                             </tr>
@@ -170,8 +168,7 @@
                                 <th>DIRECCIÓN DOMICILIO</th>
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
-                                        <input type="point" class="form-control" id="direccion" name="direccion"
-                                            required>
+                                        <input type="point" class="form-control" id="direccion" name="direccion">
                                     </div>
                                 </td>
                             </tr>
@@ -179,8 +176,7 @@
                             <tr>
                                 <th>ESTRATO</th>
                                 <td colspan="10">
-                                    <select id="estrato" name="estrato" class="form-control-select inputboxfs opciones"
-                                        required>
+                                    <select id="estrato" name="estrato" class="form-control-select inputboxfs opciones">
                                         <option value="" disabled selected>Seleccione una opción</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -194,7 +190,7 @@
                                 <th>CIUDAD</th>
                                 <td colspan="10">
                                     <div class="inputboxfs">
-                                        <input type="point" class="form-control" id="ciudad" name="ciudad" required>
+                                        <input type="point" class="form-control" id="ciudad" name="ciudad">
                                     </div>
                                 </td>
                             </tr>
@@ -217,7 +213,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="text" class="form-control" id="titulo_obtenido"
-                                                name="titulo_obtenido" required>
+                                                name="titulo_obtenido">
                                         </div>
                                     </td>
                                 </tr>
@@ -227,7 +223,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="text" class="form-control" id="institucion_educativa"
-                                                name="institucion_educativa" required>
+                                                name="institucion_educativa">
                                         </div>
                                     </td>
                                 </tr>
@@ -236,8 +232,7 @@
                                     <th>FECHA GRADO</th>
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
-                                            <input type="date" class="form-control" id="fecha_grado" name="fecha_grado"
-                                                required>
+                                            <input type="date" class="form-control" id="fecha_grado" name="fecha_grado">
                                         </div>
                                     </td>
                                 </tr>
@@ -258,8 +253,7 @@
                             <tr>
                                 <th>NIVEL</th>
                                 <td colspan="10">
-                                    <select id="nivel" name="nivel" class="form-control-select inputboxfs opciones"
-                                        required>
+                                    <select id="nivel" name="nivel" class="form-control-select inputboxfs opciones">
                                         <option value="" disabled selected>Seleccione una opción:</option>
                                         <option value="Tecnico">TC</option>
                                         <option value="Tecnologo">TL</option>
@@ -277,7 +271,7 @@
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
                                         <input type="text" class="form-control" id="nombre_estudios"
-                                            name="nombre_estudios" required>
+                                            name="nombre_estudios">
                                     </div>
                                 </td>
                             </tr>
@@ -287,7 +281,7 @@
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
                                         <input type="text" class="form-control" id="institucion_educativa2"
-                                            name="institucion_educativa2" required>
+                                            name="institucion_educativa2">
                                     </div>
                                 </td>
                             </tr>
@@ -297,7 +291,7 @@
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
                                         <input type="number" class="form-control" id="semestres_aprobados"
-                                            name="semestres_aprobados" required>
+                                            name="semestres_aprobados">
                                     </div>
                                 </td>
                             </tr>
@@ -320,7 +314,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="text" class="form-control" id="nombre_programa"
-                                                name="nombre_programa" required>
+                                                name="nombre_programa">
                                             </imput>
                                         </div>
                                     </td>
@@ -330,7 +324,7 @@
                                     <th>CÓDIGO DE LA FICHA</th>
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
-                                            <input type="text" class="form-control" id="ficha" name="ficha" required>
+                                            <input type="text" class="form-control" id="ficha" name="ficha">
                                         </div>
                                     </td>
                                 </tr>
@@ -339,7 +333,7 @@
                                     <th>PERFIL OCUPACIONAL</th>
                                     <td class="input-cell" colspan="7">
                                         <div class="inputboxfs">
-                                            <input type="text" class="form-control" id="perfil" name="perfil" required>
+                                            <input type="text" class="form-control" id="perfil" name="perfil">
                                         </div>
                                     </td>
                                 </tr>
@@ -348,8 +342,7 @@
                                     <th>OCUPACIONES A DESEMPEÑAR</th>
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
-                                            <input type="text" class="form-control" id="ocupaciones" name="ocupaciones"
-                                                required>
+                                            <input type="text" class="form-control" id="ocupaciones" name="ocupaciones">
                                         </div>
                                     </td>
                                 </tr>
@@ -359,7 +352,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="text" class="form-control" id="centro_formacion"
-                                                name="centro_formacion" required>
+                                                name="centro_formacion">
                                         </div>
                                     </td>
                                 </tr>
@@ -369,7 +362,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="point" class="form-control" id="ciudad_formacion"
-                                                name="ciudad_formacion" required>
+                                                name="ciudad_formacion">
                                         </div>
                                     </td>
                                 </tr>
@@ -379,7 +372,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="date" class="form-control" id="fecha_inicio"
-                                                name="fecha_inicio" required>
+                                                name="fecha_inicio">
                                         </div>
                                     </td>
                                 </tr>
@@ -388,8 +381,7 @@
                                     <th>FECHA DE TERMINACIÓN</th>
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
-                                            <input type="date" class="form-control" id="fecha_final" name="fecha_final"
-                                                required>
+                                            <input type="date" class="form-control" id="fecha_final" name="fecha_final">
                                         </div>
                                     </td>
                                 </tr>
@@ -397,8 +389,7 @@
                                 <tr>
                                     <th>ETAPA</th>
                                     <td colspan="10">
-                                        <select id="etapa" name="etapa" class="form-control-select inputboxfs opciones"
-                                            required>
+                                        <select id="etapa" name="etapa" class="form-control-select inputboxfs opciones">
                                             <option value="" disabled selected>Seleccione una opción</option>
                                             <option value="Lectiva">Lectiva</option>
                                             <option value="Practica">Práctica</option>
@@ -411,7 +402,7 @@
                                     <td colspan="10">
                                         <div class="inputboxfs">
                                             <input type="text" class="form-control" id="coordinador_academico"
-                                                name="coordinador_academico" required>
+                                                name="coordinador_academico">
                                         </div>
                                     </td>
                                 </tr>
@@ -421,7 +412,7 @@
                                     <td colspan="10">
                                         <div class="inputboxfs">
                                             <input type="number" class="form-control" id="telefono_coordinador"
-                                                name="telefono_coordinador" required>
+                                                name="telefono_coordinador">
                                         </div>
                                     </td>
                                 </tr>
@@ -431,7 +422,7 @@
                                     <td colspan="10">
                                         <div class="inputboxfs">
                                             <input type="email" class="form-control" id="email_coordinador"
-                                                name="email_coordinador" required>
+                                                name="email_coordinador">
                                         </div>
                                     </td>
                                 </tr>
@@ -473,7 +464,7 @@
                                         <td class="input-cell">
                                             <div class="inputboxfs">
                                                 <input type="text" class="form-control" id="fecha_diligenciamiento"
-                                                    name="diligenciamiento" required>
+                                                    name="diligenciamiento">
                                             </div>
                                         </td>
 
@@ -481,7 +472,7 @@
                                         <td class="input-cell">
                                             <div class="inputboxfs">
                                                 <input type="text" class="form-control" id="firma_aprendiz"
-                                                    name="firma_aprendiz" required>
+                                                    name="firma_aprendiz">
                                             </div>
                                         </td>
                                     </tr>
@@ -505,7 +496,7 @@
                                             <td colspan="10">
                                                 <div class="inputboxfs">
                                                     <input type="text" class="form-control" id="funcionario"
-                                                        name="funcionario" required>
+                                                        name="funcionario">
                                                 </div>
                                             </td>
                                         </tr>
@@ -515,7 +506,7 @@
                                             <td colspan="10">
                                                 <div class="inputboxfs">
                                                     <input type="number" class="form-control" id="telefono_funcionario"
-                                                        name="telefono_funcionario" required>
+                                                        name="telefono_funcionario">
                                                 </div>
                                             </td>
                                         </tr>
@@ -525,7 +516,7 @@
                                             <td colspan="10">
                                                 <div class="inputboxfs">
                                                     <input type="email" class="form-control" id="email_funcionario"
-                                                        name="email_funcionario" required>
+                                                        name="email_funcionario">
                                                 </div>
                                             </td>
                                         </tr>
@@ -548,8 +539,7 @@
                                                 <th>NIT</th>
                                                 <td colspan="7">
                                                     <div class="inputboxfs">
-                                                        <input type="text" class="form-control" id="nit" name="nit"
-                                                            required>
+                                                        <input type="text" class="form-control" id="nit" name="nit">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -559,7 +549,7 @@
                                                 <td colspan="7">
                                                     <div class="inputboxfs">
                                                         <input type="text" class="form-control" id="centro_formacion1"
-                                                            name="centro_formacion1" required>
+                                                            name="centro_formacion1">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -569,7 +559,7 @@
                                                 <td colspan="7">
                                                     <div class="inputboxfs">
                                                         <input type="text" class="form-control" id="representante_legal"
-                                                            name="representante_legal" required>
+                                                            name="representante_legal">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -579,8 +569,7 @@
                                                 <td colspan="7">
                                                     <div class="inputboxfs">
                                                         <input type="email" class="form-control"
-                                                            id="email_representante" name="email_representante"
-                                                            required>
+                                                            id="email_representante" name="email_representante">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -590,8 +579,7 @@
                                                 <td colspan="7">
                                                     <div class="inputboxfs">
                                                         <input type="number" class="form-control"
-                                                            id="telefono_representante" name="telefono_representante"
-                                                            required>
+                                                            id="telefono_representante" name="telefono_representante">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -613,7 +601,7 @@
                                                     <td colspan="10">
                                                         <div class="inputboxfs">
                                                             <input type="text" class="form-control" id="empresa"
-                                                                name="empresa" required>
+                                                                name="empresa">
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -623,7 +611,7 @@
                                                     <td colspan="10">
                                                         <div class="inputboxfs">
                                                             <input type="number" class="form-control"
-                                                                id="telefono_empresa" name="telefono_empresa" required>
+                                                                id="telefono_empresa" name="telefono_empresa">
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -633,8 +621,7 @@
                                                     <td colspan="10">
                                                         <div class="inputboxfs">
                                                             <input type="text" class="form-control"
-                                                                id="funcionario_empresa" name="funcionario_empresa"
-                                                                required>
+                                                                id="funcionario_empresa" name="funcionario_empresa">
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -671,8 +658,7 @@
                                                     <td class="input-cell">
                                                         <div class="inputboxfs">
                                                             <input type="text" class="form-control"
-                                                                id="fecha_diligenciamiento1" name="diligenciamiento"
-                                                                required>
+                                                                id="fecha_diligenciamiento1" name="diligenciamiento">
                                                         </div>
                                                     </td>
 
@@ -680,11 +666,10 @@
                                                     <td class="input-cell">
                                                         <div class="inputboxfs">
                                                             <input type="text" class="form-control" id="firma"
-                                                                name="firma" required>
+                                                                name="firma">
                                                         </div>
                                                     </td>
                                                 </tr>
-
 
                                             </table>
                                         </div>
@@ -703,7 +688,7 @@
                                 </div>
                             </div>
 
-                            </form>
+
 
                             <br><br>
 
@@ -715,21 +700,20 @@
                                 body {
 
                                     /* Elimina los márgenes del cuerpo */
-                                    
+
                                     display: inline-block;
                                     /* Cambia el comportamiento de la columna para permitir cambios de ancho */
-                                    margin-top: 12px; /* Ajusta el margen superior para todas las páginas */
-            
+                                    margin-top: 12px;
+                                    /* Ajusta el margen superior para todas las páginas */
+
                                 }
 
                                 /* Estilos para el formato de impresión */
                                 .row {
                                     width: 170%;
-                                    /* Ajusta el ancho de la fila */                    
+                                    /* Ajusta el ancho de la fila */
 
                                 }
-
-
 
                                 .container {
                                     width: 100%;
@@ -738,11 +722,11 @@
 
                                 @page {
 
-
                                     /* Elimina los márgenes predeterminados de la página al imprimir */
                                     page-break-before: always;
-                                    margin-top: 12px; /* Ajusta el margen superior para todas las páginas */
-            
+                                    margin-top: 12px;
+                                    /* Ajusta el margen superior para todas las páginas */
+
                                 }
 
                                 br {
@@ -764,11 +748,11 @@
                                 </div>
 
                                 <div class="col-md-2" id="guardarFS">
-                                    <button type="submit" class="btn btn-info"">Guardar
+                                    <button type="submit" class="btn btn-info">Guardar
                                     <i class=" bi bi-save"></i>
                                 </div>
                             </div>
-
+                            </form>
 
                         </div>
                     </div>
