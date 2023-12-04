@@ -116,7 +116,7 @@ if (isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimi
 
         $_POST["nit"], $_POST["centro_formacion1"], $_POST["representante_legal"], $_POST["email_representante"], $_POST["telefono_representante"], 
         
-        $_POST["empresa"], $_POST["telefono_empresa"], $_POST["funcionario_empresa"], $_POST["observaciones"], $_POST["fecha_diligenciamiento1"], $_POST["firma"]
+        $_POST["empresa"], $_POST["telefono_empresa"], $_POST["funcionario_empresa"], $_POST["observaciones"], $_POST["fecha_diligenciamiento1"], $_POST["firma"],
             
          $POST["estrato_idestrato"], $POST["nivel_idnivel"], $POST["usuario_idusuario"]
         )) {

@@ -1,3 +1,4 @@
+    <!-- NAVBAR -->
 
     <h1 style="color:white;" class="text-center">Plantillas</h1>
     <div class="container mt-4 p-4 bg-black rounded">
