@@ -87,6 +87,7 @@ class formatoSenaControl
 
             $this->estrato_idestrato, $this->nivel_idnivel, $this->usuario_idusuario,
             );
+            
             echo json_encode($objRespuesta);
         }
 
@@ -94,11 +95,9 @@ class formatoSenaControl
             $objRespuesta = formatoSenaModelo::mdlListarFormatoSena();
             echo json_encode($objRespuesta);
         }
-
-
-     
-
 }
+
+
 
 if (isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimiento"], $_POST["edad"], $_POST["telefono_aprendiz"] ,$_POST["email_misena"], 
         $_POST["libreta_militar"], $_POST["direccion"], $_POST["estrato"], $_POST["ciudad"], 

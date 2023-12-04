@@ -32,7 +32,7 @@
 <div id=formatoSenaCss>
 
 
-    <div class="container" id="aggFormatoSena" style="background-color: white;">
+    <div class="container" style="background-color: white;">
         <div class="row">
             <div class="col-md-11" style="margin:auto">
                 <br><br>
@@ -72,7 +72,7 @@
                             <th>NOMBRES Y APELLIDOS</th>
                             <td class="input-cell" colspan="10">
                                 <div class="inputboxfs">
-                                    <input type="text" class="form-control" id="nombres_apellidos" name="nombres_apellidos" required>
+                                    <input type="text" class="form-control" id="nombres_apellidos" name="nombres_apellidos">
                                     </imput>
                                 </div>
                             </td>
@@ -91,7 +91,7 @@
                             <th>FECHA DE NACIMIENTO</th>
                             <td class="input-cell" colspan="7">
                                 <div class="inputboxfs">
-                                    <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                                    <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento">
                                 </div>
                             </td>
 
@@ -107,7 +107,7 @@
                             <th>TELEFONO</th>
                             <td class="input-cell" colspan="10">
                                 <div class="inputboxfs">
-                                    <input type="number" class="form-control" id="telefono_aprendiz" name="telefono_aprendiz" required>
+                                    <input type="number" class="form-control" id="telefono_aprendiz" name="telefono_aprendiz">
                                 </div>
                             </td>
                         </tr>
@@ -116,7 +116,7 @@
                             <th>CORREO ELECTRONICO MISENA</th>
                             <td class="input-cell" colspan="10">
                                 <div class="inputboxfs">
-                                    <input type="email" class="form-control" id="email_misena" name="email_misena" required>
+                                    <input type="email" class="form-control" id="email_misena" name="email_misena">
                                 </div>
                             </td>
                         </tr>
@@ -125,7 +125,7 @@
                             <th>LIBRETA MILITAR</th>
                             <td class="input-cell" colspan="10">
                                 <div class="inputboxfs">
-                                    <input type="text" class="form-control" id="libreta_militar" name="libreta_militar" required>
+                                    <input type="text" class="form-control" id="libreta_militar" name="libreta_militar">
                                 </div>
                             </td>
                         </tr>
@@ -142,7 +142,7 @@
                         <tr>
                             <th>ESTRATO</th>
                             <td colspan="10">
-                                <select id="estrato" name="estrato" class="form-control-select inputboxfs opciones" required>
+                                <select id="estrato" name="estrato" class="form-control-select inputboxfs opciones">
                                     <option value="" disabled selected>Seleccione una opción</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -178,7 +178,7 @@
                                 <th>TÍTULO OBTENIDO</th>
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
-                                        <input type="text" class="form-control" id="titulo_obtenido" name="titulo_obtenido" required>
+                                        <input type="text" class="form-control" id="titulo_obtenido" name="titulo_obtenido">
                                     </div>
                                 </td>
                             </tr>
@@ -187,7 +187,7 @@
                                 <th>INSTITUCIÓN EDUCATIVA</th>
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
-                                        <input type="text" class="form-control" id="institucion_educativa" name="institucion_educativa" required>
+                                        <input type="text" class="form-control" id="institucion_educativa" name="institucion_educativa">
                                     </div>
                                 </td>
                             </tr>
@@ -196,7 +196,7 @@
                                 <th>FECHA GRADO</th>
                                 <td class="input-cell" colspan="10">
                                     <div class="inputboxfs">
-                                        <input type="date" class="form-control" id="fecha_grado" name="fecha_grado" required>
+                                        <input type="date" class="form-control" id="fecha_grado" name="fecha_grado">
                                     </div>
                                 </td>
                             </tr>
@@ -564,7 +564,7 @@
                                                 <th>EMPRESA</th>
                                                 <td colspan="10">
                                                     <div class="inputboxfs">
-                                                        <input type="text" class="form-control" id="empresa" name="empresa" required>
+                                                        <input type="text" class="form-control" id="empresa" name="empresa">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -573,7 +573,7 @@
                                                 <th>TELEFONO</th>
                                                 <td colspan="10">
                                                     <div class="inputboxfs">
-                                                        <input type="number" class="form-control" id="telefono_empresa" name="telefono_empresa" required>
+                                                        <input type="number" class="form-control" id="telefono_empresa" name="telefono_empresa">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -582,7 +582,7 @@
                                                 <th>FUNCIONARIO</th>
                                                 <td colspan="10">
                                                     <div class="inputboxfs">
-                                                        <input type="text" class="form-control" id="funcionario_empresa" name="funcionario_empresa" required>
+                                                        <input type="text" class="form-control" id="funcionario_empresa" name="funcionario_empresa">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -617,14 +617,14 @@
                                                 <th>Ciudad y Fecha de Diligenciamiento:</th>
                                                 <td class="input-cell">
                                                     <div class="inputboxfs">
-                                                        <input type="text" class="form-control" id="fecha_diligenciamiento1" name="diligenciamiento" required>
+                                                        <input type="text" class="form-control" id="fecha_diligenciamiento1" name="diligenciamiento">
                                                     </div>
                                                 </td>
 
                                                 <th>FIRMA:</th>
                                                 <td class="input-cell">
                                                     <div class="inputboxfs">
-                                                        <input type="text" class="form-control" id="firma" name="firma" required>
+                                                        <input type="text" class="form-control" id="firma" name="firma">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -668,7 +668,7 @@
 
                                 /* Estilos para el formato de impresión */
                                 .row {
-                                    width: 170%;
+                                    width: 172%;
                                     /* Ajusta el ancho de la fila */
 
                                 }
