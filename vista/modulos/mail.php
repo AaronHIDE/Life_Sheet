@@ -1,33 +1,11 @@
-<nav class="navbar navbar-expand-sm navbar-light" id="neubar">
-        <div class="container">
-            <img src="vista\imagenes\logoo.png" width="80">
-            <FONT SIZE="6" FACE="Cooper Black" COLOR="black">LIFE SHEET</FONT>
-            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto ">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Opciones
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
-                            <li><a class="dropdown-item" href="cerrarSesion">Cerrar Sesión <i class="bi bi-x-circle"></i></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav><br><br>
-
-
 <div class="container">
-
 
     <!-- Primer container -->
     <div class="row">
         <div class="col-md-5 bg-orange mr mb-5 rounded">
+            <br>
+            <FONT SIZE="6" FACE="Cooper Black" class="h2 text-black">¡Comparte tu hoja de vida con nosotros!</FONT>
             <br><br>
-            <FONT SIZE="6" FACE="Cooper Black" class="h4 text-white">¡Comparte tu hoja de vida con nosotros!</FONT>
-            <br><br><br><br>
             <p style="font-size:large;">Puedes compartir por correo tu hoja de vida previamente descargada como PDF.</p>
             <div class="d-flex flex-column align-items-center justify-content-center">
 
@@ -35,7 +13,7 @@
                 <button type="button" class="btn btn-danger mb-3 col-md-5 " data-bs-toggle="modal" data-bs-target="#myModal">
                     Más Información <i class="bi bi-info-circle"></i>
                 </button>
-                <img style="width: 280px;" src="vista\imagenes\Koala_PDF-removebg-preview.png">
+                <img style="width: 280px;" src="vista\imagenes\kokoPdf.png">
             </div>
         </div>
 
