@@ -1,28 +1,3 @@
-<nav class="navbar navbar-expand-sm navbar-light mb-3" id="neubar">
-    <div class="container">
-    <a href="inicio"><img src="vista\imagenes\logoo.png" width="80"></a>
-        <FONT SIZE="6" FACE="Cooper Black" COLOR="black">LIFE SHEET</FONT>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto ">
-
-                <FONT SIZE="6" FACE="Cooper Black" COLOR="black">HOJA DE VIDA</FONT>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Opciones
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="mail">Enviar Email  <i class="bi bi-envelope"></i></a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
 <div class="row col-md-3 offset-md-2 btn">
     <a href="principal">
