@@ -632,7 +632,7 @@
 
                                                 <tr>
                                                     <td colspan="10">
-                                                        <textarea name="observaciones" rows="20"
+                                                        <textarea name="observaciones" id ="observaciones" rows="20"
                                                             style="width: 100%; border: transparent;"></textarea>
                                                     </td>
                                                 </tr>

@@ -3,7 +3,7 @@
 class Conexion{
     public static function conectar() {
         $nameServer = "localhost";
-        $baseDatos = "Life_Sheet";
+        $baseDatos = "life_sheet";
         $usuario = "root";
         $password = "";
     

@@ -22,10 +22,10 @@ class formatoSenaModelo
                                                 $nit, $centro_formacion1, $representante_legal, $email_representante, 
                                                 $telefono_representante,
 
-                                                $empresa, $telefono_empresa, $funcionario_empresa, $fecha_diligenciamiento1, 
+                                                $empresa, $telefono_empresa, $funcionario_empresa, $observaciones, $fecha_diligenciamiento1, 
                                                 $firma,
 
-                                                $usuario_idusuario
+                                                $usuario_idusuario, $estrato_idestrato, $nivel_idnivel
                                                 )
     {
         $mensaje = array();
@@ -45,9 +45,9 @@ class formatoSenaModelo
                                                             
                                                             nit, centro_formacion1, representante_legal, email_representante, telefono_representante,
 
-                                                            empresa, telefono_empresa, funcionario_empresa, fecha_diligenciamiento1, firma,
+                                                            empresa, telefono_empresa, funcionario_empresa, observaciones, fecha_diligenciamiento1, firma,
 
-                                                            usuario_idusuario,                                                            
+                                                            estrato_idestrato, nivel_idnivel, usuario_idusuario                                                         
                                                             ) 
                                                             
                                                             VALUES(:nombres_apellidos, :documento, :fecha_nacimiento, :edad, :telefono_aprendiz, 
@@ -65,9 +65,9 @@ class formatoSenaModelo
                                                             
                                                             :nit, :centro_formacion1, :representante_legal, :email_representante, :telefono_representante,
 
-                                                            :empresa, :telefono_empresa, :funcionario_empresa, :fecha_diligenciamiento1, :firma,
+                                                            :empresa, :telefono_empresa, :funcionario_empresa, :observaciones, :fecha_diligenciamiento1, :firma,
 
-                                                            :usuario_idusuario
+                                                             :estrato_idestrato, nivel_idnivel, :usuario_idusuario
                                                             )");
 
             
@@ -119,9 +119,12 @@ class formatoSenaModelo
             $objRespuesta->bindParam(":empresa", $empresa);
             $objRespuesta->bindParam(":telefono_empresa", $telefono_empresa);
             $objRespuesta->bindParam(":funcionario_empresa", $funcionario_empresa);
+            $objRespuesta->bindParam(":observaciones", $observaciones);
             $objRespuesta->bindParam(":fecha_diligenciamiento1", $fecha_diligenciamiento1);
             $objRespuesta->bindParam(":firma", $firma);
-
+            
+            $objRespuesta->bindParam(":estrato_idestrato", $estrato_idestrato);
+            $objRespuesta->bindParam(":nivel_idnivel", $nivel_idnivel);
             $objRespuesta->bindParam(":usuario_idusuario", $usuario_idusuario);
 
 

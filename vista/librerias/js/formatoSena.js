@@ -59,6 +59,7 @@ $(function () {
             let empresa = $("#empresa").val();
             let telefono_empresa = $("#telefono_empresa").val();
             let funcionario_empresa = $("#funcionario_empresa").val();
+            let observaciones = $("#observaciones").val();
 
             let fecha_diligenciamiento1 = $("#fecha_diligenciamiento1").val();
             let firma = $("#firma").val();
@@ -113,11 +114,12 @@ $(function () {
             objData.append("empresa", empresa);
             objData.append("telefono_empresa", telefono_empresa);
             objData.append("funcionario_empresa", funcionario_empresa);
+            objData.append("observaciones", observaciones);
             objData.append("fecha_diligenciamiento1", fecha_diligenciamiento1);
             objData.append("firma", firma);
+            
 
-
-            fetch('control/formatoControl.php', {
+            fetch('control/formatoSenaControl.php', {
                 method: 'POST',
                 body: objData
             }).then(response => response.json()).then(response => {
