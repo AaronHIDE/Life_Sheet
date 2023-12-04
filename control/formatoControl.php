@@ -36,16 +36,17 @@ class formatoControl
     public $usuario_idusuario;
 
 
-            public function ctrAgregarFormato(){
-                $objRespuesta = formatoModelo::mdlAgregarFormato($this -> nombre,$this -> documento,$this -> cargo,$this -> telefono,$this -> email,$this -> direccion,$this -> estudios1,$this -> estudios2,$this -> estudios3,$this -> estudios4,$this -> experiencia1,$this -> experiencia2,$this -> experiencia3,$this->experiencia4,$this -> habilidades1,$this -> habilidades2,$this -> habilidades3,$this->habilidades4,$this -> referencias1,$this -> referencias2,$this -> referencias3,$this->referencias4,$this->telefonoReferencia1,$this->telefonoReferencia2,$this->telefonoReferencia3,$this->telefonoReferencia4,$this->usuario_idusuario);
-                echo json_encode($objRespuesta);
-            }
-            
-            public function ctrListarFormato(){
-                $objRespuesta = formatoModelo::mdlListarFormato();
-                echo json_encode($objRespuesta);
-            }
+    public function ctrAgregarFormato()
+    {
+        $objRespuesta = formatoModelo::mdlAgregarFormato($this->nombre, $this->documento, $this->cargo, $this->telefono, $this->email, $this->direccion, $this->estudios1, $this->estudios2, $this->estudios3, $this->estudios4, $this->experiencia1, $this->experiencia2, $this->experiencia3, $this->experiencia4, $this->habilidades1, $this->habilidades2, $this->habilidades3, $this->habilidades4, $this->referencias1, $this->referencias2, $this->referencias3, $this->referencias4, $this->telefonoReferencia1, $this->telefonoReferencia2, $this->telefonoReferencia3, $this->telefonoReferencia4, $this->usuario_idusuario);
+        echo json_encode($objRespuesta);
+    }
 
+    public function ctrListarFormato()
+    {
+        $objRespuesta = formatoModelo::mdlListarFormato();
+        echo json_encode($objRespuesta);
+    }
 }
 
 if (isset($_POST["nombre"], $_POST["documento"], $_POST["cargo"], $_POST["telefono"], $_POST["email"], $_POST["direccion"], $_POST["estudios1"], $_POST["estudios2"], $_POST["estudios3"], $_POST["estudios4"], $_POST["experiencia1"], $_POST["experiencia2"], $_POST["experiencia3"], $_POST["experiencia4"], $_POST["habilidades1"], $_POST["habilidades2"], $_POST["habilidades3"], $_POST["habilidades4"], $_POST["referencias1"], $_POST["referencias2"], $_POST["referencias3"], $_POST["referencias4"], $_POST["telefonoReferencia1"], $_POST["telefonoReferencia2"], $_POST["telefonoReferencia3"], $_POST["telefonoReferencia4"])) {

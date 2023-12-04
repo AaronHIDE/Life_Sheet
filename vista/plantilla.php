@@ -11,7 +11,8 @@ if (isset($_GET["ruta"])) {
             || $_GET["ruta"] == "mail" 
             || $_GET["ruta"] == "formatoSena"
             || $_GET["ruta"] == "principal"
-            || $_GET["ruta"] == "formato") {
+            || $_GET["ruta"] == "formato"
+            || $_GET["ruta"] == "formato2") {
 
             include_once "vista/modulos/".$_GET["ruta"].".php";
         } else {

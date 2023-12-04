@@ -49,7 +49,7 @@
     <div class="header">
         <h1 class="marcoh2">HOJA DE VIDA</h1>
         <div class="container nombre-container">
-            <form action="" method="POST" id="formato">
+            <form action="" method="POST" id="formato2">
                 <div class="inputboxf">
                     <FONT SIZE="6 " FACE="Montserrat" COLOR="black" class="h6">Nombre Completo</FONT>
                     <ion-icon name="person"></ion-icon>

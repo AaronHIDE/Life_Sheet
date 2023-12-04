@@ -61,7 +61,7 @@ class formatoSenaControl
 
         public function ctrAgregarFormatoSena(){
             $objRespuesta = formatoSenaModelo::mdlAgregarFormatoSena($this->nombres_apellidos, $this->documento, $this->fecha_nacimiento,
-            $this->edad, $this->email_misena, $this->libreta_militar, $this->direccion, $this->estrato, $this->ciudad,
+            $this->edad, $this->telefono_aprendiz, $this->email_misena, $this->libreta_militar, $this->direccion, $this->estrato, $this->ciudad,
 
             $this->titulo_obtenido, $this->institucion_educativa, $this->fecha_grado, $this->nivel, $this->nombre_estudios,
             $this->institucion_educativa2, $this->semestres_aprobados,
@@ -112,11 +112,12 @@ if (isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimi
         
         )) {
    
-    $objAgregar = new formatoControl();
+    $objAgregar = new formatoSenaControl();
     $objAgregar->nombres_apellidos = $_POST["nombres_apellidos"];
     $objAgregar->documento = $_POST["documento"];
     $objAgregar->fecha_nacimiento = $_POST["fecha_nacimiento"];
     $objAgregar->edad = $_POST["edad"];
+    $objAgregar->telefono_aprendiz = $_POST["telefono_aprendiz"];
     $objAgregar->email_misena = $_POST["email_misena"];
     $objAgregar->libreta_militar = $_POST["libreta_militar"];
     $objAgregar->direccion = $_POST["direccion"];

@@ -5,7 +5,7 @@ include_once "conexion.php";
 class formatoModelo
 {
 
-    public static function mdlAgregarFormato($nombre,$documento,$cargo,$telefono,$email,$direccion,$estudios1,$estudios2,$estudios3,$estudios4,$experiencia1,$experiencia2,$experiencia3,$experiencia4,$habilidades1,$habilidades2,$habilidades3,$habilidades4,$referencias1,$referencias2,$referencias3,$referencias4,$telefonoReferencia1,$telefonoReferencia2,$telefonoReferencia3,$telefonoReferencia4,$usuario_idusuario)
+    public static function mdlAgregarFormato($nombre, $documento, $cargo, $telefono, $email, $direccion, $estudios1, $estudios2, $estudios3, $estudios4, $experiencia1, $experiencia2, $experiencia3, $experiencia4, $habilidades1, $habilidades2, $habilidades3, $habilidades4, $referencias1, $referencias2, $referencias3, $referencias4, $telefonoReferencia1, $telefonoReferencia2, $telefonoReferencia3, $telefonoReferencia4, $usuario_idusuario)
     {
         $mensaje = array();
         try {

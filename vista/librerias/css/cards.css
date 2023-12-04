@@ -1,7 +1,9 @@
 .card {
     border: none;
-    background-color: black; /* Agrega esta línea para cambiar el color de fondo a negro */
-    color: white; /* Agrega esta línea para cambiar el color del texto a blanco */
+    background-color: black;
+    /* Agrega esta línea para cambiar el color de fondo a negro */
+    color: white;
+    /* Agrega esta línea para cambiar el color del texto a blanco */
 }
 
 .card-img {
@@ -10,7 +12,8 @@
 
 .vgr-cards {
 
-background-color: black;
+    background-color: black;
+    display: flex;
 
     .card {
         display: flex;
@@ -34,7 +37,7 @@ background-color: black;
     }
 
     .card-img-body {
-        
+
         flex: 1;
         overflow: hidden;
         position: relative;
@@ -48,7 +51,7 @@ background-color: black;
     }
 
     .card-img {
-        
+
         width: 100%;
         height: auto;
         position: absolute;
@@ -65,7 +68,7 @@ background-color: black;
     }
 
     .card-body {
-        
+
         flex: 2;
         padding: 0 0 0 1.25rem;
 
@@ -73,4 +76,63 @@ background-color: black;
             padding: 0;
         }
     }
+}
+
+.card2 {
+    margin: 10px;
+    position: relative;
+    width: 220px;
+    height: 320px;
+    background: mediumturquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card2::before,
+.card2::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: lightblue;
+    transition: all 0.5s;
+}
+
+.card2::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card2::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+.card2:hover::before,
+.card2:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.card2:hover:after {
+    content: "ACCEDER";
+}
+
+.card2-container {
+    display: flex;
+    justify-content: center
 }
