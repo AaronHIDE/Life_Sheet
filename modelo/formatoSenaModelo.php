@@ -2,7 +2,7 @@
 
 include_once "conexion.php";
 
-class formatoSenaModelo
+class FormatoSenaModelo
 {
 
     public static function mdlAgregarFormatoSena($nombres_apellidos, $documento, $fecha_nacimiento, $edad, $telefono_aprendiz, $email_misena,
@@ -25,7 +25,7 @@ class formatoSenaModelo
                                                 $empresa, $telefono_empresa, $funcionario_empresa, $observaciones, $fecha_diligenciamiento1, 
                                                 $firma,
 
-                                                $usuario_idusuario, $estrato_idestrato, $nivel_idnivel
+                                                 $estrato_idestrato, $nivel_idnivel, $usuario_idusuario
                                                 )
     {
         $mensaje = array();

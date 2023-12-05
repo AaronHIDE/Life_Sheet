@@ -1,24 +1,22 @@
 $(function () {
-
     const forms = document.querySelectorAll("#aggFormatoSena");
 
     Array.from(forms).forEach((form) => {
-      form.addEventListener("submit", (event) => {
-            event.preventDefault()
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
             if (!form.checkValidity()) {
-                event.stopPropagation()
-                form.classList.add("was-validated")
-
+                event.stopPropagation();
+                form.classList.add("was-validated");
             } else {
-                event.preventDefault();
                 let nombres_apellidos = $("#nombres_apellidos").val();
                 let documento = $("#documento").val();
                 let fecha_nacimiento = $("#fecha_nacimiento").val();
                 let edad = $("#edad").val();
                 let telefono_aprendiz = $("#telefono_aprendiz").val();
-                let libreta_militar = $("#libreta_militar").val();
                 let email_misena = $("#email_misena").val();
+                let libreta_militar = $("#libreta_militar").val();
                 let direccion = $("#direccion").val();
+                let estrato = $("#estrato").val();
                 let ciudad = $("#ciudad").val();
 
                 let titulo_obtenido = $("#titulo_obtenido").val();
@@ -32,12 +30,12 @@ $(function () {
                 let nombre_programa = $("#nombre_programa").val();
                 let ficha = $("#ficha").val();
                 let perfil = $("#perfil").val();
-                let ocupaciones = $("#ocupaciones").$val();
+                let ocupaciones = $("#ocupaciones").val();
                 let centro_formacion = $("#centro_formacion").val();
                 let ciudad_formacion = $("#ciudad_formacion").val();
                 let fecha_inicio = $("#fecha_inicio").val();
-                let fecha_final = $("fecha_final").val();
-                let etapa = $("etapa").val();
+                let fecha_final = $("#fecha_final").val();
+                let etapa = $("#etapa").val();
                 let coordinador_academico = $("#coordinador_academico").val();
                 let telefono_coordinador = $("#telefono_coordinador").val();
                 let email_coordinador = $("#email_coordinador").val();
@@ -105,7 +103,7 @@ $(function () {
                 objData.append("email_funcionario", email_funcionario);
 
                 objData.append("nit", nit);
-                objData.append("centro_formacion1"), centro_formacion1;
+                objData.append("centro_formacion1", centro_formacion1);
                 objData.append("representante_legal", representante_legal);
                 objData.append("email_representante", email_representante);
                 objData.append("telefono_representante", telefono_representante);
@@ -114,17 +112,18 @@ $(function () {
                 objData.append("telefono_empresa", telefono_empresa);
                 objData.append("funcionario_empresa", funcionario_empresa);
                 objData.append("observaciones", observaciones);
+                
                 objData.append("fecha_diligenciamiento1", fecha_diligenciamiento1);
                 objData.append("firma", firma);
-
+                console.log(objData);
 
                 fetch("control/formatoSenaControl.php", {
                     method: "POST",
-                    body: objData
+                    body: objData,
                 })
                     .then((response) => response.json())
                     .then((response) => {
-                        if (response["codigo"] == "200") {
+                        if (response["codigo"] === "200") {
                             Swal.fire({
                                 position: "top-end",
                                 icon: "success",
@@ -140,6 +139,9 @@ $(function () {
                                 showConfirmButton: false,
                                 timer: 1500,
                             })
+                            .catch((error) => {
+                                console.log("OCURRIO UN ERROR AL SUBIR EL FORMULARIO");
+                            });
                         }
                     })
             }
