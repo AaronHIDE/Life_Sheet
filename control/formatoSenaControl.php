@@ -171,8 +171,8 @@ if(isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimie
     $objAgregarFs->fecha_diligenciamiento1 = $_POST["fecha_diligenciamiento1"];
     $objAgregarFs->firma = $_POST["firma"];
 
-    $objAgregarFs->estrato_idestrato = $_SESSION["estrato"][0];
-    $objAgregarFs->nivel_idnivel = $_SESSION["nivel"][0];
+    $objAgregarFs->estrato_idestrato = $_POST["estrato"][0];
+    $objAgregarFs->nivel_idnivel = $_POST["nivel"][0];
     $objAgregarFs->usuario_idusuario = $_SESSION["usuario"][0];
 
     $objAgregarFs->ctrAgregarFormatoSena();
