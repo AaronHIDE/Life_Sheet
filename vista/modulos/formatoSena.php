@@ -73,7 +73,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="text" class="form-control" id="nombres_apellidos"
-                                                name="nombres_apellidos">
+                                                name="nombres_apellidos" required>
                                             </imput>
                                         </div>
                                     </td>
@@ -83,7 +83,7 @@
                                     <th>DOCUMENTO DE IDENTIDAD</th>
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
-                                            <input type="text" class="form-control" id="documento" name="documento">
+                                            <input type="text" class="form-control" id="documento" name="documento" required>
                                         </div>
                                     </td>
                                 </tr>
@@ -93,14 +93,14 @@
                                     <td class="input-cell" colspan="7">
                                         <div class="inputboxfs">
                                             <input type="date" class="form-control" id="fecha_nacimiento"
-                                                name="fecha_nacimiento">
+                                                name="fecha_nacimiento" required>
                                         </div>
                                     </td>
 
                                     <th>EDAD</th>
                                     <td class="input-cell" colspan="3">
                                         <div class="inputboxfs">
-                                            <input type="number" class="form-control" id="edad" name="edad">
+                                            <input type="number" class="form-control" id="edad" name="edad" required>
                                         </div>
                                     </td>
                                 </tr>
@@ -110,7 +110,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="number" class="form-control" id="telefono_aprendiz"
-                                                name="telefono_aprendiz">
+                                                name="telefono_aprendiz" required>
                                         </div>
                                     </td>
                                 </tr>
@@ -120,7 +120,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="email" class="form-control" id="email_misena"
-                                                name="email_misena">
+                                                name="email_misena" required>
                                         </div>
                                     </td>
                                 </tr>
@@ -139,7 +139,7 @@
                                     <th>DIRECCIÓN DOMICILIO</th>
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
-                                            <input type="point" class="form-control" id="direccion" name="direccion">
+                                            <input type="point" class="form-control" id="direccion" name="direccion" required>
                                         </div>
                                     </td>
                                 </tr>
@@ -148,12 +148,14 @@
                                     <th>ESTRATO</th>
                                     <td colspan="10">
                                         <select id="estrato" name="estrato"
-                                            class="form-control-select inputboxfs opciones">
+                                            class="form-control-select inputboxfs opciones" required>
                                             <option value="">Seleccione una opción</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
+                                            <option value="1">Estrato 1</option>
+                                            <option value="2">Estrato 2</option>
+                                            <option value="3">Estrato 3</option>
+                                            <option value="4">Estrato 4</option>
+                                            <option value="5">Estrato 5</option>
+                                            <option value="6">Estrato 6</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -162,7 +164,7 @@
                                     <th>CIUDAD</th>
                                     <td colspan="10">
                                         <div class="inputboxfs">
-                                            <input type="point" class="form-control" id="ciudad" name="ciudad">
+                                            <input type="point" class="form-control" id="ciudad" name="ciudad" required>
                                         </div>
                                     </td>
                                 </tr>
@@ -185,7 +187,7 @@
                                         <td class="input-cell" colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="text" class="form-control" id="titulo_obtenido"
-                                                    name="titulo_obtenido">
+                                                    name="titulo_obtenido" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -195,7 +197,7 @@
                                         <td class="input-cell" colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="text" class="form-control" id="institucion_educativa"
-                                                    name="institucion_educativa">
+                                                    name="institucion_educativa" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -205,7 +207,7 @@
                                         <td class="input-cell" colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="date" class="form-control" id="fecha_grado"
-                                                    name="fecha_grado">
+                                                    name="fecha_grado" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -226,15 +228,15 @@
                                 <tr>
                                     <th>NIVEL</th>
                                     <td colspan="10">
-                                        <select id="nivel" name="nivel" class="form-control-select inputboxfs opciones">
+                                        <select id="nivel" name="nivel" class="form-control-select inputboxfs opciones" required>
                                             <option value="">Seleccione una opción:</option>
-                                            <option value="Tecnico">TC</option>
-                                            <option value="Tecnologo">TL</option>
-                                            <option value="EspecializacionTecnologica">TE</option>
-                                            <option value="Universitaria">UN</option>
-                                            <option value="Especializacion">ES</option>
-                                            <option value="Maestria">MG</option>
-                                            <option value="Doctorado">DOC</option>
+                                            <option value="1">TC: Técnico</option>
+                                            <option value="2">TL: Tecnélogo</option>
+                                            <option value="3">TE: Especializacién Tecnológica</option>
+                                            <option value="4">UN: Universitaria</option>
+                                            <option value="5">ES: Especialización</option>
+                                            <option value="6">MG: Maestría</option>
+                                            <option value="7">DOC: Doctorado</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -244,7 +246,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="text" class="form-control" id="nombre_estudios"
-                                                name="nombre_estudios">
+                                                name="nombre_estudios" required>
                                         </div>
                                     </td>
                                 </tr>
@@ -254,7 +256,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="text" class="form-control" id="institucion_educativa2"
-                                                name="institucion_educativa2">
+                                                name="institucion_educativa2" required>
                                         </div>
                                     </td>
                                 </tr>
@@ -264,7 +266,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="number" class="form-control" id="semestres_aprobados"
-                                                name="semestres_aprobados">
+                                                name="semestres_aprobados" required>
                                         </div>
                                     </td>
                                 </tr>
@@ -287,7 +289,7 @@
                                         <td class="input-cell" colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="text" class="form-control" id="nombre_programa"
-                                                    name="nombre_programa">
+                                                    name="nombre_programa" required>
                                                 </imput>
                                             </div>
                                         </td>
@@ -297,7 +299,7 @@
                                         <th>CÓDIGO DE LA FICHA</th>
                                         <td class="input-cell" colspan="10">
                                             <div class="inputboxfs">
-                                                <input type="text" class="form-control" id="ficha" name="ficha">
+                                                <input type="text" class="form-control" id="ficha" name="ficha" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -306,7 +308,7 @@
                                         <th>PERFIL OCUPACIONAL</th>
                                         <td class="input-cell" colspan="7">
                                             <div class="inputboxfs">
-                                                <input type="text" class="form-control" id="perfil" name="perfil">
+                                                <input type="text" class="form-control" id="perfil" name="perfil" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -316,7 +318,7 @@
                                         <td class="input-cell" colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="text" class="form-control" id="ocupaciones"
-                                                    name="ocupaciones">
+                                                    name="ocupaciones" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -326,7 +328,7 @@
                                         <td class="input-cell" colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="text" class="form-control" id="centro_formacion"
-                                                    name="centro_formacion">
+                                                    name="centro_formacion" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -336,7 +338,7 @@
                                         <td class="input-cell" colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="point" class="form-control" id="ciudad_formacion"
-                                                    name="ciudad_formacion">
+                                                    name="ciudad_formacion" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -346,7 +348,7 @@
                                         <td class="input-cell" colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="date" class="form-control" id="fecha_inicio"
-                                                    name="fecha_inicio">
+                                                    name="fecha_inicio" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -356,7 +358,7 @@
                                         <td class="input-cell" colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="date" class="form-control" id="fecha_final"
-                                                    name="fecha_final">
+                                                    name="fecha_final" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -365,10 +367,10 @@
                                         <th>ETAPA</th>
                                         <td colspan="10">
                                             <select id="etapa" name="etapa"
-                                                class="form-control-select inputboxfs opciones">
+                                                class="form-control-select inputboxfs opciones" required>
                                                 <option value="" >Seleccione una opción</option>
-                                                <option value="lectiva">Lectiva</option>
-                                                <option value="practica">Práctica</option>
+                                                <option value="1">Lectiva</option>
+                                                <option value="2">Práctica</option>
                                             </select>
                                         </td>
                                     </tr>
@@ -378,7 +380,7 @@
                                         <td colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="text" class="form-control" id="coordinador_academico"
-                                                    name="coordinador_academico">
+                                                    name="coordinador_academico" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -388,7 +390,7 @@
                                         <td colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="number" class="form-control" id="telefono_coordinador"
-                                                    name="telefono_coordinador">
+                                                    name="telefono_coordinador" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -398,7 +400,7 @@
                                         <td colspan="10">
                                             <div class="inputboxfs">
                                                 <input type="email" class="form-control" id="email_coordinador"
-                                                    name="email_coordinador">
+                                                    name="email_coordinador" required>
                                             </div>
                                         </td>
                                     </tr>
@@ -440,7 +442,7 @@
                                             <td class="input-cell">
                                                 <div class="inputboxfs">
                                                     <input type="text" class="form-control" id="fecha_diligenciamiento"
-                                                        name="fecha_diligenciamiento">
+                                                        name="fecha_diligenciamiento" required>
                                                 </div>
                                             </td>
 
@@ -448,7 +450,7 @@
                                             <td class="input-cell">
                                                 <div class="inputboxfs">
                                                     <input type="text" class="form-control" id="firma_aprendiz"
-                                                        name="firma_aprendiz">
+                                                        name="firma_aprendiz" required>
                                                 </div>
                                             </td>
                                         </tr>
@@ -525,7 +527,7 @@
                                                     <td colspan="7">
                                                         <div class="inputboxfs">
                                                             <input type="text" class="form-control"
-                                                                id="centro_formacion1" name="centro_formacion1">
+                                                                id="centro_formacion1" name="centro_formacion1" required>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -535,7 +537,7 @@
                                                     <td colspan="7">
                                                         <div class="inputboxfs">
                                                             <input type="text" class="form-control"
-                                                                id="representante_legal" name="representante_legal">
+                                                                id="representante_legal" name="representante_legal" required>
                                                         </div>
                                                     </td>
                                                 </tr>

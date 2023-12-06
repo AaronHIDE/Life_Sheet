@@ -62,6 +62,7 @@ class formatoSenaControl
 
     public $estrato_idestrato;
     public $nivel_idnivel;
+    public $etapa_idetapa;
     public $usuario_idusuario;
 
         public function ctrAgregarFormatoSena(){
@@ -85,7 +86,7 @@ class formatoSenaControl
             $this->empresa, $this->telefono_empresa, $this->funcionario_empresa, $this->observaciones, $this->fecha_diligenciamiento1, 
             $this->firma,
 
-            $this->estrato_idestrato, $this->nivel_idnivel, $this->usuario_idusuario,
+            $this->estrato_idestrato, $this->nivel_idnivel, $this->etapa_idetapa, $this->usuario_idusuario
             );
             
             echo json_encode($objRespuesta);
@@ -116,6 +117,7 @@ if(isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimie
         $_POST["nit"], $_POST["centro_formacion1"], $_POST["representante_legal"], $_POST["email_representante"], $_POST["telefono_representante"], 
         
         $_POST["empresa"], $_POST["telefono_empresa"], $_POST["funcionario_empresa"], $_POST["observaciones"], $_POST["fecha_diligenciamiento1"], $_POST["firma"]
+
         )) {
    
     $objAgregarFs = new formatoSenaControl();
@@ -171,8 +173,9 @@ if(isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimie
     $objAgregarFs->fecha_diligenciamiento1 = $_POST["fecha_diligenciamiento1"];
     $objAgregarFs->firma = $_POST["firma"];
 
-    $objAgregarFs->estrato_idestrato = $_POST["estrato"][0];
-    $objAgregarFs->nivel_idnivel = $_POST["nivel"][0];
+    $objAgregarFs->estrato_idestrato = $_POST["estrato"];
+    $objAgregarFs->nivel_idnivel = $_POST["nivel"];
+    $objAgregarFs->etapa_idetapa = $_POST["etapa"];
     $objAgregarFs->usuario_idusuario = $_SESSION["usuario"][0];
 
     $objAgregarFs->ctrAgregarFormatoSena();

@@ -123,7 +123,7 @@ $(function () {
                 })
                     .then((response) => response.json())
                     .then((response) => {
-                        if (response["codigo"] === "200") {
+                        if (response["codigo"] == "200") {
                             Swal.fire({
                                 position: "top-end",
                                 icon: "success",
