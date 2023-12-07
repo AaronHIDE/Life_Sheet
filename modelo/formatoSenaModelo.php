@@ -25,107 +25,96 @@ class formatoSenaModelo
                                                 $empresa, $telefono_empresa, $funcionario_empresa, $observaciones, $fecha_diligenciamiento1, 
                                                 $firma,
 
-                                                $usuario_idusuario, $estrato_idestrato, $nivel_idnivel
+                                                $estrato_idestrato, $nivel_idnivel, $etapa_idetapa, $usuario_idusuario
                                                 )
     {
         $mensaje = array();
         try {
             $objRespuesta = Conexion::conectar()->prepare("INSERT INTO hoja_de_vida_sena(nombres_apellidos, documento, fecha_nacimiento, edad, telefono_aprendiz, 
-                                                            email_misena, libreta_militar, direccion, ciudad,
+                                                                email_misena, libreta_militar, direccion, estrato, ciudad,
+                                                                
+                                                                titulo_obtenido, institucion_educativa, fecha_grado, nivel, nombre_estudios, 
+                                                                institucion_educativa2, semestres_aprobados, 
+                                                                
+                                                                nombre_programa, ficha, perfil, ocupaciones, centro_formacion, ciudad_formacion, 
+                                                                fecha_inicio, fecha_final, etapa, coordinador_academico, telefono_coordinador, 
+                                                                email_coordinador,
+                                                                
+                                                                fecha_diligenciamiento, firma_aprendiz,
 
-                                                            titulo_obtenido, institucion_educativa, fecha_grado, nivel, nombre_estudios, institucion_educativa2, 
-                                                            semestres_aprobados, 
-                                                            
-                                                            nombre_programa, ficha, perfil, ocupaciones, centro_formacion, ciudad_formacion, fecha_inicio, 
-                                                            fecha_final, etapa, coordinador_academico, telefono_coordinador, email_coordinador,
+                                                                funcionario, telefono_funcionario, email_funcionario, 
+                                                                
+                                                                nit, centro_formacion1, representante_legal, email_representante, 
+                                                                telefono_representante,
 
-                                                            fecha_diligenciamiento, firma_aprendiz,
+                                                                empresa, telefono_empresa, funcionario_empresa, observaciones, fecha_diligenciamiento1, 
+                                                                firma,
 
-                                                            funcionario, telefono_funcionario, email_funcionario, 
-                                                            
-                                                            nit, centro_formacion1, representante_legal, email_representante, telefono_representante,
-
-                                                            empresa, telefono_empresa, funcionario_empresa, observaciones, fecha_diligenciamiento1, firma,
-
-                                                            estrato_idestrato, nivel_idnivel, usuario_idusuario                                                         
+                                                                estrato_idestrato, nivel_idnivel, etapa_idetapa, usuario_idusuario                                                   
                                                             ) 
                                                             
-                                                            VALUES(:nombres_apellidos, :documento, :fecha_nacimiento, :edad, :telefono_aprendiz, 
-                                                            :email_misena, :libreta_militar, :direccion, :ciudad,
-
-                                                            :titulo_obtenido, :institucion_educativa, :fecha_grado, :nivel, :nombre_estudios, :institucion_educativa2, 
-                                                            :semestres_aprobados, 
-                                                            
-                                                            :nombre_programa, :ficha, :perfil, :ocupaciones, :centro_formacion, :ciudad_formacion, :fecha_inicio, 
-                                                            :fecha_final, :etapa, :coordinador_academico, :telefono_coordinador, :email_coordinador,
-
-                                                            :fecha_diligenciamiento, :firma_aprendiz,
-
-                                                            :funcionario, :telefono_funcionario, :email_funcionario, 
-                                                            
-                                                            :nit, :centro_formacion1, :representante_legal, :email_representante, :telefono_representante,
-
-                                                            :empresa, :telefono_empresa, :funcionario_empresa, :observaciones, :fecha_diligenciamiento1, :firma,
-
-                                                             :estrato_idestrato, nivel_idnivel, :usuario_idusuario
+                                                            VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 
+                                                                   ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 
+                                                                   ?, ?, ?, ?, ?, ?, ?, ?, ?
                                                             )");
 
             
-            $objRespuesta->bindParam(":nombres_apellidos", $nombres_apellidos);
-            $objRespuesta->bindParam(":documento", $documento);
-            $objRespuesta->bindParam(":fecha_nacimiento", $fecha_nacimiento);
-            $objRespuesta->bindParam(":edad", $edad);
-            $objRespuesta->bindParam(":telefono_aprendiz", $telefono_aprendiz);
-            $objRespuesta->bindParam(":email_misena", $email_misena);
-            $objRespuesta->bindParam(":libreta_militar", $libreta_militar);
-            $objRespuesta->bindParam(":direccion", $direccion);
-            $objRespuesta->bindParam(":estrato", $estrato);
-            $objRespuesta->bindParam(":ciudad", $ciudad);
+            $objRespuesta->bindParam(1, $nombres_apellidos);
+            $objRespuesta->bindParam(2, $documento);
+            $objRespuesta->bindParam(3, $fecha_nacimiento);
+            $objRespuesta->bindParam(4, $edad);
+            $objRespuesta->bindParam(5, $telefono_aprendiz);
+            $objRespuesta->bindParam(6, $email_misena);
+            $objRespuesta->bindParam(7, $libreta_militar);
+            $objRespuesta->bindParam(8, $direccion);
+            $objRespuesta->bindParam(9, $estrato);
+            $objRespuesta->bindParam(10, $ciudad);
 
-            $objRespuesta->bindParam(":titulo_obtenido", $titulo_obtenido);
-            $objRespuesta->bindParam(":institucion_educativa", $institucion_educativa);
-            $objRespuesta->bindParam(":fecha_grado", $fecha_grado);
-            $objRespuesta->bindParam(":nivel", $nivel);
-            $objRespuesta->bindParam(":nombre_estudios", $nombre_estudios);
-            $objRespuesta->bindParam(":institucion_educativa2", $institucion_educativa2);
-            $objRespuesta->bindParam(":semestres_aprobados", $semestres_aprobados);
+            $objRespuesta->bindParam(11, $titulo_obtenido);
+            $objRespuesta->bindParam(12, $institucion_educativa);
+            $objRespuesta->bindParam(13, $fecha_grado);
+            $objRespuesta->bindParam(14, $nivel);
+            $objRespuesta->bindParam(15, $nombre_estudios);
+            $objRespuesta->bindParam(16, $institucion_educativa2);
+            $objRespuesta->bindParam(17, $semestres_aprobados);
         
-            $objRespuesta->bindParam(":nombre_programa", $nombre_programa);
-            $objRespuesta->bindParam(":ficha", $ficha);
-            $objRespuesta->bindParam(":perfil", $perfil);
-            $objRespuesta->bindParam(":ocupaciones", $ocupaciones);
-            $objRespuesta->bindParam(":centro_formacion", $centro_formacion);
-            $objRespuesta->bindParam(":ciudad_formacion", $ciudad_formacion);
-            $objRespuesta->bindParam(":fecha_inicio", $fecha_inicio);
-            $objRespuesta->bindParam(":fecha_final", $fecha_final);
-            $objRespuesta->bindParam(":etapa", $etapa);
-            $objRespuesta->bindParam(":coordinador_academico", $coordinador_academico);
-            $objRespuesta->bindParam(":telefono_coordinador", $telefono_coordinador);
-            $objRespuesta->bindParam(":email_coordinador", $email_coordinador);
+            $objRespuesta->bindParam(18, $nombre_programa);
+            $objRespuesta->bindParam(19, $ficha);
+            $objRespuesta->bindParam(20, $perfil);
+            $objRespuesta->bindParam(21, $ocupaciones);
+            $objRespuesta->bindParam(22, $centro_formacion);
+            $objRespuesta->bindParam(23, $ciudad_formacion);
+            $objRespuesta->bindParam(24, $fecha_inicio);
+            $objRespuesta->bindParam(25, $fecha_final);
+            $objRespuesta->bindParam(26, $etapa);
+            $objRespuesta->bindParam(27, $coordinador_academico);
+            $objRespuesta->bindParam(28, $telefono_coordinador);
+            $objRespuesta->bindParam(29, $email_coordinador);
 
-            $objRespuesta->bindParam(":fecha_diligenciamiento", $fecha_diligenciamiento);
-            $objRespuesta->bindParam(":firma_aprendiz", $firma_aprendiz);
+            $objRespuesta->bindParam(30, $fecha_diligenciamiento);
+            $objRespuesta->bindParam(31, $firma_aprendiz);
 
-            $objRespuesta->bindParam(":funcionario", $funcionario);
-            $objRespuesta->bindParam(":telefono_funcionario", $telefono_funcionario);
-            $objRespuesta->bindParam(":email_funcionario", $email_funcionario);
+            $objRespuesta->bindParam(32, $funcionario);
+            $objRespuesta->bindParam(33, $telefono_funcionario);
+            $objRespuesta->bindParam(34, $email_funcionario);
 
-            $objRespuesta->bindParam(":nit", $nit);
-            $objRespuesta->bindParam(":centro_formacion1", $centro_formacion1);
-            $objRespuesta->bindParam(":representante_legal", $representante_legal);
-            $objRespuesta->bindParam(":email_representante", $email_representante);
-            $objRespuesta->bindParam(":telefono_representante", $telefono_representante);
+            $objRespuesta->bindParam(35, $nit);
+            $objRespuesta->bindParam(36, $centro_formacion1);
+            $objRespuesta->bindParam(37, $representante_legal); 
+            $objRespuesta->bindParam(38, $email_representante);
+            $objRespuesta->bindParam(39, $telefono_representante);
 
-            $objRespuesta->bindParam(":empresa", $empresa);
-            $objRespuesta->bindParam(":telefono_empresa", $telefono_empresa);
-            $objRespuesta->bindParam(":funcionario_empresa", $funcionario_empresa);
-            $objRespuesta->bindParam(":observaciones", $observaciones);
-            $objRespuesta->bindParam(":fecha_diligenciamiento1", $fecha_diligenciamiento1);
-            $objRespuesta->bindParam(":firma", $firma);
+            $objRespuesta->bindParam(40, $empresa);
+            $objRespuesta->bindParam(41, $telefono_empresa);
+            $objRespuesta->bindParam(42, $funcionario_empresa);
+            $objRespuesta->bindParam(43, $observaciones);
+            $objRespuesta->bindParam(44, $fecha_diligenciamiento1);
+            $objRespuesta->bindParam(45, $firma);
             
-            $objRespuesta->bindParam(":estrato_idestrato", $estrato_idestrato);
-            $objRespuesta->bindParam(":nivel_idnivel", $nivel_idnivel);
-            $objRespuesta->bindParam(":usuario_idusuario", $usuario_idusuario);
+            $objRespuesta->bindParam(46, $estrato_idestrato);
+            $objRespuesta->bindParam(47, $nivel_idnivel);
+            $objRespuesta->bindParam(48, $etapa_idetapa);
+            $objRespuesta->bindParam(49, $usuario_idusuario);
 
 
             if ($objRespuesta->execute()) {
