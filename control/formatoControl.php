@@ -44,7 +44,7 @@ class formatoControl
 
     public function ctrListarFormato()
     {
-        $objRespuesta = formatoModelo::mdlListarFormato();
+        $objRespuesta = formatoModelo::mdlListarFormato($this->usuario_idusuario);
         echo json_encode($objRespuesta);
     }
 }
@@ -85,7 +85,8 @@ if (isset($_POST["nombre"], $_POST["documento"], $_POST["cargo"], $_POST["telefo
 
 
 
-if (isset($_POST["listarFormato"]) == "ok") {
+if (isset($_POST["cargarCards"])) {
     $objFormato = new FormatoControl();
+    $objFormato ->usuario_idusuario = $_POST["cargarCards"];
     $objFormato->ctrListarFormato();
 }

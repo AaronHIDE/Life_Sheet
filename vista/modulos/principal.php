@@ -1,4 +1,10 @@
-    <!-- NAVBAR -->
+<?php
+  $usuario = null;
+  if (isset($_SESSION["usuario"][0])){
+    $usuario = $_SESSION["usuario"][0];
+  }
+  
+?>    <!-- NAVBAR -->
 
     <h1 style="color:white;" class="text-center">Plantillas</h1>
     <div class="container mt-4 p-4 bg-black rounded">
@@ -27,4 +33,19 @@
               </div>
             </div>
           </div>
+
+    <h1 style="color:white;" class="text-center">Guardadas</h1>
+
+
+          <div id="contenedorCard" class="card2-container" usuario="<?php echo $usuario; ?>"  >
+            <a href="formato2">
+              <div class="card2">LIFE SHEET</div>
+            </a>
+
+
+            <a href="formatoSena2">
+              <div class="card2">FORMATO SENA</div>
+            </a>
+          </div>
+
         </div>
