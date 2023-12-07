@@ -62,6 +62,7 @@ class formatoSenaControl
 
     public $estrato_idestrato;
     public $nivel_idnivel;
+    public $etapa_idetapa;
     public $usuario_idusuario;
 
         public function ctrAgregarFormatoSena(){
@@ -85,8 +86,9 @@ class formatoSenaControl
             $this->empresa, $this->telefono_empresa, $this->funcionario_empresa, $this->observaciones, $this->fecha_diligenciamiento1, 
             $this->firma,
 
-            $this->estrato_idestrato, $this->nivel_idnivel, $this->usuario_idusuario,
+            $this->estrato_idestrato, $this->nivel_idnivel, $this->etapa_idetapa, $this->usuario_idusuario
             );
+            
             echo json_encode($objRespuesta);
         }
 
@@ -94,13 +96,11 @@ class formatoSenaControl
             $objRespuesta = formatoSenaModelo::mdlListarFormatoSena();
             echo json_encode($objRespuesta);
         }
-
-
-     
-
 }
 
-if (isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimiento"], $_POST["edad"], $_POST["telefono_aprendiz"] ,$_POST["email_misena"], 
+
+
+if(isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimiento"], $_POST["edad"], $_POST["telefono_aprendiz"], $_POST["email_misena"],
         $_POST["libreta_militar"], $_POST["direccion"], $_POST["estrato"], $_POST["ciudad"], 
  
         $_POST["titulo_obtenido"], $_POST["institucion_educativa"], $_POST["fecha_grado"], $_POST["nivel"], $_POST["nombre_estudios"], $_POST["institucion_educativa2"], 
@@ -117,73 +117,72 @@ if (isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimi
         $_POST["nit"], $_POST["centro_formacion1"], $_POST["representante_legal"], $_POST["email_representante"], $_POST["telefono_representante"], 
         
         $_POST["empresa"], $_POST["telefono_empresa"], $_POST["funcionario_empresa"], $_POST["observaciones"], $_POST["fecha_diligenciamiento1"], $_POST["firma"]
-            
-         $POST["estrato_idestrato"], $POST["nivel_idnivel"], $POST["usuario_idusuario"]
+
         )) {
    
-    $objAgregar = new formatoSenaControl();
-    $objAgregar->nombres_apellidos = $_POST["nombres_apellidos"];
-    $objAgregar->documento = $_POST["documento"];
-    $objAgregar->fecha_nacimiento = $_POST["fecha_nacimiento"];
-    $objAgregar->edad = $_POST["edad"];
-    $objAgregar->telefono_aprendiz = $_POST["telefono_aprendiz"];
-    $objAgregar->email_misena = $_POST["email_misena"];
-    $objAgregar->libreta_militar = $_POST["libreta_militar"];
-    $objAgregar->direccion = $_POST["direccion"];
-    $objAgregar->estrato = $_POST["estrato"];
-    $objAgregar->ciudad = $_POST["ciudad"];
+    $objAgregarFs = new formatoSenaControl();
+    $objAgregarFs->nombres_apellidos = $_POST["nombres_apellidos"];
+    $objAgregarFs->documento = $_POST["documento"];
+    $objAgregarFs->fecha_nacimiento = $_POST["fecha_nacimiento"];
+    $objAgregarFs->edad = $_POST["edad"];
+    $objAgregarFs->telefono_aprendiz = $_POST["telefono_aprendiz"];
+    $objAgregarFs->email_misena = $_POST["email_misena"];
+    $objAgregarFs->libreta_militar = $_POST["libreta_militar"];
+    $objAgregarFs->direccion = $_POST["direccion"];
+    $objAgregarFs->estrato = $_POST["estrato"];
+    $objAgregarFs->ciudad = $_POST["ciudad"];
 
-    $objAgregar->titulo_obtenido = $_POST["titulo_obtenido"];
-    $objAgregar->institucion_educativa = $_POST["institucion_educativa"];
-    $objAgregar->fecha_grado = $_POST["fecha_grado"];
-    $objAgregar->nivel = $_POST["nivel"];
-    $objAgregar->nombre_estudios = $_POST["nombre_estudios"];
-    $objAgregar->institucion_educativa2 = $_POST["institucion_educativa2"];
-    $objAgregar->semestres_aprobados = $_POST["semestres_aprobados"];
+    $objAgregarFs->titulo_obtenido = $_POST["titulo_obtenido"];
+    $objAgregarFs->institucion_educativa = $_POST["institucion_educativa"];
+    $objAgregarFs->fecha_grado = $_POST["fecha_grado"];
+    $objAgregarFs->nivel = $_POST["nivel"];
+    $objAgregarFs->nombre_estudios = $_POST["nombre_estudios"];
+    $objAgregarFs->institucion_educativa2 = $_POST["institucion_educativa2"];
+    $objAgregarFs->semestres_aprobados = $_POST["semestres_aprobados"];
 
-    $objAgregar->nombre_programa = $_POST["nombre_programa"];
-    $objAgregar->ficha = $_POST["ficha"];
-    $objAgregar->perfil = $_POST["perfil"];
-    $objAgregar->ocupaciones = $_POST["ocupaciones"];
-    $objAgregar->centro_formacion = $_POST["centro_formacion"];
-    $objAgregar->ciudad_formacion = $_POST["ciudad_formacion"];
-    $objAgregar->fecha_inicio = $_POST["fecha_inicio"];
-    $objAgregar->fecha_final = $_POST["fecha_final"];
-    $objAgregar->etapa = $_POST["etapa"];
-    $objAgregar->coordinador_academico = $_POST["coordinador_academico"];
-    $objAgregar->telefono_coordinador = $_POST["telefono_coordinador"];
-    $objAgregar->email_coordinador = $_POST["email_coordinador"];
+    $objAgregarFs->nombre_programa = $_POST["nombre_programa"];
+    $objAgregarFs->ficha = $_POST["ficha"];
+    $objAgregarFs->perfil = $_POST["perfil"];
+    $objAgregarFs->ocupaciones = $_POST["ocupaciones"];
+    $objAgregarFs->centro_formacion = $_POST["centro_formacion"];
+    $objAgregarFs->ciudad_formacion = $_POST["ciudad_formacion"];
+    $objAgregarFs->fecha_inicio = $_POST["fecha_inicio"];
+    $objAgregarFs->fecha_final = $_POST["fecha_final"];
+    $objAgregarFs->etapa = $_POST["etapa"];
+    $objAgregarFs->coordinador_academico = $_POST["coordinador_academico"];
+    $objAgregarFs->telefono_coordinador = $_POST["telefono_coordinador"];
+    $objAgregarFs->email_coordinador = $_POST["email_coordinador"];
 
-    $objAgregar->fecha_diligenciamiento = $_POST["fecha_diligenciamiento"];
-    $objAgregar->firma_aprendiz = $_POST["firma_aprendiz"];
+    $objAgregarFs->fecha_diligenciamiento = $_POST["fecha_diligenciamiento"];
+    $objAgregarFs->firma_aprendiz = $_POST["firma_aprendiz"];
 
-    $objAgregar->funcionario = $_POST["funcionario"];
-    $objAgregar->telefono_funcionario = $_POST["telefono_funcionario"];
-    $objAgregar->email_funcionario = $_POST["email_funcionario"];
+    $objAgregarFs->funcionario = $_POST["funcionario"];
+    $objAgregarFs->telefono_funcionario = $_POST["telefono_funcionario"];
+    $objAgregarFs->email_funcionario = $_POST["email_funcionario"];
 
-    $objAgregar->nit = $_POST["nit"];
-    $objAgregar->centro_formacion1 = $_POST["centro_formacion1"];
-    $objAgregar->representante_legal = $_POST["representante_legal"];
-    $objAgregar->email_representante = $_POST["email_representante"];
-    $objAgregar->telefono_representante = $_POST["telefono_representante"];
+    $objAgregarFs->nit = $_POST["nit"];
+    $objAgregarFs->centro_formacion1 = $_POST["centro_formacion1"];
+    $objAgregarFs->representante_legal = $_POST["representante_legal"];
+    $objAgregarFs->email_representante = $_POST["email_representante"];
+    $objAgregarFs->telefono_representante = $_POST["telefono_representante"];
 
-    $objAgregar->empresa = $_POST["empresa"];
-    $objAgregar->telefono_empresa = $_POST["telefono_empresa"];
-    $objAgregar->funcionario_empresa = $_POST["funcionario_empresa"];
-    $objAgregar->observaciones = $_POST["observaciones"];
-    $objAgregar->fecha_diligenciamiento1 = $_POST["fecha_diligenciamiento1"];
-    $objAgregar->firma = $_POST["firma"];
+    $objAgregarFs->empresa = $_POST["empresa"];
+    $objAgregarFs->telefono_empresa = $_POST["telefono_empresa"];
+    $objAgregarFs->funcionario_empresa = $_POST["funcionario_empresa"];
+    $objAgregarFs->observaciones = $_POST["observaciones"];
+    $objAgregarFs->fecha_diligenciamiento1 = $_POST["fecha_diligenciamiento1"];
+    $objAgregarFs->firma = $_POST["firma"];
 
-    $objAgregar->estrato_idestrato = $_SESSION["estrato"][0];
-    $objAgregar->nivel_idnivel = $_SESSION["nivel"][0];
-    $objAgregar->usuario_idusuario = $_SESSION["usuario"][0];
+    $objAgregarFs->estrato_idestrato = $_POST["estrato"];
+    $objAgregarFs->nivel_idnivel = $_POST["nivel"];
+    $objAgregarFs->etapa_idetapa = $_POST["etapa"];
+    $objAgregarFs->usuario_idusuario = $_SESSION["usuario"][0];
 
-
-    $objAgregar->ctrAgregarFormatoSena();
+    $objAgregarFs->ctrAgregarFormatoSena();
 }
 
 
-if (isset($_POST["listarFormatoSena"]) == "ok") {
-    $objFormato = new formatoSenaControl();
-    $objFormato->ctrListarFormatoSena();
+if (isset($_POST["listarFormatoSena"]) && $_POST["listarFormatoSena"] == "ok") {
+    $objFormatoSena = new formatoSenaControl();
+    $objFormatoSena->ctrListarFormatoSena();
 }

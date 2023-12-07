@@ -9,10 +9,10 @@ $(function () {
       "submit",
       (event) => {
         event.preventDefault();
-
         if (!form.checkValidity()) {
           event.stopPropagation();
           form.classList.add("was-validated");
+          
         } else {
           let nombre = $("#nombre").val();
           let documento = $("#documento").val();
