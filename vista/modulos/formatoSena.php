@@ -228,15 +228,16 @@
                                 <tr>
                                     <th>NIVEL</th>
                                     <td colspan="10">
-                                        <select id="nivel" name="nivel" class="form-control-select inputboxfs opciones" required>
+                                        <select id="nivel" name="nivel" class="form-control-select inputboxfs opciones required">
                                             <option value="">Seleccione una opción:</option>
                                             <option value="1">TC: Técnico</option>
                                             <option value="2">TL: Tecnélogo</option>
-                                            <option value="3">TE: Especializacién Tecnológica</option>
+                                            <option value="3">TE: Especialización Tecnológica</option>
                                             <option value="4">UN: Universitaria</option>
                                             <option value="5">ES: Especialización</option>
                                             <option value="6">MG: Maestría</option>
                                             <option value="7">DOC: Doctorado</option>
+                                            <option value="8">NO APLICA</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -246,7 +247,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="text" class="form-control" id="nombre_estudios"
-                                                name="nombre_estudios" required>
+                                                name="nombre_estudios">
                                         </div>
                                     </td>
                                 </tr>
@@ -256,7 +257,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="text" class="form-control" id="institucion_educativa2"
-                                                name="institucion_educativa2" required>
+                                                name="institucion_educativa2">
                                         </div>
                                     </td>
                                 </tr>
@@ -266,7 +267,7 @@
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
                                             <input type="number" class="form-control" id="semestres_aprobados"
-                                                name="semestres_aprobados" required>
+                                                name="semestres_aprobados">
                                         </div>
                                     </td>
                                 </tr>
@@ -527,7 +528,7 @@
                                                     <td colspan="7">
                                                         <div class="inputboxfs">
                                                             <input type="text" class="form-control"
-                                                                id="centro_formacion1" name="centro_formacion1" required>
+                                                                id="centro_formacion1" name="centro_formacion1">
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -537,7 +538,7 @@
                                                     <td colspan="7">
                                                         <div class="inputboxfs">
                                                             <input type="text" class="form-control"
-                                                                id="representante_legal" name="representante_legal" required>
+                                                                id="representante_legal" name="representante_legal">
                                                         </div>
                                                     </td>
                                                 </tr>
