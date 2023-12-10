@@ -129,19 +129,21 @@ class formatoSenaModelo
         return $mensaje;
     }
 
-    public static function mdlListarFormatoSena()
+    public static function mdlListarFormatoSena($usuario_idusuario)
     {
-        $listarFormatoSena = null;
+        $mensaje = array();
         try {
-            $objRespuesta = Conexion::conectar()->prepare("SELECT * FROM hoja_de_vida_sena");
+            $objRespuesta = Conexion::conectar()->prepare("SELECT * FROM hoja_de_vida_sena WHERE usuario_idusuario = :usuario_idusuario ORDER BY idhoja_de_vida_sena  DESC LIMIT 1");
+            $objRespuesta->bindParam(":usuario_idusuario", $usuario_idusuario);
             $objRespuesta->execute();
             $listarFormatoSena = $objRespuesta->fetchAll();
+            $mensaje = array("codigo"=>"200","mensaje"=>$listarFormatoSena);
             $objRespuesta = null;
         } catch (Exception $e) {
             $listarFormatoSena = $e->getMessage();
         }
 
-        return $listarFormatoSena;
+        return $mensaje;
     }
 
 

@@ -148,4 +148,88 @@ $(function () {
 
         }, false)
     })
+
+
+    function cargarCards() {
+        // Corregir el uso de $("#contenedorCard")
+        let usuario = $("#contenedorCard").attr("usuario");
+        let objData = new FormData();
+        objData.append("cargarCards", usuario);
+        fetch("control/formatoSenaControl.php", {
+          method: "POST",
+          body: objData,
+        })
+          .then((response) => response.json())
+          .then((response) => {
+            if (response["codigo"] == "200") {
+              $("#contenedorCard").html("");
+    
+              response["mensaje"].forEach(listarCardsUsuario);
+              function listarCardsUsuario(item, index) {
+                var interfaces = '<a href="formatoSena2?' + item.idhoja_de_vida_sena + '">';
+                interfaces += '<div class="card2">FORMATO SENA</div>';
+                interfaces += "</a>";
+    
+                $("#contenedorCard").append(interfaces);
+              }
+              $("#nombres_apellidos").val(response['mensaje'][0]['nombres_apellidos']);
+              $("#documento").val(response['mensaje'][0]['documento']);
+              $("#fecha_nacimiento").val(response['mensaje'][0]['fecha_nacimiento']);
+              $("#edad").val(response['mensaje'][0]['edad']);
+              $("#telefono_aprendiz").val(response['mensaje'][0]['telefono_aprendiz']);
+              $("#email_misena").val(response['mensaje'][0]['email_misena']);
+              $("#libreta_militar").val(response['mensaje'][0]['libreta_militar']);
+              $("#direccion").val(response['mensaje'][0]['direccion']);
+              $("#estrato").val(response['mensaje'][0]['estrato']);
+              $("#ciudad").val(response['mensaje'][0]['ciudad']); 
+              
+              $("#titulo_obtenido").val(response['mensaje'][0]['titulo_obtenido']);
+              $("#institucion_educativa").val(response['mensaje'][0]['institucion_educativa']);
+              $("#fecha_grado").val(response['mensaje'][0]['fecha_grado']);
+              $("#nivel").val(response['mensaje'][0]['nivel']);
+              $("#nombre_estudios").val(response['mensaje'][0]['nombre_estudios']);
+              $("#institucion_educativa2").val(response['mensaje'][0]['institucion_educativa2']);
+              $("#semestres_aprobados").val(response['mensaje'][0]['semestres_aprobados']);
+
+              $("#nombre_programa").val(response['mensaje'][0]['nombre_programa']);
+              $("#ficha").val(response['mensaje'][0]['ficha']);
+              $("#perfil").val(response['mensaje'][0]['perfil']);
+              $("#ocupaciones").val(response['mensaje'][0]['ocupaciones']);
+              $("#centro_formacion").val(response['mensaje'][0]['centro_formacion']);
+              $("#ciudad_formacion").val(response['mensaje'][0]['ciudad_formacion']);
+              $("#fecha_inicio").val(response['mensaje'][0]['fecha_inicio']);
+              $("#fecha_final").val(response['mensaje'][0]['fecha_final']);
+              $("#etapa").val(response['mensaje'][0]['etapa']);
+              $("#coordinador_academico").val(response['mensaje'][0]['coordinador_academico']);
+              $("#telefono_coordinador").val(response['mensaje'][0]['telefono_coordinador']);
+              $("#email_coordinador").val(response['mensaje'][0]['email_coordinador']);
+
+              $("#fecha_diligenciamiento").val(response['mensaje'][0]['fecha_diligenciamiento']);
+              $("#firma_aprendiz").val(response['mensaje'][0]['firma_aprendiz']);
+
+              $("#funcionario").val(response['mensaje'][0]['funcionario']);
+              $("#telefono_funcionario").val(response['mensaje'][0]['telefono_funcionario']);
+              $("#email_funcionario").val(response['mensaje'][0]['email_funcionario']);
+
+              $("#nit").val(response['mensaje'][0]['nit']);
+              $("#centro_formacion1").val(response['mensaje'][0]['centro_formacion1']);
+              $("#representante_legal").val(response['mensaje'][0]['representante_legal']);
+              $("#email_representante").val(response['mensaje'][0]['email_representante']);
+              $("#telefono_representante").val(response['mensaje'][0]['telefono_representante']);
+
+              $("#empresa").val(response['mensaje'][0]['empresa']);
+              $("#telefono_empresa").val(response['mensaje'][0]['telefono_empresa']);
+              $("#funcionario_empresa").val(response['mensaje'][0]['funcionario_empresa']);
+              $("#observaciones").val(response['mensaje'][0]['observaciones']);
+
+              $("#fecha_diligenciamiento1").val(response['mensaje'][0]['fecha_diligenciamiento1']);
+              $("#firma").val(response['mensaje'][0]['firma']);
+
+              $("#estrato_idestrato").val(response['mensaje'][0]['estrato_idestrato']);
+              $("#nivel_idnivel").val(response['mensaje'][0]['nivel_idnivel']);
+              $("#etapa_idetapa").val(response['mensaje'][0]['etapa_idetapa']);
+              $("#usuario_idusuario").val(response['mensaje'][0]['usuario_idusuario']);
+            }
+          });
+      }
 })
