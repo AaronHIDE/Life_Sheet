@@ -38,14 +38,14 @@
 
 
           <div id="contenedorCard" class="card2-container" usuario="<?php echo $usuario; ?>"  >
-            <a href="formato2">
+            <!-- <a href="formato2">
               <div class="card2">LIFE SHEET</div>
             </a>
 
 
             <a href="formatoSena2">
-              <div class="card2">FORMATO SENA</div>
-            </a>
+              <div class="card2">FORMATO SENA</div> 
+            </a>-->
           </div>
 
         </div>

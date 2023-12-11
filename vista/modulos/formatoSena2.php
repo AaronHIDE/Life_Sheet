@@ -728,6 +728,10 @@
                                         </script>
                                     </div>
 
+                                    <div class="col-md-2" id="guardarFS">
+                                        <button type="submit" class="btn btn-info">Guardar
+                                            <i class=" bi bi-save"></i>
+                                    </div>
                                 </div>
                             </form>
                         </div>

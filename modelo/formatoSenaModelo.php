@@ -129,18 +129,36 @@ class formatoSenaModelo
         return $mensaje;
     }
 
-    public static function mdlListarFormatoSena($usuario_idusuario)
+    public static function mdlListarFormato($idUsuario)
     {
         $mensaje = array();
         try {
             $objRespuesta = Conexion::conectar()->prepare("SELECT * FROM hoja_de_vida_sena WHERE usuario_idusuario = :usuario_idusuario ORDER BY idhoja_de_vida_sena  DESC LIMIT 1");
-            $objRespuesta->bindParam(":usuario_idusuario", $usuario_idusuario);
+            $objRespuesta->bindParam(":usuario_idusuario", $idUsuario);
             $objRespuesta->execute();
             $listarFormatoSena = $objRespuesta->fetchAll();
             $mensaje = array("codigo"=>"200","mensaje"=>$listarFormatoSena);
             $objRespuesta = null;
         } catch (Exception $e) {
-            $listarFormatoSena = $e->getMessage();
+            $mensaje = array("codigo"=>"401","mensaje"=>$e->getMessage());
+        }
+
+        return $mensaje;
+    }
+
+
+    public static function mdlListarFormatoSena($idFormatoSena)
+    {
+        $mensaje = array();
+        try {
+            $objRespuesta = Conexion::conectar()->prepare("SELECT * FROM hoja_de_vida_sena WHERE idhoja_de_vida_sena = :idFormatoSena ORDER BY idhoja_de_vida_sena  DESC LIMIT 1");
+            $objRespuesta->bindParam(":idFormatoSena", $idFormatoSena);
+            $objRespuesta->execute();
+            $listarFormatoSena = $objRespuesta->fetchAll();
+            $mensaje = array("codigo"=>"200","mensaje"=>$listarFormatoSena);
+            $objRespuesta = null;
+        } catch (Exception $e) {
+            $mensaje = array("codigo"=>"401","mensaje"=>$e->getMessage());
         }
 
         return $mensaje;
