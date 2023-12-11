@@ -67,4 +67,21 @@ class formatoModelo
 
         return $mensaje;
     }
+
+    public static function mdlListarFormatoForm($idFormato)
+    {
+        $mensaje = array();
+        try {
+            $objRespuesta = Conexion::conectar()->prepare("SELECT * FROM hoja_de_vida WHERE idhoja_de_vida = :idFormato ORDER BY idhoja_de_vida  DESC LIMIT 1");
+            $objRespuesta->bindParam(":idFormato", $idFormato);
+            $objRespuesta->execute();
+            $listarFormato = $objRespuesta->fetchAll();
+            $mensaje = array("codigo"=>"200","mensaje"=>$listarFormato);
+            $objRespuesta = null;
+        } catch (Exception $e) {
+            $mensaje = array("codigo"=>"401","mensaje"=>$e->getMessage());
+        }
+
+        return $mensaje;
+    }
 }
