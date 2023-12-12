@@ -43,7 +43,7 @@
             <h1 style="color:white;" class="text-center">Guardadas</h1>
 
 
-            <div id="contenedorCard" class="card2-container" usuario="<?php echo $usuario; ?>">
+            <div id="contenedorCard" class="card2-container contenedorCard" usuario="<?php echo $usuario; ?>">
             <!-- <a href="formato2">
             <div class="card2">LIFE SHEET</div>
             </a>

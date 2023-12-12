@@ -121,6 +121,7 @@ $(function () {
 
             $("#contenedorCard").append(interfaces);
           }
+          
           console.log(response['mensaje']);
           $("#nombre").val(response['mensaje'][0]['nombre']);
           $("#documento").val(response['mensaje'][0]['documento']);
