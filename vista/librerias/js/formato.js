@@ -1,4 +1,6 @@
 $(function () {
+  cargarCards();
+
   const forms = document.querySelectorAll("#formato");
 
   // Loop over them and prevent submission
@@ -7,10 +9,10 @@ $(function () {
       "submit",
       (event) => {
         event.preventDefault();
-
         if (!form.checkValidity()) {
           event.stopPropagation();
           form.classList.add("was-validated");
+          
         } else {
           let nombre = $("#nombre").val();
           let documento = $("#documento").val();
@@ -96,4 +98,115 @@ $(function () {
       false
     );
   });
+
+  function cargarCards() {
+    // Corregir el uso de $("#contenedorCard")
+    let usuario = $("#contenedorCard").attr("usuario");
+    let objData = new FormData();
+    objData.append("cargarCards", usuario);
+    fetch("control/formatoControl.php", {
+      method: "POST",
+      body: objData,
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        if (response["codigo"] == "200") {
+          $("#contenedorCard").html("");
+
+          response["mensaje"].forEach(listarCardsUsuario);
+          function listarCardsUsuario(item, index) {
+            var interfaces = '<a href="formato2?' + item.idhoja_de_vida + '">';
+            interfaces += '<div class="card2">LIFE SHEET</div>';
+            interfaces += "</a>";
+
+            $("#contenedorCard").append(interfaces);
+          }
+          console.log(response['mensaje']);
+          $("#nombre").val(response['mensaje'][0]['nombre']);
+          $("#documento").val(response['mensaje'][0]['documento']);
+          $("#cargo").val(response['mensaje'][0]['cargo']);
+          $("#telefono").val(response['mensaje'][0]['telefono']);
+          $("#email").val(response['mensaje'][0]['email']);
+          $("#direccion").val(response['mensaje'][0]['direccion']);
+          $("#estudios1").val(response['mensaje'][0]['estudios1']);
+          $("#estudios2").val(response['mensaje'][0]['estudios2']);
+          $("#estudios3").val(response['mensaje'][0]['estudios3']);
+          $("#estudios4").val(response['mensaje'][0]['estudios4']);
+          $("#experiencia1").val(response['mensaje'][0]['experiencia1']);
+          $("#experiencia2").val(response['mensaje'][0]['experiencia2']);
+          $("#experiencia3").val(response['mensaje'][0]['experiencia3']);
+          $("#experiencia4").val(response['mensaje'][0]['experiencia4']);
+          $("#habilidades1").val(response['mensaje'][0]['habilidades1']);
+          $("#habilidades2").val(response['mensaje'][0]['habilidades2']);
+          $("#habilidades3").val(response['mensaje'][0]['habilidades3']);
+          $("#habilidades4").val(response['mensaje'][0]['habilidades4']);
+          $("#referencias1").val(response['mensaje'][0]['referencias1']);
+          $("#referencias2").val(response['mensaje'][0]['referencias2']);
+          $("#referencias3").val(response['mensaje'][0]['referencias3']);
+          $("#referencias4").val(response['mensaje'][0]['referencias4']);
+          $("#telefonoReferencia1").val(response['mensaje'][0]['telefonoReferencia1']);
+          $("#telefonoReferencia2").val(response['mensaje'][0]['telefonoReferencia2']);
+          $("#telefonoReferencia3").val(response['mensaje'][0]['telefonoReferencia3']);
+          $("#telefonoReferencia4").val(response['mensaje'][0]['telefonoReferencia4']);
+          $("#usuario_idusuario").val(response['mensaje'][0]['usuario_idusuario']);
+        }
+      });
+  }
+
+  function cargarFormato() {
+    // Corregir el uso de $("#contenedorCard")
+    let objData = new FormData();
+    objData.append("cargarDatosForm", window.location.search.split('?')[1]);
+    fetch("control/formatoControl.php", {
+      method: "POST",
+      body: objData,
+    })
+      .then((response) => response.json())
+      .then((response) => {
+        if (response["codigo"] == "200") {
+          $("#contenedorCard").html("");
+
+          response["mensaje"].forEach(listarCardsUsuario);
+          function listarCardsUsuario(item, index) {
+            var interfaces = '<a href="formato2?' + item.idhoja_de_vida + '">';
+            interfaces += '<div class="card2">LIFE SHEET</div>';
+            interfaces += "</a>";
+
+            $("#contenedorCard").append(interfaces);
+          }
+          console.log(response['mensaje']);
+          $("#nombre").val(response['mensaje'][0]['nombre']);
+          $("#documento").val(response['mensaje'][0]['documento']);
+          $("#cargo").val(response['mensaje'][0]['cargo']);
+          $("#telefono").val(response['mensaje'][0]['telefono']);
+          $("#email").val(response['mensaje'][0]['email']);
+          $("#direccion").val(response['mensaje'][0]['direccion']);
+          $("#estudios1").val(response['mensaje'][0]['estudios1']);
+          $("#estudios2").val(response['mensaje'][0]['estudios2']);
+          $("#estudios3").val(response['mensaje'][0]['estudios3']);
+          $("#estudios4").val(response['mensaje'][0]['estudios4']);
+          $("#experiencia1").val(response['mensaje'][0]['experiencia1']);
+          $("#experiencia2").val(response['mensaje'][0]['experiencia2']);
+          $("#experiencia3").val(response['mensaje'][0]['experiencia3']);
+          $("#experiencia4").val(response['mensaje'][0]['experiencia4']);
+          $("#habilidades1").val(response['mensaje'][0]['habilidades1']);
+          $("#habilidades2").val(response['mensaje'][0]['habilidades2']);
+          $("#habilidades3").val(response['mensaje'][0]['habilidades3']);
+          $("#habilidades4").val(response['mensaje'][0]['habilidades4']);
+          $("#referencias1").val(response['mensaje'][0]['referencias1']);
+          $("#referencias2").val(response['mensaje'][0]['referencias2']);
+          $("#referencias3").val(response['mensaje'][0]['referencias3']);
+          $("#referencias4").val(response['mensaje'][0]['referencias4']);
+          $("#telefonoReferencia1").val(response['mensaje'][0]['telefonoReferencia1']);
+          $("#telefonoReferencia2").val(response['mensaje'][0]['telefonoReferencia2']);
+          $("#telefonoReferencia3").val(response['mensaje'][0]['telefonoReferencia3']);
+          $("#telefonoReferencia4").val(response['mensaje'][0]['telefonoReferencia4']);
+          $("#usuario_idusuario").val(response['mensaje'][0]['usuario_idusuario']);
+        }
+      });
+  }
+
+  if(window.location.search.split('?')[1]) {
+    cargarFormato();
+  }
 });

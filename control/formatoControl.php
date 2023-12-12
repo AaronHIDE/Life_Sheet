@@ -6,7 +6,7 @@ include_once "../modelo/formatoModelo.php";
 
 class formatoControl
 {
-
+    public $idHojaDeVida;
     public $nombre;
     public $documento;
     public $cargo;
@@ -44,7 +44,13 @@ class formatoControl
 
     public function ctrListarFormato()
     {
-        $objRespuesta = formatoModelo::mdlListarFormato();
+        $objRespuesta = formatoModelo::mdlListarFormatoForm($this->idHojaDeVida);
+        echo json_encode($objRespuesta);
+    }
+
+    public function ctrCargarCards()
+    {
+        $objRespuesta = formatoModelo::mdlListarFormato($this->usuario_idusuario);
         echo json_encode($objRespuesta);
     }
 }
@@ -85,7 +91,14 @@ if (isset($_POST["nombre"], $_POST["documento"], $_POST["cargo"], $_POST["telefo
 
 
 
-if (isset($_POST["listarFormato"]) == "ok") {
+if (isset($_POST["cargarCards"])) {
     $objFormato = new FormatoControl();
+    $objFormato ->usuario_idusuario = $_POST["cargarCards"];
+    $objFormato->ctrCargarCards();
+}
+
+if (isset($_POST["cargarDatosForm"])) {
+    $objFormato = new FormatoControl();
+    $objFormato->idHojaDeVida = $_POST["cargarDatosForm"];
     $objFormato->ctrListarFormato();
 }
