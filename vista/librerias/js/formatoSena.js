@@ -1,6 +1,6 @@
 $(function () {
 
-    cargarCards();
+  cargarCardsFs();
     const forms = document.querySelectorAll("#aggFormatoSena");
 
     Array.from(forms).forEach((form) => {
@@ -152,10 +152,10 @@ $(function () {
     })
 
 
-    function cargarCards() {
+    function cargarCardsFs() {
         let usuario = $("#contenedorCard").attr("usuario");
         let objData = new FormData();
-        objData.append("cargarCards", usuario);
+        objData.append("cargarCardsFs", usuario);
         fetch("control/formatoSenaControl.php", {
           method: "POST",
           body: objData,

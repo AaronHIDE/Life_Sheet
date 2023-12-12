@@ -129,7 +129,7 @@ class formatoSenaModelo
         return $mensaje;
     }
 
-    public static function mdlListarFormato($idUsuario)
+    public static function mdlListarCard($idUsuario)
     {
         $mensaje = array();
         try {

@@ -93,9 +93,9 @@ class formatoSenaControl
             echo json_encode($objRespuesta);
         }
 
-        public function ctrCargarCards()
+        public function ctrCargarCardsFs()
         {
-            $objRespuesta = formatoModelo::mdlListarFormato($this->usuario_idusuario);
+            $objRespuesta = formatoSenaModelo::mdlListarCard($this->usuario_idusuario);
             echo json_encode($objRespuesta);
         }
 
@@ -190,14 +190,14 @@ if(isset($_POST["nombres_apellidos"], $_POST["documento"], $_POST["fecha_nacimie
 }
 
 
-if (isset($_POST["cargarCards"])) {
+if (isset($_POST["cargarCardsFs"])) {
     $objFormatoSena = new formatoSenaControl();
-    $objFormato ->usuario_idusuario = $_POST["cargarCards"];
-    $objFormatoSena->ctrCargarCards();
+    $objFormatoSena->usuario_idusuario = $_POST["cargarCardsFs"];
+    $objFormatoSena->ctrCargarCardsFs();
 }
 
 if (isset($_POST["cargarDatosFormSena"])) {
-    $objFormato = new formatoSenaControl();
-    $objFormato->idHojaDeVidaSena = $_POST["cargarDatosFormSena"];
-    $objFormato->ctrListarFormatoSena();
+    $objFormatoSena = new formatoSenaControl();
+    $objFormatoSena->idHojaDeVidaSena = $_POST["cargarDatosFormSena"];
+    $objFormatoSena->ctrListarFormatoSena();
 }
