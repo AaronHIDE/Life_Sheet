@@ -64,5 +64,9 @@ class formatoModelo
         }
 
         return $listarFormato;
+
+        
     }
+
 }
+

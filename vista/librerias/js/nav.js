@@ -8,60 +8,44 @@ document.addEventListener("DOMContentLoaded", function () {
         elemento.style.display = "none";
     });
 
-    // Muestra solo los elementos correspondientes a las rutas deseadas
-    if (rutaActual.includes("/inicio")) {
-        document.getElementById("inicio").style.display = "block";
-        document.getElementById("registro").style.display = "block";
-    }
 
-    // Muestra solo los elementos correspondientes a la ruta deseada
+     // Muestra solo los elementos correspondientes a la ruta deseada
     if (rutaActual.includes("/principal")) {
         document.getElementById("crear").style.display = "block";
         document.getElementById("compartir").style.display = "block";
         document.getElementById("cerrarSesion").style.display = "block";
     }
 
-    if (rutaActual.includes("/mail")) {
-        document.getElementById("crear").style.display = "block";
-        document.getElementById("cerrarSesion").style.display = "block";
-    }
-
-    if (rutaActual.includes("/mail")) {
-        document.getElementById("crear").style.display = "block";
-        document.getElementById("cerrarSesion").style.display = "block";
-    }
-
-    if (rutaActual.includes("/formato")) {
-        document.getElementById("crear").style.display = "block";
-        document.getElementById("compartir").style.display = "block";
-        document.getElementById("cerrarSesion").style.display = "block";
-    }
-
-    if (rutaActual.includes("/formatoSena")) {
-        document.getElementById("crear").style.display = "block";
-        document.getElementById("compartir").style.display = "block";
-        document.getElementById("cerrarSesion").style.display = "block";
-    }
-
-    if (rutaActual.includes("/login")) {
-        document.getElementById("registro").style.display = "block";
-        document.getElementById("home").style.display = "block";
-    }
-
-    if (rutaActual.includes("/registro")) {
+    // Muestra solo los elementos correspondientes a la ruta deseada
+    if (rutaActual === "/Life_Sheet/") {
         document.getElementById("inicio").style.display = "block";
+        document.getElementById("registro").style.display = "block";
+    } else if (rutaActual.includes("/inicio")) {
+        document.getElementById("inicio").style.display = "block";
+        document.getElementById("registro").style.display = "block";
+    } else if (rutaActual.includes("/principal")) {
+        document.getElementById("crear").style.display = "block";
+        document.getElementById("compartir").style.display = "block";
+        document.getElementById("cerrarSesion").style.display = "block";
+    } else if (rutaActual.includes("/mail")) {
+        document.getElementById("crear").style.display = "block";
+        document.getElementById("cerrarSesion").style.display = "block";
+    } else if (rutaActual.includes("/login")) {
         document.getElementById("home").style.display = "block";
+        document.getElementById("registro").style.display = "block";     
+    } else if (rutaActual.includes("/registro")) {
+        document.getElementById("home").style.display = "block";
+        document.getElementById("inicio").style.display = "block";
+    } else if (rutaActual.includes("/formato")) {
+        document.getElementById("crear").style.display = "block";
+        document.getElementById("compartir").style.display = "block";
+        document.getElementById("cerrarSesion").style.display = "block";
+    } else if (rutaActual.includes("/formatoSena")) {
+        document.getElementById("crear").style.display = "block";
+        document.getElementById("compartir").style.display = "block";
+        document.getElementById("cerrarSesion").style.display = "block";
     }
 
-    // if (rutaActual.includes("/")) {
-    //     document.getElementById("inicio").style.display = "block";
-    //     document.getElementById("registro").style.display = "block";
-    // }
 
 
-
-    
-    // Puedes agregar más condiciones según tus necesidades
-
-    // También puedes usar un switch o estructuras if adicionales dependiendo de tu lógica
 });
