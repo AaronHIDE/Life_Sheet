@@ -153,7 +153,7 @@ $(function () {
 
 
     function cargarCardsFs() {
-        let usuario = $("#contenedorCard").attr("usuario");
+        let usuario = $("#contenedorCard2").attr("usuario");
         let objData = new FormData();
         objData.append("cargarCardsFs", usuario);
         fetch("control/formatoSenaControl.php", {
@@ -163,7 +163,7 @@ $(function () {
           .then((response) => response.json())
           .then((response) => {
             if (response["codigo"] == "200") {
-              $("#contenedorCard").html("");
+              $("#contenedorCard2").html("");
     
               response["mensaje"].forEach(listarCardsUsuario);
               function listarCardsUsuario(item, index) {
@@ -171,7 +171,7 @@ $(function () {
                 interfaces += '<div class="card2">FORMATO SENA</div>';
                 interfaces += "</a>";
     
-                $("#contenedorCard").append(interfaces);
+                $("#contenedorCard2").append(interfaces);
               }
               $("#nombres_apellidos").val(response['mensaje'][0]['nombres_apellidos']);
               $("#documento").val(response['mensaje'][0]['documento']);

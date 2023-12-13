@@ -43,17 +43,24 @@
             <h1 style="color:white;" class="text-center">Guardadas</h1>
 
 
-            <div id="contenedorCard" class="card2-container" usuario="<?php echo $usuario; ?>">
-            <!-- <a href="formato2">
-            <div class="card2">LIFE SHEET</div>
-            </a>
+            <div class="row">
+                <div class="col-md-2">
+                    <div id="contenedorCard" class="card2-container" usuario="<?php echo $usuario; ?>">
+                    <!-- <a href="formato2">
+                        <div class="card2">LIFE SHEET</div>
+                    </a>-->
+                    </div>
+                </div>
 
+                <div class="col-md-2 offset-md-1">
+                    <div id="contenedorCard2" class="card2-container" usuario="<?php echo $usuario; ?>">
+                    <!-- <a href="formatoSena2">
+                        <div class="card2">FORMATO SENA</div>
+                    </a>-->
+                    </div>
+                </div>
 
-            <a href="formatoSena2">
-              <div class="card2">FORMATO SENA</div> 
-            </a>-->
             </div>
-
         </div>
     </div>
 </div>
