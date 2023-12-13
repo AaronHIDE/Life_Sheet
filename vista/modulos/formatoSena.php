@@ -451,7 +451,7 @@
                                             <td class="input-cell">
                                                 <div class="inputboxfs">
                                                     <input type="text" class="form-control" id="firma_aprendiz"
-                                                        name="firma_aprendiz" required>
+                                                        name="firma_aprendiz">
                                                 </div>
                                             </td>
                                         </tr>
