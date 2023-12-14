@@ -83,7 +83,7 @@
                                     <th>DOCUMENTO DE IDENTIDAD</th>
                                     <td class="input-cell" colspan="10">
                                         <div class="inputboxfs">
-                                            <input type="text" class="form-control" id="documento" name="documento" required>
+                                            <input type="number" class="form-control" id="documento" name="documento" required>
                                         </div>
                                     </td>
                                 </tr>

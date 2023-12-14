@@ -236,7 +236,7 @@ $(function () {
 
 
       function cargarFormatoSena() {
-        // Corregir el uso de $("#contenedorCard")
+        // Corregir el uso de $("#contenedorCard2")
         let objData = new FormData();
         objData.append("cargarDatosFormSena", window.location.search.split('?')[1]);
         fetch("control/formatoSenaControl.php", {
@@ -246,7 +246,7 @@ $(function () {
           .then((response) => response.json())
           .then((response) => {
             if (response["codigo"] == "200") {
-              $("#contenedorCard").html("");
+              $("#contenedorCard2").html("");
     
               response["mensaje"].forEach(listarCardsUsuario);
               function listarCardsUsuario(item, index) {
@@ -254,7 +254,7 @@ $(function () {
                 interfaces += '<div class="card2">FORMATO SENA</div>';
                 interfaces += "</a>";
     
-                $("#contenedorCard").append(interfaces);
+                $("#contenedorCard2").append(interfaces);
               }
               console.log(response['mensaje']);
               $("#nombres_apellidos").val(response['mensaje'][0]['nombres_apellidos']);

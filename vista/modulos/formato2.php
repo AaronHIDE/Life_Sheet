@@ -230,10 +230,10 @@
                     <input type="number" class="form-control" id="telefonoReferencia4" name="telefonoReferencia4">
                     <label for="telefonoReferencia4" class="form-label"></label>
                 </div><br><br>
-                <div class="col-md-2 offset-md-4" id="transferir">
+                <!-- <div class="col-md-2 offset-md-4" id="transferir">
                     <button type="submit" class="btn btn-info"">Guardar
                         <i class=" bi bi-save"></i>
-                </div>
+                </div> -->
                 </form>
             </div>
         </div>
